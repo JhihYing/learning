@@ -1,3 +1,7 @@
+body {
+  display: none;
+}
+
 /* ----------------------- 滾輪外觀 ----------------------- */
 /* 下拉式選單 (分類) */
 .course-type-ul::-webkit-scrollbar {

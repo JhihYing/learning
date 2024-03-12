@@ -1,9 +1,11 @@
 $(document).ready(function () {
   // -----------------------  載入 header -----------------------
-  $(".headerpage").load("header.html");
-
-  // -----------------------  載入 footer -----------------------
-  $(".footerpage").load("footer.html");
+  $(".headerpage").load("header.html", function () {
+    // -----------------------  載入 footer -----------------------
+    $(".footerpage").load("footer.html", function () {
+      $("body").show(); // 顯示頁面內容
+    });
+  });
 
   // ----------------------- 判斷分類第一個 -----------------------
   $(".course-type li:first-child").addClass("active");

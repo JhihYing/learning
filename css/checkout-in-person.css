@@ -1,3 +1,6 @@
+body {
+  display: none;
+}
 /* ----------------------- 購物車 ----------------------- */
 .checkout-bg {
   background-color: #f4f4f4;

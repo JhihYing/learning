@@ -1,3 +1,6 @@
+body {
+  display: none;
+}
 .nav-category-title > p {
   color: #e8c558 !important;
 }

@@ -1,9 +1,12 @@
 $(document).ready(function () {
-  // -----------------------  載入 header -----------------------
-  $(".headerpage").load("header.html");
-
-  // -----------------------  載入 footer -----------------------
-  $(".footerpage").load("footer.html");
+  // 载入 header
+  $(".headerpage").load("header.html", function () {
+    // 载入 footer
+    $(".footerpage").load("footer.html", function () {
+      // 显示页面内容
+      $("body").show();
+    });
+  });
 
   // -----------------------  最新消息 & 通知 切換 -----------------------
   $(".notification-list > li").click(function () {

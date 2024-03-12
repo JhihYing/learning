@@ -1,9 +1,11 @@
 $(document).ready(function () {
   // -----------------------  載入 header -----------------------
-  $(".headerpage").load("header.html");
-
-  // -----------------------  載入 footer -----------------------
-  $(".footerpage").load("footer.html");
+  $(".headerpage").load("header.html", function () {
+    // -----------------------  載入 footer -----------------------
+    $(".footerpage").load("footer.html", function () {
+      $("body").show(); // 顯示頁面內容
+    });
+  });
 
   // 切換分類(介紹、章節、評價、作業、問與答、公告)
   $(".info-nav-ul > li").click(function () {

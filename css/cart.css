@@ -1,3 +1,7 @@
+body {
+  display: none;
+}
+
 /* ----------------------- 購物車 ----------------------- */
 .carts-bg {
   background-color: #f4f4f4;

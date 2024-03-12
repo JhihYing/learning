@@ -1,3 +1,6 @@
+body {
+  display: none;
+}
 .nav-box > li > a {
   color: #e8c558 !important;
 }

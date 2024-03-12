@@ -1,9 +1,11 @@
 $(document).ready(function () {
   // -----------------------  載入 header -----------------------
-  $(".headerpage").load("header.html");
-
-  // -----------------------  載入 footer -----------------------
-  $(".footerpage").load("footer.html");
+  $(".headerpage").load("header.html", function () {
+    // -----------------------  載入 footer -----------------------
+    $(".footerpage").load("footer.html", function () {
+      $("body").show(); // 顯示頁面內容
+    });
+  });
 
   // ----------------------- 選擇發票類型 (捐贈 & 個人 & 公司) -----------------------
   $('input[name="invoice"]').change(function () {

@@ -1,3 +1,7 @@
+body {
+  display: none;
+}
+
 /* ----------------------- 公告 ----------------------- */
 .notification-detail {
   width: 100%;

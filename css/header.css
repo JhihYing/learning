@@ -1,0 +1,1003 @@
+/* ----------------------- 滾輪外觀 ----------------------- */
+/* 下拉式選單 (分類) */
+.nav-category-ul::-webkit-scrollbar {
+  width: 6px;
+}
+.nav-category-ul::-webkit-scrollbar-thumb {
+  background-color: rgba(218, 218, 218, 0.755);
+  border-radius: 10px;
+}
+.nav-category-ul::-webkit-scrollbar-track {
+  background-color: initial;
+}
+
+/* 下拉式選單 (分類細項) */
+.nav-category-details-ul::-webkit-scrollbar {
+  width: 6px;
+}
+.nav-category-details-ul::-webkit-scrollbar-thumb {
+  background-color: rgba(218, 218, 218, 0.755);
+  border-radius: 10px;
+}
+.nav-category-details-ul::-webkit-scrollbar-track {
+  background-color: initial;
+}
+
+/* RWD 漢堡選單-主選單 */
+.hamburger-open::-webkit-scrollbar {
+  width: 6px;
+}
+.hamburger-open::-webkit-scrollbar-thumb {
+  background-color: rgba(218, 218, 218, 0.755);
+  border-radius: 10px;
+}
+.hamburger-open::-webkit-scrollbar-track {
+  background-color: initial;
+}
+
+/* RWD 漢堡選單展開-課程類別(細項)選單 */
+.rwd-nav-category-details-box::-webkit-scrollbar {
+  width: 6px;
+}
+.rwd-nav-category-details-box::-webkit-scrollbar-thumb {
+  background-color: rgba(218, 218, 218, 0.755);
+  border-radius: 10px;
+}
+.rwd-nav-category-details-box::-webkit-scrollbar-track {
+  background-color: initial;
+}
+
+/* ----------------------- header ----------------------- */
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #364772;
+  z-index: 15;
+  box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 15%);
+}
+.header .container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.nav-main {
+  height: 75px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* logo、導覽列 */
+.nav-main > .left-box {
+  display: flex;
+  align-items: center;
+  height: 75px;
+}
+
+/* ----------------------- logo ----------------------- */
+.logo {
+  transition: all 0.2s;
+  width: 120px;
+  min-width: 120px;
+}
+.logo:hover {
+  opacity: 0.8;
+}
+.logo > img {
+  width: 100%;
+}
+
+/* ----------------------- 導覽列 ----------------------- */
+.nav-box {
+  display: flex;
+  align-items: center;
+  height: 75px;
+  margin-left: 30px;
+  position: relative;
+}
+
+/* 導覽列 */
+.nav-category {
+  height: 75px;
+}
+/* 課程類別hover後顯示第一層選單 */
+.nav-category:hover .nav-category-box {
+  display: block;
+}
+/* 課程類別hover後顯示第二層選單 */
+.nav-category-ul > li:hover > .nav-category-details-box {
+  display: block;
+}
+
+.nav-box > li {
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 75px;
+}
+.nav-box > li:last-child {
+  margin-right: 0;
+}
+
+.nav-box > li > a {
+  color: white;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 13px 12px;
+  transition: all 0.2s;
+}
+.nav-box > li > a:hover {
+  background-color: #19274a7d;
+  border-radius: 5px;
+}
+
+.nav-category-title {
+  display: flex;
+  align-items: center;
+}
+.nav-category-title > p {
+  color: white;
+  white-space: nowrap;
+}
+.nav-arrow-icon {
+  width: 10px;
+  height: 13px;
+  margin-left: 8px;
+}
+.nav-arrow-icon > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 下拉式選單 */
+.nav-dropdown {
+  position: absolute;
+  top: 75px;
+  left: 0px;
+  background-color: #243255;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* 分類 */
+.nav-category-box {
+  padding: 10px 0px 10px 2px;
+  display: none;
+}
+.nav-category-ul {
+  width: 235px;
+  height: 450px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.nav-category-ul > li {
+  cursor: pointer;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s;
+}
+.nav-category-ul > li:hover {
+  background-color: #364772;
+}
+.nav-category-ul > li:hover > p {
+  color: #e8c558;
+}
+.nav-category-ul > li:first-child {
+  padding: 0;
+}
+.nav-category-ul > li > p {
+  color: white;
+  line-height: 1.5;
+  transition: all 0.2s;
+}
+.nav-category-ul > li > a {
+  color: white;
+  line-height: 1.5;
+  transition: all 0.2s;
+  width: 100%;
+  padding: 20px 20px;
+}
+.nav-category-ul > li:hover > a {
+  color: #e8c558;
+}
+
+.nav-dropdown-arrow-icon {
+  width: 8px;
+  min-width: 8px;
+  margin-left: 10px;
+}
+.nav-dropdown-arrow-icon > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 分類細項 */
+.nav-category-details-box {
+  padding: 10px 2px;
+  position: absolute;
+  top: 0;
+  right: -237px;
+  background-color: #243255;
+  display: none;
+}
+.nav-category-details-ul {
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  width: 235px;
+  height: 450px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.nav-category-details-ul > li:hover > a {
+  background-color: #364772;
+  color: #e8c558;
+}
+.nav-category-details-ul > li > a {
+  color: white;
+  display: block;
+  padding: 20px 20px;
+  line-height: 1.5;
+  transition: all 0.2s;
+}
+
+/* 搜尋、我的學習、購物車、小鈴鐺、會員 */
+.right-box {
+  display: flex;
+  align-items: center;
+}
+
+/* 搜尋 */
+.search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.search > input {
+  border: 1px solid #363636;
+  border-radius: 30px;
+  width: 250px;
+  height: 40px;
+  padding: 0px 50px 0px 20px;
+  font-size: 14px;
+}
+
+.search > input::placeholder {
+  color: #d3d3d3;
+}
+.search > input:focus {
+  outline: none;
+  border: 1px solid #e8c558;
+}
+.search-img {
+  position: absolute;
+  right: 18px;
+  top: 11px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.search-img:hover {
+  opacity: 0.7;
+}
+
+/* 搜尋 (RWD顯示) */
+.search-rwd {
+  margin-left: 15px;
+  background-color: initial;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  padding-left: 4px;
+  display: none;
+}
+.search-rwd:hover,
+.search-rwd.active {
+  background-color: #19274a7d;
+}
+.search-img-rwd {
+  width: 23px;
+  padding-top: 3px;
+  cursor: pointer;
+  margin-right: 3px;
+  display: none;
+  transition: all 0.2s;
+}
+
+.search-img-rwd > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.search-rwd-open {
+  width: 100%;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  z-index: 10;
+  display: none;
+}
+.search-rwd-box {
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 25px;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+
+.search-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  position: relative;
+}
+.search-title > p {
+  font-size: 23px;
+}
+
+.search-close-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transition: all 0.2s;
+}
+.search-close-btn:hover {
+  opacity: 0.7;
+}
+
+.search-box {
+  position: relative;
+}
+.search-box > input {
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  border: none;
+  border-bottom: 1px solid #dadada;
+  background-color: initial;
+  padding-left: 40px;
+}
+
+.search-box > input:focus {
+  outline: none;
+}
+.search-rwd-img {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  transition: all 0.2s;
+  cursor: pointer;
+  width: 20px;
+  transition: all 0.2s;
+}
+
+.search-rwd-img:hover {
+  opacity: 0.7;
+}
+
+.search-rwd-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 我的學習 */
+.nav-learn {
+  color: white;
+  margin-left: 20px;
+  transition: all 0.2s;
+  padding: 13px 12px;
+}
+.nav-learn:hover {
+  background-color: #19274a7d;
+  border-radius: 5px;
+}
+
+/* 購物車 */
+.cart {
+  margin-left: 15px;
+  background-color: initial;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  padding-left: 4px;
+  position: relative;
+}
+.cart:hover {
+  background-color: #19274a7d;
+}
+.cart-icon {
+  height: 26px;
+  width: 26px;
+  min-width: 26px;
+}
+.cart-icon > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.cart-icon {
+  position: absolute;
+}
+.cart-notice {
+  padding: 3px 3px;
+  background-color: #ff7566;
+  border-radius: 20px;
+  min-width: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #364772;
+  position: absolute;
+  top: 0px;
+  right: -8px;
+  color: white;
+  font-size: 12px;
+  /* display: none; */
+}
+/* 小鈴鐺 */
+.bell {
+  background-color: initial;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 15px 0px 15px;
+  transition: all 0.2s;
+  position: relative;
+}
+.bell:hover {
+  background-color: #19274a7d;
+}
+.bell-icon {
+  height: 27px;
+  width: 23px;
+  min-width: 23px;
+  margin-top: 3px;
+}
+
+.bell-icon > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.bell-notice {
+  width: 9px;
+  height: 9px;
+  background-color: #ff7566;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  /* display: none; */
+}
+
+/* --------- 登入前 --------- */
+.login-before-box {
+  display: flex;
+  align-items: center;
+  display: none;
+  /* 開關 */
+}
+.login-before-box > p {
+  border: 1px solid #e8c558;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: #e8c558;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.login-before-box > .sign-up {
+  background-color: #e8c558;
+  color: white;
+  margin-left: 10px;
+}
+.login-before-box > .login:hover {
+  border: 1px solid #e4ba39;
+  color: #e4ba39;
+}
+.login-before-box > .sign-up:hover {
+  background-color: #e4ba39;
+  border: 1px solid #e4ba39;
+}
+
+/* --------- 登入後 --------- */
+.login-afrer-toggleShow {
+  /* display: none; */
+}
+
+.login-after-box {
+  position: relative;
+  cursor: pointer;
+}
+.member-icon {
+  width: 34px;
+  min-width: 34px;
+  height: 75px;
+}
+
+.member-icon > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 下拉選單 */
+.member-dropdown {
+  border-radius: 5px;
+  width: 240px;
+  min-width: 230px;
+  position: absolute;
+  top: 74px;
+  right: 0px;
+  background-color: #243255;
+  z-index: 2;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  padding: 10px 2px;
+  display: none;
+}
+
+.member-dropdown > li > p {
+  color: white;
+}
+.member-dropdown > li > a {
+  color: white;
+  display: block;
+  padding: 20px 20px;
+  transition: all 0.2s;
+}
+.member-dropdown > li:hover > a {
+  color: #e8c558;
+  background-color: #364772;
+}
+
+.member-icon:hover + .member-dropdown,
+.member-icon + .member-dropdown:hover {
+  display: block;
+}
+
+.nav-member-info {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  line-height: 1.5;
+  padding: 10px 20px 20px 20px;
+}
+
+.nav-member-info > p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: all 0.2s;
+}
+
+.nav-member-info > p:last-child {
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: 300;
+}
+.nav-sign-out {
+  color: white;
+  padding: 20px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.2s;
+}
+.nav-sign-out:hover {
+  color: #e8c558;
+  background-color: #364772;
+}
+
+/* ----------------------- 漢堡選單 ----------------------- */
+/* (套件) */
+.hamburger-inner,
+.hamburger-inner:before,
+.hamburger-inner::after {
+  background-color: white;
+  width: 27px;
+  height: 2.5px;
+}
+.hamburger--slider.is-active .hamburger-inner,
+.hamburger--slider.is-active .hamburger-inner:before,
+.hamburger--slider.is-active .hamburger-inner:after {
+  background-color: white;
+  width: 27px;
+  height: 2.5px;
+}
+
+/* 漢堡選單 */
+.hamburger {
+  display: none;
+  padding: 0;
+  padding-top: 3px;
+}
+.hamburger-box {
+  width: 27px;
+}
+
+/* 漢堡選單(展開) */
+.rwd-bg {
+  height: calc(100% - 75px);
+  position: absolute;
+  background: #000;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 0.2s;
+  opacity: 0.7;
+  display: none;
+}
+
+/* --------- 主選單 --------- */
+.hamburger-bg {
+  background-color: rgba(0, 0, 0, 60%);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  right: 0;
+  display: none;
+}
+.hamburger-open {
+  width: 320px;
+  height: calc(100% - 75px);
+  background-color: #243255;
+  position: fixed;
+  right: 0;
+  top: 74px;
+  right: 0;
+  z-index: 2;
+  overflow: auto;
+  padding: 0px 2px;
+  display: none;
+}
+
+/* 會員(登入後，才顯示) */
+.rwd-nav-member-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  transition: all 0.2s;
+  /* display: none; */
+}
+.rwd-nav-member-box:hover {
+  opacity: 0.8;
+}
+
+/* 登入 / 註冊 */
+.rwd-nav-login-register {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  flex-direction: column;
+  display: none;
+  /* 開關 */
+}
+.rwd-nav-login-register > p {
+  border: 1px solid #e8c558;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: #e8c558;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+}
+.rwd-nav-login-register > .sign-up {
+  background-color: #e8c558;
+  color: white;
+  margin-top: 20px;
+  /* margin-left: 10px; */
+}
+.rwd-nav-login-register > p:hover {
+  color: #e4ba39;
+  border-color: #e4ba39;
+}
+.rwd-nav-login-register > .sign-up:hover {
+  background-color: #e4ba39;
+  color: white;
+}
+
+.rwd-nav-member-info {
+  /* width: 190px; */
+  width: calc(100% - 24px);
+}
+.rwd-nav-member-info > p {
+  color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.rwd-nav-member-info > p:last-child {
+  margin-top: 10px;
+  font-size: 13px;
+  height: 14px;
+  font-weight: 300;
+}
+.rwd-nav-dropdown-arrow-icon {
+  width: 8px;
+  min-width: 8px;
+  margin-left: 20px;
+}
+.rwd-dropdown-arrow-icon > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 我的學習 */
+.rwd-nav-learn {
+  padding: 20px 20px;
+  display: block;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.2s;
+  /* display: none; */
+}
+.rwd-nav-learn:hover {
+  background-color: #364772;
+  color: #e8c558;
+}
+
+/* 專家嚴選 */
+.rwd-nav-expert {
+  padding: 20px 20px;
+  display: block;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.2s;
+}
+.rwd-nav-expert:hover {
+  background-color: #364772;
+  color: #e8c558;
+}
+
+/* 課程類別 */
+.rwd-nav-category-box {
+  padding: 20px 0px;
+}
+.rwd-nav-category-box > p {
+  color: #b5b5b5;
+  font-size: 14px;
+  padding: 0px 20px;
+}
+
+.rwd-nav-category-ul {
+  margin-top: 20px;
+}
+.rwd-nav-category-ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.rwd-nav-category-ul > li:hover {
+  background-color: #364772;
+}
+.rwd-nav-category-ul > li:hover > p {
+  color: #e8c558;
+}
+.rwd-nav-category-ul > li > p {
+  color: white;
+  display: block;
+  line-height: 1.5;
+  padding: 20px 0px;
+  width: 100%;
+}
+.rwd-nav-category-ul > li:hover > a {
+  color: #e8c558;
+}
+.rwd-nav-category-ul > li > a {
+  color: white;
+  display: block;
+  line-height: 1.5;
+  padding: 20px 0px;
+  width: 100%;
+}
+
+/* --------- 會員專區選單 --------- */
+.hamburger-open-member {
+  width: 320px;
+  height: 100%;
+  background-color: #243255;
+  position: fixed;
+  right: 0;
+  top: 74px;
+  right: 0;
+  z-index: 3;
+  overflow: auto;
+  padding: 0px 2px;
+  display: none;
+}
+
+/* 返回主選單 */
+.rwd-nav-back-box {
+  display: flex;
+  /* align-items: center; */
+  cursor: pointer;
+  padding: 20px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.2s;
+}
+.rwd-nav-back-box:hover {
+  opacity: 0.8;
+}
+.rwd-nav-back-box > p {
+  color: white;
+  margin-left: 20px;
+}
+.rwd-nav-back-arrow-icon {
+  width: 8px;
+  min-width: 8px;
+  transform: rotate(180deg);
+}
+.rwd-nav-back-arrow-icon > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 選單 */
+.rwd-member-dropdown > li {
+  transition: all 0.2s;
+}
+.rwd-member-dropdown > li:hover {
+  background-color: #364772;
+}
+.rwd-member-dropdown > li:hover > a {
+  color: #e8c558;
+}
+.rwd-member-dropdown > li > a {
+  color: white;
+  line-height: 1.5;
+  padding: 20px 20px;
+  display: block;
+}
+.rwd-nav-sign-out {
+  color: white;
+  padding: 20px 20px;
+  cursor: pointer;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  transform: all 0.2s;
+}
+.rwd-nav-sign-out:hover {
+  color: #e8c558;
+}
+
+/* --------- 課程類別(細項)選單 --------- */
+.hamburger-open-course-details {
+  width: 320px;
+  /* height: 100%; */
+  height: calc(100% - 75px);
+  background-color: #243255;
+  position: fixed;
+  right: 0;
+  top: 74px;
+  right: 0;
+  z-index: 3;
+  padding: 0px 2px;
+  display: none;
+}
+.rwd-nav-category-details-box {
+  overflow-y: auto;
+  height: calc(100% - 57px);
+}
+.rwd-nav-category-details-ul {
+  display: none;
+}
+.rwd-nav-category-details-ul > li {
+  transition: all 0.2s;
+}
+.rwd-nav-category-details-ul > li:hover {
+  background-color: #364772;
+}
+.rwd-nav-category-details-ul > li:hover > a {
+  color: #e8c558;
+}
+.rwd-nav-category-details-ul > li > a {
+  color: white;
+  line-height: 1.5;
+  padding: 20px 20px;
+  display: block;
+}
+
+/* ----------------------- RWD ----------------------- */
+@media screen and (max-width: 1280px) {
+  .header .container {
+    padding: 0px 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .login-before-box {
+    display: none;
+  }
+  .hamburger {
+    display: inline-block;
+  }
+  .search {
+    display: none;
+  }
+  .login-after-box {
+    display: none;
+  }
+  .nav-learn {
+    display: none;
+  }
+  .nav-box {
+    display: none;
+  }
+  .search-rwd {
+    display: flex;
+  }
+  .search-img-rwd {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    min-width: 110px;
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logo {
+    min-width: 100px;
+    width: 100px;
+  }
+  .bell {
+    margin: 0px 10px;
+  }
+  .bell-icon {
+    height: 24px;
+  }
+  .cart {
+    margin-left: 10px;
+  }
+  .cart-icon {
+    height: 24px;
+  }
+  .search-img-rwd {
+    height: 24px;
+  }
+  .header .container {
+    padding: 0px 25px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+}

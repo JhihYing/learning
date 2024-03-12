@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>訂單資訊(實體課程)</title>
+
+    <!-- ----------------------- 導入css ----------------------- -->
+    <!-- 自訂義的css -->
+    <link rel="stylesheet" href="./css/checkout-in-person.css" />
+  </head>
+
+  <body>
+    <!-- -----------------------  載入 header -----------------------  -->
+    <div class="headerpage"></div>
+
+    <!-- ----------------------- 訂單資訊(實體課程) ----------------------- -->
+    <section class="checkout-bg">
+      <div class="checkout">
+        <div class="container">
+          <h3>訂單資訊</h3>
+
+          <form action="" class="checkout-main-box">
+            <!-- ----------------------- 付款資訊 ----------------------- -->
+            <div class="checkout-info-box">
+              <!-- 報名項目 -->
+              <div class="order-list-box">
+                <div class="order-list-title">
+                  <h3>報名項目</h3>
+                </div>
+                <ul class="order-list-ul">
+                  <li class="course-card">
+                    <div class="course-image">
+                      <img src="./images/course06.jpg" alt="" />
+                    </div>
+
+                    <div class="course-info-box">
+                      <p>實體課程：已開課</p>
+                      <h4>
+                        【絹印手作體驗課程】來大稻程百年老宅內，體驗印花絹印
+                      </h4>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- 課程方案 -->
+              <div class="ticket-type-box">
+                <h3>課程方案</h3>
+
+                <ul class="ticket-type-ul">
+                  <li class="active">
+                    <label>
+                      <input
+                        type="radio"
+                        name="ticket-type"
+                        value=""
+                        checked
+                        required
+                      />
+                      <div class="ticket-info">
+                        <h4>9.22(五）早鳥票</h4>
+                        <p>2023.9.22(五) 19:30</p>
+                        <ul class="ticket-notice">
+                          <li>販售期限：2023.08.10(二) 23:00 止</li>
+                          <li>數量有限，售完為止</li>
+                        </ul>
+                      </div>
+                      <p>NT$ 450</p>
+                    </label>
+                  </li>
+
+                  <li>
+                    <label>
+                      <input
+                        type="radio"
+                        name="ticket-type"
+                        value=""
+                        required
+                      />
+                      <div class="ticket-info">
+                        <h4>9.22(五）一般票</h4>
+                        <p>2023.9.22(五) 19:30</p>
+                        <ul class="ticket-notice">
+                          <li>報名人數限制：30 人</li>
+                        </ul>
+                      </div>
+                      <p>NT$ 600</p>
+                    </label>
+                  </li>
+
+                  <li>
+                    <label>
+                      <input
+                        type="radio"
+                        name="ticket-type"
+                        value=""
+                        required
+                      />
+                      <div class="ticket-info">
+                        <h4>9.26(三）一般票</h4>
+                        <p>2023.9.26(三) 19:30</p>
+                      </div>
+                      <p>NT$ 600</p>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- 報名資料 -->
+              <div class="order-info-box">
+                <h3>報名資料</h3>
+
+                <div class="order-contact-box">
+                  <div class="order-name-phone-box">
+                    <div class="order-name">
+                      <label for="order-name">姓名</label>
+                      <input
+                        type="text"
+                        id="order-name"
+                        placeholder="請輸入真實姓名"
+                        required
+                      />
+                    </div>
+                    <div class="order-email">
+                      <label for="invoice-email">電子郵件</label>
+                      <input
+                        type="email"
+                        id="invoice-email"
+                        placeholder="請輸入聯絡信箱"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="order-phone">
+                    <label for="order-phone">行動電話</label>
+                    <input
+                      type="tel"
+                      id="order-phone"
+                      placeholder="請輸入行動電話"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- 付款方式 -->
+              <div class="payment-box">
+                <h3 class="title">付款方式</h3>
+                <div class="remit">
+                  <input type="radio" id="remit" checked="" />
+                  <label for="remit">匯款轉帳</label>
+                </div>
+              </div>
+
+              <!-- 發票選項 -->
+              <div class="invoice-box">
+                <h3 class="title">發票資訊</h3>
+                <p>
+                  請確認資訊無誤以避免發票無法開立，此資料僅供開立發票使用。
+                </p>
+
+                <div class="invoice-type">
+                  <!-- 個人 -->
+                  <div class="personal-box">
+                    <input
+                      type="radio"
+                      id="personal"
+                      name="invoice"
+                      required=""
+                      checked
+                    />
+                    <label for="personal">個人</label>
+                  </div>
+
+                  <!-- 公司戶 (電子發票) -->
+                  <div class="company-box">
+                    <input
+                      type="radio"
+                      id="company"
+                      name="invoice"
+                      required=""
+                    />
+                    <label for="company">公司戶</label>
+                  </div>
+
+                  <!-- 捐贈 -->
+                  <div class="donate-box">
+                    <input
+                      type="radio"
+                      id="donate"
+                      name="invoice"
+                      required=""
+                    />
+                    <label for="donate">捐贈</label>
+                  </div>
+                </div>
+
+                <!-- 依照選擇的發票類型，出現相應的輸入框  -->
+                <div class="invoice-type-box">
+                  <!-- 捐贈碼 -->
+                  <div class="donate-code">
+                    <label for="donate-code">捐贈碼</label>
+                    <input
+                      disabled
+                      type="text"
+                      id="donate-code"
+                      placeholder="輸入捐贈碼"
+                      required=""
+                    />
+                  </div>
+
+                  <!-- 個人 -->
+                  <div class="personal">
+                    <div class="personal-type">
+                      <input
+                        class="member-barcode active"
+                        name="personal"
+                        type="button"
+                        value="會員載具"
+                        required=""
+                      />
+                      <input
+                        class="phone-input-btn"
+                        name="personal"
+                        type="button"
+                        value="手機載具"
+                        required=""
+                      />
+                    </div>
+                    <div class="mobile-barcode">
+                      <p>手機條碼</p>
+                      <input
+                        disabled
+                        class="input-text"
+                        type="text"
+                        placeholder="輸入手機載具條碼"
+                        required=""
+                      />
+                    </div>
+                  </div>
+
+                  <!-- 公司戶 (電子發票) -->
+                  <div class="company">
+                    <div calss="uniform-invoice">
+                      <label for="uniform-invoice">統一編號 (非必填)</label>
+                      <input
+                        id="uniform-invoice"
+                        type="text"
+                        placeholder="輸入統一編號"
+                      />
+                    </div>
+                    <div class="invoice-title">
+                      <label for="invoice-title">發票抬頭 (非必填)</label>
+                      <input
+                        id="invoice-title"
+                        type="text"
+                        placeholder="輸入發票抬頭"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ----------------------- 結帳 ----------------------- -->
+            <div class="checkout-box">
+              <h3>訂單明細</h3>
+
+              <!-- 價錢 -->
+              <div class="order-price-box">
+                <div class="price-box">
+                  <p>小計</p>
+                  <span>NT$ 450</span>
+                </div>
+                <div class="price-box">
+                  <p>(税)</p>
+                  <span>NT$ 23</span>
+                </div>
+                <p class="total-price">NT$ 473</p>
+                <a href="./checkout-success.html" class="checkout-btn"
+                  >確定報名</a
+                >
+                <!-- <input class="checkout-btn" type="submit" value="確定報名" /> -->
+                <p class="checkout-notice">
+                  點擊上方按鈕即表示您已審閱，並同意會員權利說明、個資法及隱私權相關規範、購物須知。
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------  載入 footer -----------------------  -->
+    <div class="footerpage"></div>
+
+    <!-- ----------------------- 導入JS ----------------------- -->
+    <!-- 套件 - jQuery -->
+    <script src="./vendors/jquery-3.7.0.min.js"></script>
+
+    <!-- 自定義的JS -->
+    <script src="./js/checkout-in-person.js"></script>
+  </body>
+</html>

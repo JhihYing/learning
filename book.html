@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新書聆聽-播放頁</title>
+
+    <!-- ----------------------- 導入css ----------------------- -->
+    <!-- 自訂義的css -->
+    <link rel="stylesheet" href="./css/book.css" />
+  </head>
+
+  <body>
+    <!-- -----------------------  載入 header -----------------------  -->
+    <div class="headerpage"></div>
+
+    <!-- ----------------------- 新書聆聽-播放頁 ----------------------- -->
+    <section class="course-play-video">
+      <div class="container">
+        <!-- ----------------------- 主要內容 ----------------------- -->
+        <div class="main-content">
+          <h3>小王子</h3>
+
+          <!-- 尚未購買課程 -->
+          <div class="no-buy-course-box">
+            <div class="no-buy-course-img">
+              <img src="./images/privacy.svg" alt="課程內容未解鎖" />
+            </div>
+            <h3>課程內容未解鎖</h3>
+            <p>已購買課程？請檢查是否登入正確帳號</p>
+            <a href="">購買此堂課</a>
+          </div>
+
+          <!-- 新書聆聽圖片 -->
+          <div class="course-flex-box">
+            <div class="course-image-box">
+              <div class="course-image"></div>
+            </div>
+
+            <!-- 音檔 -->
+            <audio controls="" class="book-audio">
+              <source
+                src="https://haodooclassic.net/MP3/445-01.mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+          </div>
+
+          <!-- 進度 -->
+          <div class="schedule-box">
+            <div class="course-schedule">
+              <p>上課進度</p>
+              <div class="course-bar">
+                <div class="course-bar-progress"></div>
+              </div>
+              <span>68%</span>
+            </div>
+          </div>
+
+          <!-- ----------------------- 課程內容 ----------------------- -->
+          <section class="course-main-section">
+            <!-- -------- 課程內容 -------- -->
+            <div class="course-main-box">
+              <!-- 分類與內容 -->
+              <div class="course-content">
+                <!-- 分類 -->
+                <ul class="info-nav-ul">
+                  <li class="chapter-li">章節</li>
+                  <li class="transcription-li active">逐字稿</li>
+                  <li class="announcement-li">公告</li>
+                  <!-- <li class="faq-li">討論</li> -->
+                  <li class="evaluate-li">評價</li>
+                  <!-- <li class="homework-li">作業</li> -->
+                </ul>
+
+                <!-- 章節 -->
+                <div class="chapter-box-rwd"></div>
+
+                <!-- 評價 -->
+                <div class="evaluate-box">
+                  <div class="evaluate-title">
+                    <h3>課程內容評價</h3>
+                    <a>修改評價</a>
+                  </div>
+                  <form action="" class="evaluate-form">
+                    <div class="evaluate">
+                      <p>你對於此課程的評價如何</p>
+
+                      <div class="rate">
+                        <input
+                          type="radio"
+                          id="star5"
+                          name="rate"
+                          value="5"
+                          required
+                        />
+                        <label for="star5" title="text"></label>
+                        <input
+                          type="radio"
+                          id="star4"
+                          name="rate"
+                          value="4"
+                          required
+                        />
+                        <label for="star4" title="text"></label>
+                        <input
+                          type="radio"
+                          id="star3"
+                          name="rate"
+                          value="3"
+                          required
+                        />
+                        <label for="star3" title="text"></label>
+                        <input
+                          type="radio"
+                          id="star2"
+                          name="rate"
+                          value="2"
+                          required
+                        />
+                        <label for="star2" title="text"></label>
+                        <input
+                          type="radio"
+                          id="star1"
+                          name="rate"
+                          value="1"
+                          required
+                        />
+                        <label for="star1" title="text"></label>
+                      </div>
+                    </div>
+
+                    <div class="thoughts">
+                      <p>公開分享你對課程內容的想法</p>
+                      <textarea
+                        placeholder="你的回饋對老師而言是最大的鼓勵"
+                        required
+                      ></textarea>
+                    </div>
+
+                    <div class="send-evaluate">
+                      <p class="notice-once">評價只能修改一次</p>
+                      <p class="notice-no">評價修改次數已達上限</p>
+                      <input type="submit" class="cancel-btn" value="取消" />
+                      <input type="submit" class="send-btn" value="送出" />
+                    </div>
+                  </form>
+
+                  <!-- 評價已填寫 -->
+                  <div class="evaluate-ok">
+                    <div class="evaluate-member">
+                      <img src="./images/evaluate-member.svg" alt="" />
+                    </div>
+
+                    <div class="evaluate-info">
+                      <div class="evaluate-info-title-box">
+                        <div class="evaluate-info-title">
+                          <p class="evaluate-name">patrick.lee</p>
+                          <ul class="star-ul">
+                            <li>
+                              <img src="./images/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/star.svg" alt="" />
+                            </li>
+                          </ul>
+                        </div>
+                        <p class="evaluate-date">2022-03-30</p>
+                      </div>
+                      <div class="evaluate-content">
+                        <p>
+                          講師搭配教材與範例，讓線上上課不會無聊，不過內容很豐富，需要花很多時間聽講。
+                          建議在最後有個收攝總結，簡單複習。不然重新在上一次課的機會應該不大高。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 逐字稿 -->
+                <div class="transcription-box">
+                  <!-- <h3>逐字稿</h3> -->
+                  <p>1 請給我畫一隻綿羊 <span>14:09</span></p>
+
+                  <div class="audio-transcription">
+                    <p>
+                      <strong>獻給萊昂·韋爾特</strong>
+                    </p>
+
+                    <p>
+                      孩子們，請原諒我把這本書獻給了一個大人。我的第一個理由：這個大人是我在世界上最要好的朋友。第二個理由：這個大人他什麼都懂，連童書都懂。第三個理由：這個大人住在法國，他在那裡又冷又餓。他需要有人安慰。如果這三個理由還不夠，我很想把這本書獻給後來成了大人的那個孩子。所有的大人當初都是孩子（但是很少有大人記得這一點）。所以，我把獻詞改一下：
+                    </p>
+
+                    <p>
+                      <strong>獻給還是個小男孩時的萊昂</strong>
+                    </p>
+                    <p>
+                      我六歲那年，有一次，在一本書裡看見一幅很棒的圖畫，那本書叫《親身經歷的故事》，寫原始森林。那幅圖畫上，一條大蟒蛇正在吞吃一頭猛獸。
+                    </p>
+
+                    <p>
+                      書裡寫著：「大蟒蛇把獵物整個吞下，嚼都不嚼。然後，牠動彈不了，牠得睡上整整六個月，才能消化肚子裡的東西。」
+                    </p>
+                    <p>
+                      我把我的傑作拿給大人看，問他們：「我的畫是不是讓你們很害怕？」
+                    </p>
+                    <p>他們回答：「一頂帽子有什麼好怕的？」</p>
+                    <p>
+                      但我畫的不是帽子呀。我畫的是一條大蟒蛇，正在消化一頭大象。於是我把大蟒蛇的肚子裡面也畫了出來，好讓大人看個明白。大人老是要人解釋。這是畫作第2號：
+                    </p>
+                    <p>
+                      大人勸我不要再畫大蟒蛇了，還是專心學地理、歷史、算術和文法吧。就這樣，我六歲時放棄了畫家生涯。畫作第1號和第2號的挫折，讓我洩了氣。大人自己什麼也弄不懂，卻要孩子一遍一遍地解釋，真夠累人的……
+                    </p>
+
+                    <p>
+                      我只好另選職業。我學會了開飛機。世界各地，我差不多都去過。的確，地理對我很有用。只要看一眼，我就能認出，哪裡是中國、哪裡是亞利桑那。如果夜裡迷航了，這很管用。
+                    </p>
+                    <p>
+                      在我的生活中，我和很多嚴肅的人打過很多交道。在大人之中，我經歷了很多。我就近觀察他們。不過，我對他們的看法，沒有多大改善。
+                    </p>
+                    <p>
+                      碰到頭腦清楚一點的大人，我會拿出一直保存著的畫作第1號給他看。我想知道他能不能看懂。但大人總是這麼回答我：「這是一頂帽子。」所以，我就懶得跟他說大蟒蛇、原始森林或者星星了。我只好說一些他能懂的事情。我跟他說橋牌、高爾夫、政治或者領帶。大人就很滿意，覺得認識了一個正常人……
+                    </p>
+                  </div>
+                </div>
+
+                <!-- 問答 -->
+                <div class="faq-box"></div>
+
+                <!-- 作業 -->
+                <div class="homework-box"></div>
+                <!-- 公告 -->
+                <div class="announcement-box">
+                  <div class="announcement-title">
+                    <p>
+                      共有
+                      <span>2</span>
+                      則公告
+                    </p>
+                  </div>
+
+                  <div class="announcement active">
+                    <div class="announcement-title-box">
+                      <p class="member-privacy active">學員限定</p>
+                      <h3>分享平價好用的水彩筆</h3>
+                      <p class="date">2022/07/29</p>
+                    </div>
+                    <div class="announcement-info-box">
+                      <div class="announcement-info">
+                        <p>
+                          各位學員好，這堂課程內容已經全部上架完成，<br />
+                          大家可以接著學習繪製小刺蝟蒙布朗，以及和風富士山窗景<br />
+                          (搭配日式糰子雪精靈)的背景繪製囉。<br />
+                          也希望大家可以上傳作業，多多練習，我都會幫同學們批改並回覆哦!<br />
+                          如果對課程教學內容有問題，歡迎你到 YOTTA<br />
+                          的討論區中詢問，我會盡可能地回覆你們！<br />
+                        </p>
+                        <p>
+                          ▌ 上架範圍：<br />
+                          - 教學影片： <br />
+                          單元30~32 （6-1、6-2、7-1）<br />
+                          素材：<br />
+                          6-1小刺蝟蒙布朗草稿與上色-講義.pdf（下載位置：單元30）<br />
+                          6-1教材-小刺蝟蒙布朗草稿與上色.pdf（下載位置：單元30）<br />
+                          6-2和風富士山窗景草稿與上色-講義.pdf（下載位置：單元31）<br />
+                          6-2教材-和風富士山窗景.pdf（下載位置：單元31）<br />
+                          作業：作業17 ～ 作業18
+                        </p>
+                        <p>
+                          ▌如何觀看課程呢？ <br />
+                          電腦裝置： <br />
+                          步驟一：使用網頁瀏覽器「登入會員」後，上方會顯示「我的課程」。<br />
+                          步驟二：進入「我的課程」後，找到已開課的線上課程，按下「播放」按鈕，進入課程播放器開始觀看。<br />
+                          手機 / 平板裝置： <br />
+                          步驟一：點選右上方選單「登入/註冊」進行會員登入。登入會員後，下拉式選單即會顯示「我的課程」。<br />
+                          步驟二：進入「我的課程」後，找到已開課的線上課程，按下「播放」按鈕，進入課程播放器開始觀看。<br />
+                          ．觀看課程如有問題，請直接參閱此篇「觀看課程影片」說明。<br />
+                          ．課程播放器不順暢，或無法順利觀看，請參閱此篇「課程播放器不順暢或無法順利觀看」說明。
+                        </p>
+                      </div>
+
+                      <!-- 收合 -->
+                      <div class="introduction-show-box">
+                        <div class="introduction-show-btn">
+                          <div class="arrow-top">
+                            <img src="./images/expert-arrow-top.svg" alt="" />
+                          </div>
+                          <p>閱讀更多</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="announcement active">
+                    <div class="announcement-title-box">
+                      <p class="member-privacy">學員限定</p>
+                      <h3>【通知】課程內容全部完成上架</h3>
+                      <p class="date">2022/05/14</p>
+                    </div>
+
+                    <div class="announcement-info-box">
+                      <div class="announcement-info">
+                        <p>
+                          各位學員好，這堂課程內容已經全部上架完成，<br />
+                          大家可以接著學習繪製小刺蝟蒙布朗，以及和風富士山窗景<br />
+                          (搭配日式糰子雪精靈)的背景繪製囉。<br />
+                          也希望大家可以上傳作業，多多練習，我都會幫同學們批改並回覆哦!<br />
+                          如果對課程教學內容有問題，歡迎你到 YOTTA<br />
+                          的討論區中詢問，我會盡可能地回覆你們！<br />
+                        </p>
+                        <p>
+                          ▌ 上架範圍：<br />
+                          - 教學影片： <br />
+                          單元30~32 （6-1、6-2、7-1）<br />
+                          素材：<br />
+                          6-1小刺蝟蒙布朗草稿與上色-講義.pdf（下載位置：單元30）<br />
+                          6-1教材-小刺蝟蒙布朗草稿與上色.pdf（下載位置：單元30）<br />
+                          6-2和風富士山窗景草稿與上色-講義.pdf（下載位置：單元31）<br />
+                          6-2教材-和風富士山窗景.pdf（下載位置：單元31）<br />
+                          作業：作業17 ～ 作業18
+                        </p>
+                        <p>
+                          ▌如何觀看課程呢？ <br />
+                          電腦裝置： <br />
+                          步驟一：使用網頁瀏覽器「登入會員」後，上方會顯示「我的課程」。<br />
+                          步驟二：進入「我的課程」後，找到已開課的線上課程，按下「播放」按鈕，進入課程播放器開始觀看。<br />
+                          手機 / 平板裝置： <br />
+                          步驟一：點選右上方選單「登入/註冊」進行會員登入。登入會員後，下拉式選單即會顯示「我的課程」。<br />
+                          步驟二：進入「我的課程」後，找到已開課的線上課程，按下「播放」按鈕，進入課程播放器開始觀看。<br />
+                          ．觀看課程如有問題，請直接參閱此篇「觀看課程影片」說明。<br />
+                          ．課程播放器不順暢，或無法順利觀看，請參閱此篇「課程播放器不順暢或無法順利觀看」說明。
+                        </p>
+                      </div>
+
+                      <!-- 收合 -->
+                      <div class="introduction-show-box">
+                        <div class="introduction-show-btn">
+                          <div class="arrow-top">
+                            <img src="./images/expert-arrow-top.svg" alt="" />
+                          </div>
+                          <p>閱讀更多</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ----------------------- 頁碼 ----------------------- -->
+                  <div class="pagination-box">
+                    <button class="page-arrow-pre"><</button>
+
+                    <div class="page-number">
+                      <span>1</span>
+                      <span>/</span>
+                      <span>2</span>
+                    </div>
+
+                    <button class="page-arrow-next">></button>
+                  </div>
+
+                  <!-- 尚無公告 -->
+                  <div class="no-announcement">
+                    <div class="no-announcement-img">
+                      <img src="./images/announcement.svg" alt="尚無公告" />
+                    </div>
+                    <p>尚無公告</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ----------------------- 播放清單 ----------------------- -->
+        <div class="play-video-list">
+          <!-- 章節 -->
+          <div class="chapter-box chapter-container">
+            <div class="chapter-title-box">
+              <h3>課程單元</h3>
+              <p>9集，135 分鐘</p>
+            </div>
+
+            <div class="chapter chapter-01">
+              <div class="chapter-list-box active">
+                <h4>小王子</h4>
+                <div class="chapter-time">
+                  <div class="chapter-arrow-img">
+                    <img src="./images/chapter-arrow-top.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <ul class="chapter-ul">
+                <li class="active">
+                  <div class="checkbox active">
+                    <div></div>
+                  </div>
+
+                  <div class="chapter-title">
+                    <p>1 請給我畫一隻綿羊</p>
+                    <div class="chapter-info-box">
+                      <a href="">試看</a>
+                      <p>14:09</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="checkbox">
+                    <div></div>
+                  </div>
+
+                  <div class="chapter-title">
+                    <p>2 B612號小行星上的小王子</p>
+                    <div class="chapter-info-box">
+                      <p>13:08</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="checkbox">
+                    <div></div>
+                  </div>
+
+                  <div class="chapter-title">
+                    <p>3 玫瑰花</p>
+                    <div class="chapter-info-box">
+                      <p>15:31</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="checkbox">
+                    <div></div>
+                  </div>
+
+                  <div class="chapter-title">
+                    <p>4 大人真是奇怪啊</p>
+                    <div class="chapter-info-box">
+                      <p>15:36</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="checkbox">
+                    <div></div>
+                  </div>
+
+                  <div class="chapter-title">
+                    <p>5 商人、點燈人</p>
+                    <div class="chapter-info-box">
+                      <p>12:58</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="checkbox">
+                    <div></div>
+                  </div>
+
+                  <div class="chapter-title">
+                    <p>6 地球</p>
+                    <div class="chapter-info-box">
+                      <p>15:35</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="checkbox">
+                    <div></div>
+                  </div>
+
+                  <div class="chapter-title">
+                    <p>7 狐狸</p>
+                    <div class="chapter-info-box">
+                      <p>14:21</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="checkbox">
+                    <div></div>
+                  </div>
+
+                  <div class="chapter-title">
+                    <p>8 飛機故障的第八天</p>
+                    <div class="chapter-info-box">
+                      <p>16:41</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="checkbox">
+                    <div></div>
+                  </div>
+
+                  <div class="chapter-title">
+                    <p>9 小王子回到了他的星球</p>
+                    <div class="chapter-info-box">
+                      <p>17:28</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------  載入 footer -----------------------  -->
+    <div class="footerpage"></div>
+
+    <!-- ----------------------- 導入JS ----------------------- -->
+    <!-- 套件 - jQuery -->
+    <script src="./vendors/jquery-3.7.0.min.js"></script>
+
+    <!-- 自定義的JS -->
+    <script src="./js/book.js"></script>
+  </body>
+</html>

@@ -1,0 +1,442 @@
+/* ----------------------- 購物車 ----------------------- */
+.checkout-bg {
+  background-color: #f4f4f4;
+}
+.checkout {
+  width: 100%;
+  padding-top: 125px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.checkout > .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.checkout > .container > h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.checkout-main-box {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+/* ----------------------- 付款資訊 ----------------------- */
+.checkout-info-box {
+  width: calc(100% - 300px);
+}
+
+/* 購買明細 */
+.order-list-box {
+  background-color: white;
+  padding: 20px 20px;
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+.order-list-title {
+  border-bottom: 1px solid #cfcfcf43;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.order-list-title > h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.order-list-title > p {
+  font-size: 15px;
+  color: rgb(140, 140, 140);
+}
+.order-list-title > p > span {
+  font-weight: 500;
+  color: rgb(140, 140, 140);
+}
+.order-list-ul > .course-card {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #cfcfcf43;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.order-list-ul > .course-card:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.course-image {
+  flex: 0 0 120px;
+  margin-right: 15px;
+}
+.course-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.course-info-box > p {
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 15px;
+  color: #6f6f6f;
+}
+.course-info-box > p::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #51618e;
+  border-radius: 30px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+.online-course > .course-info-box > p::before {
+  background-color: #51618e;
+}
+.pre-order-course > .course-info-box > p::before {
+  background-color: #ff7566;
+}
+.book-course > .course-info-box > p::before {
+  background-color: #cc9453;
+}
+.course-info-box > h4 {
+  /* font-size: 15px; */
+  font-weight: 500;
+  margin: 10px 0px;
+  line-height: 1.5;
+}
+.course-price-btn-box > p {
+  font-weight: 500;
+  color: #364772;
+}
+
+/* 付款方式 */
+.payment-box {
+  background-color: white;
+  border-radius: 3px;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+.payment-box > h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.payment-box > .remit > input,
+.payment-box > .remit > label {
+  cursor: pointer;
+}
+.payment-box > .remit {
+  cursor: pointer;
+}
+
+/* 發票選項 */
+.invoice-box {
+  background-color: white;
+  border-radius: 3px;
+  padding: 24px;
+}
+.invoice-box > h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.invoice-box > p {
+  color: rgb(140, 140, 140);
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.invoice-type {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.invoice-type > div {
+  margin-right: 30px;
+  cursor: pointer;
+  line-height: 2;
+}
+.invoice-type > div:last-child {
+  margin-right: 0;
+}
+.invoice-type > div > input {
+  cursor: pointer;
+}
+.invoice-type > div > label {
+  cursor: pointer;
+}
+.invoice-type-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* 捐贈 */
+.donate-code {
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 30px;
+  width: 100%;
+  display: none;
+}
+.donate-code > label {
+  margin-right: 10px;
+}
+.donate-code > input {
+  font-size: 15px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(155, 155, 155, 0.8);
+  border-image: initial;
+  width: 100%;
+}
+
+/* 個人 */
+.personal {
+  width: 100%;
+  margin-bottom: 30px;
+  /* display: none; */
+}
+.personal > .input-btn,
+.phone-box > .input-btn {
+  background-color: rgba(54, 54, 54, 0.05);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 8px 22px;
+  transition: all 0.2s ease 0s;
+  border: 1px solid rgba(54, 54, 54, 0.05);
+}
+.personal-type > input {
+  background-color: rgba(54, 54, 54, 0.05);
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 8px 22px;
+  transition: all 0.2s ease 0s;
+  border: 1px solid rgba(54, 54, 54, 0.05);
+  margin-right: 10px;
+}
+.personal-type > input:hover,
+.personal-type > input.active {
+  background-color: #b0bee02b;
+  color: #51618e;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #51618e;
+  border-image: initial;
+}
+.personal-type > input:last-child {
+  margin-right: 0;
+}
+.mobile-barcode {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  margin-top: 20px;
+  display: none;
+}
+.mobile-barcode > input {
+  width: 100%;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: 1px solid rgba(155, 155, 155, 0.8);
+  /* margin-left: 10px; */
+  margin-top: 10px;
+}
+.mobile-barcode > p {
+  white-space: nowrap;
+}
+
+/* 公司戶 */
+.company {
+  margin-bottom: 30px;
+  width: 100%;
+  display: none;
+}
+.company > div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.company > div:last-child {
+  margin-bottom: 0;
+}
+.company > div > label {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.company > div > input {
+  width: 100%;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: 1px solid rgba(155, 155, 155, 0.8);
+}
+
+/* 聯絡方式 */
+.invoice-contact-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.invoice-contact-box > div {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+.invoice-contact-box > div > label {
+  cursor: pointer;
+}
+.invoice-contact-box > div > input {
+  width: 100%;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: 1px solid rgba(155, 155, 155, 0.8);
+  margin-top: 10px;
+}
+
+/* ----------------------- 結帳 ----------------------- */
+.checkout-box {
+  border: 1px solid #cfcfcf;
+  background-color: white;
+  width: 300px;
+  margin-left: 30px;
+  border-radius: 3px;
+  padding: 24px;
+  position: sticky;
+  top: 120px;
+}
+.checkout-box > h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+
+  border-bottom: 1px solid #cfcfcf43;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+/* 價錢 */
+.order-price-box > .total-price {
+  color: #364772;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: right;
+  margin-top: 20px;
+  background-color: #b0bee02b;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+.price-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.order-price-box > .checkout-btn {
+  background-color: #364772;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  padding: 0 25px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 20px;
+}
+.order-price-box > .checkout-btn:hover {
+  background-color: #51618e;
+}
+
+.checkout-notice {
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgb(140, 140, 140);
+}
+
+/* ----------------------- RWD ----------------------- */
+@media screen and (max-width: 1280px) {
+  .checkout {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .checkout-main-box {
+    flex-direction: column;
+  }
+  .checkout-info-box {
+    width: 100%;
+  }
+  .checkout-box {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+  .checkout {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .course-image {
+    flex: 0 0 100px;
+  }
+  .invoice-box > p {
+    font-size: 14px;
+  }
+  .invoice-contact-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .invoice-contact-box > div {
+    width: 100%;
+  }
+  .invoice-contact-box > .invoice-name {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .course-info-box > h4 {
+    font-size: 15px;
+  }
+
+  .invoice-contact-box > div > label {
+    font-size: 15px;
+  }
+  .mobile-barcode > p {
+    font-size: 15px;
+  }
+  .company > div > label {
+    font-size: 15px;
+  }
+  .donate-code > label {
+    font-size: 15px;
+  }
+}

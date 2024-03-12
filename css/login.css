@@ -1,0 +1,192 @@
+/* 背景(黑色遮蔽) */
+.popup-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 70%);
+  position: fixed;
+  top: 0px;
+  display: none;
+  z-index: 2;
+}
+
+/* ----------------------- 登入 ----------------------- */
+.login-wrap {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+}
+
+.login-wrap .container {
+  width: 380px;
+  margin: 0 auto;
+  padding: 30px 40px;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 1px 5px 2px rgb(79 79 79 / 21%);
+}
+
+.login {
+  position: relative;
+}
+
+/* 關閉視窗按鈕 */
+.login-close-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: absolute;
+  top: -36px;
+  right: -29px;
+}
+.login-close-btn:hover {
+  opacity: 0.7;
+}
+
+/* 標題 */
+.login > h2 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* 表單 */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 輸入框 (帳號、密碼) */
+.account-box {
+  margin-bottom: 20px;
+}
+.password-box {
+  position: relative;
+}
+.account-box,
+.password-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-box > label,
+.password-box > label {
+  color: #363636cc;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.account-box > input,
+.password-box > input {
+  padding: 10px 55px 10px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+  border: 1px solid #9b9b9bcc;
+}
+.account-box > input {
+  padding: 10px 20px 10px 20px;
+}
+
+.account-box > input:focus,
+.password-box > input:focus {
+  outline: none;
+  border: 1px solid #364772;
+}
+
+.account-box > input::placeholder,
+.password-box > input::placeholder {
+  color: #d3d3d3;
+}
+
+.password-eye-icon {
+  position: absolute;
+  top: 37px;
+  right: 20px;
+  width: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.password-eye-icon:hover {
+  opacity: 0.7;
+}
+.password-eye-icon > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 登入按鈕 */
+.login-btn {
+  background-color: #364772;
+  padding: 10px 0px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  margin: 30px 0px;
+  transition: all 0.2s;
+}
+.login-btn:hover {
+  background-color: #243255;
+  cursor: pointer;
+}
+
+.login-function-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 忘記密碼 & 未收到驗證碼 & 立即註冊 */
+.login-function-box {
+  margin: 10px 0px 20px 0px;
+}
+.login-function-box > a {
+  text-align: center;
+  transition: all 0.2s;
+  color: #a3a3a3;
+  font-size: 14px;
+  cursor: pointer;
+  /* border-bottom: 1px solid #a3a3a3; */
+  margin: 0px 7px;
+  white-space: nowrap;
+  position: relative;
+  cursor: pointer;
+}
+.login-function-box > a::after {
+  content: "|";
+  position: absolute;
+  right: -9px;
+}
+.login-function-box:hover > a::after {
+  color: #a3a3a3;
+}
+.login-function-box > a:last-child::after {
+  display: none;
+}
+.login-function-box > a:hover {
+  color: #737373;
+}
+
+/* ----------------------- RWD ----------------------- */
+@media screen and (max-width: 576px) {
+  .login-wrap .container {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .login-wrap .container {
+    width: 320px;
+  }
+}

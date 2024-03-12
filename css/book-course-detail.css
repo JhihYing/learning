@@ -1,0 +1,967 @@
+.nav-category-title > p {
+  color: #e8c558 !important;
+}
+
+/* ----------------------- 滾輪外觀 ----------------------- */
+/* 分類 */
+.info-nav-ul::-webkit-scrollbar {
+  height: 6px;
+}
+.info-nav-ul::-webkit-scrollbar-thumb {
+  background-color: rgba(218, 218, 218, 0);
+  border-radius: 10px;
+}
+.info-nav-ul::-webkit-scrollbar-track {
+  background-color: initial;
+}
+
+/* ----------------------- 新書聆聽 ----------------------- */
+.course-detail {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.course-detail > .container,
+.course-detail > .course-bg > .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.course-bg {
+  background-color: #f6f6f6c0;
+  padding-top: 125px;
+  padding-bottom: 55px;
+}
+
+/* ----------------------- 麵包屑 ----------------------- */
+.bread-crumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  font-size: 15px;
+}
+.bread-crumbs > a {
+  transition: all 0.2s;
+  line-height: 1.5;
+}
+.bread-crumbs > a:hover {
+  opacity: 0.8;
+}
+.bread-crumbs > span {
+  margin: 0px 8px;
+}
+.bread-crumbs > p {
+  font-weight: 500;
+  color: #364772;
+  line-height: 1.5;
+}
+
+/* ----------------------- 課程標題 ----------------------- */
+.course-title-section {
+  display: flex;
+  align-items: center;
+}
+
+/* 照片 */
+.course-video-box {
+  width: 780px;
+  margin-right: 40px;
+  border-radius: 3px;
+  border: 1px solid rgb(255, 255, 255);
+  /* border: 1px solid red; */
+  overflow: hidden;
+  position: relative;
+}
+
+.course-video-img {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.course-video-img > .course-image {
+  background-image: url("../images/book.jpg");
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+  /* cursor: pointer; */
+}
+
+/* 標題 */
+.course-title-box {
+  width: 400px;
+}
+.course-label-box {
+  margin-bottom: 15px;
+}
+.course-label-box > li {
+  padding: 10px 12px;
+  font-size: 15px;
+  background-color: #cc9453;
+  border-radius: 30px;
+  /* border: 1px solid #d1d1d1; */
+  margin-right: 15px;
+  /* cursor: pointer; */
+  transition: all 0.2s;
+  white-space: nowrap;
+  display: inline-block;
+  color: white;
+}
+
+.course-title-box > h3 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.course-title-box > .course-expert {
+  color: #a4a4a4;
+  margin: 15px 0px 20px 0px;
+}
+.course-title-box > .course-expert > a {
+  line-height: 1.5;
+  transition: all 0.2s;
+}
+.course-title-box > .course-expert > a:hover {
+  opacity: 0.8;
+}
+
+.course-info-box {
+  display: flex;
+  align-items: center;
+}
+.course-score {
+  color: #f9bf4e;
+  font-weight: 500;
+  position: relative;
+  margin-right: 30px;
+  margin-left: 25px;
+}
+.course-score::before {
+  content: "";
+  background-image: url(../images/star.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: -25px;
+  top: -1px;
+}
+.learn-num {
+  position: relative;
+  padding-left: 23px;
+}
+.learn-num::before {
+  content: "";
+  background-image: url(../images/students.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+
+/* 課程內容 & 購買 */
+.course-main-section {
+  margin-top: 50px;
+  display: flex;
+  align-items: start;
+}
+
+/* -------- 課程內容 -------- */
+.course-main-box {
+  width: calc(100% - 365px);
+  /* border: 1px solid rebeccapurple; */
+}
+
+/* 課程資訊 */
+.course-main-info-box > h3 {
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 30px;
+}
+.course-main-info-box > h3:before {
+  content: "";
+  border-left: 4px solid #364772;
+  margin-right: 12px;
+}
+.course-main-info-box > p {
+  line-height: 1.5;
+}
+.course-main-info-ul {
+  /* border: 1px solid fuchsia; */
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.course-main-info-ul > li {
+  margin-bottom: 24px;
+  width: 48%;
+  display: flex;
+  align-items: center;
+}
+.course-main-info-icon {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+}
+.course-main-info-icon > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.course-main-info-ul > li > p {
+  color: #6a6a6a;
+  margin-left: 20px;
+}
+
+.course-main-info-ul > li > p > span {
+  font-weight: 500;
+  margin-left: 10px;
+  line-height: 1.5;
+}
+
+/* 分類與內容 */
+.course-content {
+  /* border: 1px solid forestgreen; */
+  margin-top: 26px;
+}
+
+/* 分類 */
+.info-nav-ul {
+  /* border: 1px solid rosybrown; */
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #cfcfcf;
+  margin-bottom: 20px;
+
+  overflow-x: auto;
+}
+.info-nav-ul > li {
+  flex: 1;
+  text-align: center;
+  padding: 20px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+  white-space: nowrap;
+  border-bottom: 3px solid #36477200;
+}
+.info-nav-ul > li:hover {
+  color: #364772;
+}
+.info-nav-ul > li.active {
+  color: #364772;
+  border-bottom: 3px solid #364772;
+}
+
+/* 介紹 */
+.course-detail-image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.course-detail-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.introduce-box {
+  margin-top: 50px;
+  /* display: none; */
+}
+.introduce-box > p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.introduce-box > p > strong {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* 章節 */
+.chapter-box {
+  /* border: 1px solid red; */
+  margin-top: 50px;
+  display: none;
+}
+.chapter-title-box {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chapter-title-box > h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+.chapter-title-box > p > span {
+  color: #364772;
+  font-weight: 500;
+}
+
+.chapter {
+  margin-bottom: 20px;
+  /* border: 1px solid red; */
+}
+.chapter-list-box {
+  background-color: #f3f3f3;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.chapter-list-box:hover {
+  background-color: #e9e9e9;
+}
+.chapter-list-box > h4 {
+  color: #364772;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.chapter-time {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.chapter-time > p {
+  font-size: 14px;
+  white-space: nowrap;
+  /* color: #909090; */
+}
+.chapter-time > .chapter-arrow-img {
+  width: 17px;
+  height: 10px;
+  display: flex;
+  margin-left: 30px;
+  transition: all 0.3s;
+}
+.chapter-time > .chapter-arrow-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.chapter-ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-bottom: 1px solid #cfcfcf43;
+}
+.chapter-ul > li:last-child {
+  border-bottom: none;
+}
+.chapter-ul > li > p {
+  line-height: 1.5;
+}
+.chapter-ul > li > p.homewoek {
+  position: relative;
+  padding-left: 30px;
+}
+.chapter-ul > li > p.homewoek::before {
+  content: "";
+  background-image: url("../images/homework.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+.chapter-info-box {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+.chapter-info-box > p {
+  font-size: 14px;
+  width: 50px;
+  text-align: right;
+  color: #909090;
+}
+.chapter-info-box > a {
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 12px;
+  /* font-weight: 300; */
+  background-color: #51618e;
+  padding: 8px 8px;
+  border-radius: 3px;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.chapter-info-box > a:hover {
+  opacity: 0.8;
+}
+
+/*  評價 */
+.evaluate-box {
+  /* border: 1px solid red; */
+  margin-top: 50px;
+  display: none;
+}
+
+.evaluate-title-box {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* display: none; */
+}
+.evaluate-title-box > .evaluate-score {
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 30px;
+}
+.evaluate-title-box > .evaluate-score::before {
+  content: "";
+  background-image: url("../images/star.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: -1px;
+  left: 0;
+}
+.evaluate-title-box > p > span {
+  color: #364772;
+  font-weight: 500;
+}
+
+.evaluate-info-box {
+  background-color: #f9f9f9;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  padding: 32px 32px;
+  display: flex;
+}
+
+.evaluate-member {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+.evaluate-member > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.evaluate-info-title-box {
+  margin-bottom: 20px;
+}
+
+.evaluate-info-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.evaluate-info {
+  width: calc(100% - 60px);
+}
+.evaluate-info-title > .evaluate-name {
+  font-weight: 500;
+  font-size: 18px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.star-ul {
+  /* width: 110px; */
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.star-ul > li {
+  margin-left: 5px;
+}
+.evaluate-date {
+  margin-top: 10px;
+  font-size: 14px;
+  color: rgb(128, 128, 128);
+}
+
+.evaluate-content > p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.evaluate-content > p:last-child {
+  margin-bottom: 0;
+}
+
+/* 頁碼 */
+.pagination-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  /* display: none; */
+}
+.pagination-box > button {
+  background-color: #f5f5f5;
+  border: none;
+  outline: none;
+  width: 28px;
+  min-width: 28px;
+  height: 28px;
+  min-height: 28px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.pagination-box > button:hover {
+  background-color: #e8e8e8;
+}
+.pagination-box > .page-number {
+  margin: 0px 20px;
+}
+
+/* 尚無評價 */
+.no-evaluate {
+  padding: 130px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+.no-evaluate-img {
+  width: 90px;
+}
+.no-evaluate-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.no-evaluate > p {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #909090;
+}
+
+/* 公告 */
+.announcement-box {
+  /* border: 1px solid red; */
+  margin-top: 50px;
+  display: none;
+}
+.announcement {
+  /* border: 1px solid green; */
+  background-color: #f9f9f9;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  padding: 32px 32px;
+}
+
+.announcement-title {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* display: none; */
+}
+
+.announcement-title > p > span {
+  color: #364772;
+  font-weight: 500;
+}
+
+.announcement.active > .announcement-title-box > .member-privacy {
+  display: none;
+}
+.member-privacy {
+  color: #364772;
+  font-weight: 500;
+  font-size: 15px;
+  padding-left: 25px;
+  position: relative;
+}
+.member-privacy::before {
+  content: "";
+  background-image: url("../images/padlock.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 19px;
+  height: 20px;
+  top: -2px;
+  left: 0;
+}
+
+.announcement > .announcement-title-box > h3 {
+  font-size: 18px;
+  margin: 20px 0px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.announcement > .announcement-title-box > .date {
+  font-size: 14px;
+  color: rgb(128, 128, 128);
+}
+
+.announcement-info > p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.announcement-info-box {
+  border-top: 1px solid gainsboro;
+  padding-top: 30px;
+  margin-top: 30px;
+  position: relative;
+  display: none;
+  /* max-height: 120px; */
+  /* overflow: hidden;
+  position: relative;
+  display: none; */
+}
+.announcement.active > .announcement-info-box {
+  display: inline-block;
+}
+
+.announcement-info {
+  max-height: 120px;
+  overflow: hidden;
+  position: relative;
+}
+
+.introduction-show-box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: 30px;
+  transition: all 0.2s;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background: linear-gradient(180deg, rgba(244, 245, 246, 0), #f9f9f9 80%);
+  width: 100%;
+  height: 120px;
+}
+.introduction-show-btn {
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  /* padding: 5px 0px 5px 30px; */
+  border-radius: 30px;
+}
+.introduction-show-btn > .arrow-top {
+  width: 12px;
+  margin-bottom: -2px;
+  margin-right: 5px;
+  transform: rotate(180deg);
+}
+.introduction-show-btn > .arrow-top > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.introduction-show-btn > p {
+  text-align: end;
+  color: #364772;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* 尚無公告 */
+.no-announcement {
+  padding: 130px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+.no-announcement-img {
+  width: 90px;
+}
+.no-announcement-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.no-announcement > p {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #909090;
+}
+
+/* -------- 購買 -------- */
+.buy-card {
+  width: 100%;
+  border: 1px solid #cfcfcf;
+  background-color: white;
+  width: 365px;
+  margin-left: 30px;
+  border-radius: 3px;
+  padding: 24px;
+
+  position: sticky;
+  top: 120px;
+}
+.buy-card > p {
+  color: #878787;
+  border-bottom: 1px solid #cfcfcf43;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.buy-card > h3 {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.buy-card > .buy-btn-box {
+  display: flex;
+  align-items: center;
+}
+.buy-btn-box > .now-buy-btn {
+  background-color: #364772;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 40px);
+  height: 40px;
+  font-size: 15px;
+  padding: 0 25px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.buy-btn-box > .now-buy-btn:hover {
+  background-color: #51618e;
+}
+
+.buy-btn-box > .add-cart-btn {
+  border: 2px solid #364772;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: white;
+  transition: all 0.2s;
+}
+.buy-btn-box > .add-cart-btn:hover {
+  opacity: 0.7;
+}
+.add-cart-image {
+  width: 19px;
+  height: 30px;
+}
+.add-cart-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ----------------------- RWD ----------------------- */
+@media screen and (max-width: 1280px) {
+  .course-detail > .container,
+  .course-detail > .course-bg > .container {
+    padding: 0px 40px;
+  }
+
+  .course-label-box > li {
+    font-size: 14px;
+  }
+  .course-title-box > h3 {
+    font-size: 24px;
+  }
+  .course-title-box > .course-expert {
+    font-size: 15px;
+  }
+  .course-info-box > p {
+    font-size: 15px;
+  }
+  .course-score::before {
+    width: 17px;
+    top: 0px;
+  }
+
+  .play-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .course-main-box {
+    width: calc(100% - 300px);
+  }
+  .buy-card {
+    width: 300px;
+  }
+  .buy-card > h3 {
+    font-size: 24px;
+  }
+  .buy-btn-box > .now-buy-btn {
+    font-size: 14px;
+  }
+
+  .course-main-info-box > h3 {
+    font-size: 20px;
+  }
+  .course-main-info-icon {
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+  }
+  .course-main-info-ul > li > p {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .course-title-box > h3 {
+    font-size: 22px;
+  }
+
+  .buy-card {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    top: initial;
+    left: 0;
+    right: 0;
+    padding: 20px 40px;
+    border: none;
+    border-top: 1px solid #cfcfcf;
+    box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 15%);
+  }
+  .buy-card > h3 {
+    margin-bottom: 0;
+    margin-right: 20px;
+    font-size: 22px;
+  }
+  .buy-card > p {
+    display: none;
+  }
+  .buy-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .buy-btn-box {
+    width: 100%;
+  }
+
+  .course-main-box {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .buy-card > h3 {
+    font-size: 20px;
+  }
+
+  .course-main-info-ul > li {
+    width: 100%;
+  }
+
+  .course-title-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .course-video-box {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .course-title-box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .course-detail > .container,
+  .course-detail > .course-bg > .container {
+    padding: 0px 25px;
+  }
+
+  .buy-card > h3 {
+    font-size: 18px;
+  }
+  .buy-card {
+    padding: 20px 25px;
+  }
+
+  .play-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .chapter-list-box {
+    flex-direction: column;
+    align-items: start;
+  }
+  .chapter-time {
+    margin: 0;
+    margin-top: 10px;
+  }
+  .chapter-ul > li {
+    flex-direction: column;
+    align-items: start;
+  }
+  .chapter-info-box {
+    margin: 0;
+    margin-top: 10px;
+  }
+  .chapter-list-box {
+    position: relative;
+    padding-right: 50px;
+  }
+  .chapter-arrow-img {
+    position: absolute;
+    top: 42px;
+    right: 24px;
+  }
+  .chapter-list-box > h4 {
+    font-size: 17px;
+  }
+  .evaluate-info-title {
+    flex-direction: column;
+    align-items: start;
+  }
+  .star-ul {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .star-ul > li:first-child {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .play-icon {
+    width: 50px;
+    height: 50px;
+  }
+}

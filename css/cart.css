@@ -1,0 +1,341 @@
+/* ----------------------- 購物車 ----------------------- */
+.carts-bg {
+  background-color: #f4f4f4;
+}
+.carts {
+  width: 100%;
+  padding-top: 125px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.carts > .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.carts > .container > h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.carts-main-box {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+/* ----------------------- 購物車清單 ----------------------- */
+.carts-ul {
+  width: calc(100% - 280px);
+  /* display: none; */
+}
+.carts-ul > li {
+  width: 100%;
+  background-color: white;
+  border-radius: 3px;
+  padding: 24px 24px;
+  display: flex;
+  align-items: center;
+}
+.checkbox {
+  cursor: pointer;
+  width: 16.5px;
+  height: 16.5px;
+  border-radius: 3px;
+  margin-right: 24px;
+}
+.carts-ul > li > a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* align-items: flex-start; */
+}
+
+.course-card {
+  width: 285px;
+  border-bottom: 1px solid #cfcfcf6d;
+  transition: all 0.2s;
+}
+.course-card:hover {
+  background-color: #c8cedd2a;
+}
+.course-card:last-child {
+  border-bottom: 0;
+}
+
+.course-card .course-image {
+  flex: 0 0 148px;
+  margin-right: 20px;
+}
+.course-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.course-info-box {
+  width: calc(100% - 145px);
+}
+
+.course-info-box > p {
+  color: #6f6f6f;
+  font-weight: 500;
+  font-size: 14px;
+  position: relative;
+  padding-left: 15px;
+}
+.course-info-box > p::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #51618e;
+  border-radius: 30px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+.course-info-box > h4 {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 10px 0 20px 0;
+  line-height: 1.5;
+}
+
+.course-price-btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.course-price-btn-box > p {
+  font-weight: 600;
+  color: #364772;
+  font-size: 18px;
+}
+.delete-btn {
+  background-color: initial;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.delete-btn:hover {
+  opacity: 0.8;
+}
+.delete-btn > img {
+  width: 18px;
+}
+.delete-btn > p {
+  margin-left: 10px;
+}
+
+.online-course > a > .course-info-box > p::before {
+  background-color: #51618e;
+}
+
+.pre-order-course > a > .course-info-box > p::before {
+  background-color: #ff7566;
+}
+.book-course > a > .course-info-box > p::before {
+  background-color: #cc9453;
+}
+
+/* ----------------------- 空的購物車 ----------------------- */
+.null-carts {
+  width: calc(100% - 280px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3px;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-color: white;
+  display: none;
+}
+.null-carts-img {
+  width: 130px;
+  margin-right: 20px;
+}
+.null-carts-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.null-carts > p {
+  font-size: 18px;
+  margin: 30px 0;
+  font-weight: 500;
+}
+
+.null-carts > .back-btn {
+  background-color: #364772;
+  border-radius: 3px;
+  color: white;
+  font-size: 15px;
+  padding: 12px 30px;
+  transition: all 0.2s;
+}
+.null-carts > .back-btn:hover {
+  background-color: #51618e;
+}
+
+/* ----------------------- 結帳 ----------------------- */
+.checkout-box {
+  border: 1px solid #cfcfcf;
+  background-color: white;
+  width: 280px;
+  margin-left: 30px;
+  border-radius: 3px;
+  padding: 24px;
+  position: sticky;
+  top: 120px;
+}
+.checkout-box > h3 {
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 1px solid #cfcfcf43;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.price-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price-box > span {
+  font-size: 24px;
+  color: #364772;
+  font-weight: 500;
+}
+.checkout-box > .checkout-btn {
+  background-color: #364772;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  padding: 0 25px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 20px;
+}
+.checkout-box > .checkout-btn:hover {
+  background-color: #51618e;
+}
+.checkout-box > .checkout-btn.null {
+  background-color: #ababab;
+  cursor: not-allowed;
+}
+
+/* ----------------------- RWD ----------------------- */
+@media screen and (max-width: 1280px) {
+  .carts {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .carts-main-box {
+    flex-direction: column;
+  }
+
+  .carts-ul {
+    width: 100%;
+  }
+
+  .checkout-box {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+
+  .null-carts {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+  .carts {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .course-info-box > h4 {
+    font-size: 17px;
+  }
+  .checkout-box > h3 {
+    font-size: 18px;
+  }
+
+  .course-info-box > h4 {
+    font-size: 16px;
+  }
+
+  .course-info-box {
+    width: calc(100% - 120px);
+  }
+  .course-card .course-image {
+    flex: 0 0 120px;
+  }
+  .course-price-btn-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .delete-btn {
+    padding-left: 0;
+    margin-top: 15px;
+  }
+  .delete-btn > img {
+    width: 16px;
+  }
+  .carts-ul > li > a {
+    align-items: flex-start;
+  }
+
+  .price-box > span {
+    font-size: 22px;
+  }
+  .course-info-box > h4 {
+    margin-bottom: 15px;
+  }
+  .carts-ul > li {
+    align-items: initial;
+    flex-direction: column;
+  }
+  .checkbox {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .course-info-box {
+    width: calc(100% - 100px);
+  }
+  .course-card .course-image {
+    flex: 0 0 100px;
+  }
+
+  .null-carts {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .null-carts-img {
+    width: 120px;
+  }
+  .null-carts > p {
+    font-size: 16px;
+  }
+  .null-carts > .back-btn {
+    font-size: 14px;
+  }
+}

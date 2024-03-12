@@ -1,0 +1,524 @@
+/* ----------------------- 會員專區-訂單記錄 ----------------------- */
+.member-order {
+  width: 100%;
+  background-color: #fafafa;
+  padding-top: 130px;
+  padding-bottom: 100px;
+  min-height: calc(100vh - 244px);
+}
+.member-order > .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.member-flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* ----------------------- 選單 (共用) ----------------------- */
+.member-box {
+  width: 20%;
+  min-width: 240px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 40px 20px 20px 20px;
+  margin-right: 20px;
+  position: sticky;
+  top: 130px;
+}
+.member-title {
+  display: flex;
+}
+.member-title > h3 {
+  font-weight: 500;
+}
+.member-images {
+  width: 18px;
+  margin-right: 10px;
+}
+.member-images > img {
+  width: 100%;
+  height: 100%;
+}
+.member-ul {
+  text-align: center;
+  white-space: nowrap;
+}
+.member-ul > li {
+  margin-bottom: 40px;
+}
+.member-box > hr {
+  margin: 0px;
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: #e5e5e5;
+  margin: 30px 0px;
+}
+.member-ul > li:hover > a {
+  color: #364772;
+}
+.member-ul > li > a {
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.member-ul > li.active > a {
+  color: #364772;
+  font-weight: 500;
+}
+
+/* ----------------------- 訂單記錄 ----------------------- */
+.order-box {
+  /* border: 1px solid red; */
+  width: 78%;
+}
+
+.order-title-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* 線上課程、實體課程分類 */
+.order-category-ul {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d9d9d9bf;
+}
+.order-category-ul > li {
+  cursor: pointer;
+  padding: 15px 15px;
+  transition: all 0.2s;
+  border-bottom: 3px solid rgba(205, 92, 92, 0);
+}
+.order-category-ul > li:hover {
+  color: #364772;
+  border-color: #364772;
+  font-weight: 500;
+}
+.order-category-ul > li.active {
+  color: #364772;
+  font-weight: 500;
+  border-bottom: 3px solid #364772;
+}
+
+/* 線上課程的訂單 */
+/* .online-order-box {
+  display: none;
+} */
+
+/* 線上課程的訂單 */
+.in-person-order-box {
+  display: none;
+}
+
+.order-card {
+  /* border: 1px solid orange; */
+  background-color: white;
+  margin-bottom: 20px;
+}
+.order-card:last-child {
+  margin-bottom: 0;
+}
+
+.order-number {
+  background-color: #d9d9d9bf;
+  padding: 15px 24px;
+}
+.order-number > p {
+  font-weight: 500;
+}
+
+/* 付款篩選 */
+.pay-filter {
+  padding: 8px 50px 8px 8px;
+}
+.pay-filter:focus-visible {
+  outline-color: initial;
+}
+
+/* 訂單資訊 */
+.order-info-ul {
+  padding: 24px 24px 13px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e4e4e4;
+}
+.order-info-ul > li {
+  width: 49.9%;
+  margin-bottom: 20px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+}
+.order-info-ul > li > span {
+  color: #364772;
+  font-weight: 500;
+}
+.order-info-ul > li > input {
+  margin-left: 10px;
+  background-color: #b0bee02b;
+  color: #51618e;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #51618e;
+  font-weight: 500;
+  border-radius: 36px;
+  padding: 5px 10px;
+  transition: all 0.2s ease 0s;
+}
+.order-info-ul > li > input:hover {
+  opacity: 0.9;
+}
+
+.toggle-box {
+  display: none;
+}
+
+/* 購買課程清單 */
+.order-list-ul {
+  padding: 24px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.order-list-ul > .course-card {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #cfcfcf43;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.order-list-ul > .course-card:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.course-image {
+  flex: 0 0 125px;
+  margin-right: 15px;
+}
+.course-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.course-info-box > p {
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 15px;
+  color: #6f6f6f;
+}
+.course-info-box > p::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #51618e;
+  border-radius: 30px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+.online-course > .course-info-box > p::before {
+  background-color: #51618e;
+}
+.pre-order-course > .course-info-box > p::before {
+  background-color: #ff7566;
+}
+.book-course > .course-info-box > p::before {
+  background-color: #cc9453;
+}
+.course-info-box > h4 {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 10px 0px;
+  line-height: 1.5;
+}
+.course-price-btn-box > p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #364772;
+}
+
+/* 報名資訊 */
+.order-detail-indo-box {
+  background-color: #b0bee02b;
+  padding: 20px;
+  margin-bottom: 2px;
+}
+.order-detail-indo-box > p {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.order-detail-indo-ul > li {
+  margin-bottom: 15px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* 發票資訊 */
+.order-detail-list {
+  padding: 24px;
+  border-bottom: 1px solid #e4e4e4;
+}
+/* .order-barcode-ul {
+  background-color: #b0bee02b;
+  padding: 20px;
+} */
+.order-barcode-ul > li {
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+.order-barcode-ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.order-more {
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+}
+.order-more > p {
+  cursor: pointer;
+  font-weight: 500;
+  /* border-bottom: 1px solid #747474; */
+  display: inline-block;
+  /* padding-bottom: 5px; */
+  transition: all 0.2s;
+  font-size: 14px;
+  position: relative;
+  color: #747474;
+}
+.order-more > p::before {
+  content: "";
+  background-image: url("../images/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 2px;
+  right: -19px;
+  transform: rotate(180deg);
+}
+.order-more > p.rotate::before {
+  transform: rotate(0deg);
+}
+.order-more > p:hover {
+  opacity: 0.8;
+}
+
+/* 尚無訂單 */
+.no-order-box {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: none;
+}
+.no-order-image {
+  width: 45px;
+}
+.no-order-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.no-order-box > p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* 繳款資訊 */
+.remit {
+  width: 100%;
+  padding: 100px 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.remit-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.remit-box > .remit-title > h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+.remit-title > span {
+  font-size: 15px;
+  color: rgb(116, 116, 116);
+  line-height: 1.5;
+}
+.remit-box > div:not(.remit-goback-btn) {
+  display: flex;
+  margin-bottom: 15px;
+}
+.remit-box > div > p {
+  line-height: 1.5;
+}
+.remit-box > div > .title-test {
+  white-space: nowrap;
+}
+.remit-box > div:last-child > .title-test {
+  margin-bottom: 0px;
+}
+
+.remit-goback-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.remit-goback-btn > input {
+  background-color: initial;
+  color: #364772;
+  border: 2px solid #364772;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  font-size: 14px;
+  padding: 0 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.remit-goback-btn > input:hover {
+  border: 2px solid #51618e;
+  color: #51618e;
+  cursor: pointer;
+}
+
+/* ----------------------- RWD ----------------------- */
+@media screen and (max-width: 1280px) {
+  .member-order {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .member-order {
+    height: auto;
+  }
+
+  .member-flex-box {
+    flex-direction: column;
+  }
+  .member-title,
+  .member-box > hr {
+    display: none;
+  }
+  .member-box {
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 0px;
+    background-color: inherit;
+    height: auto;
+    position: relative;
+    top: initial;
+  }
+  .member-ul {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+  .member-ul > li {
+    margin: 0px 10px;
+  }
+
+  .personal-box {
+    width: 100%;
+  }
+  .order-box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .order-info-ul > li {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .remit-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .remit-box > .remit-title > h4 {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .member-order {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .personal-box {
+    padding: 40px 40px;
+  }
+  .member-ul > li > a {
+    font-size: 15px;
+  }
+
+  .order-category-ul > li {
+    font-size: 15px;
+    padding: 15px 10px;
+  }
+  .pay-filter {
+    padding-right: 40px;
+  }
+  .order-number > p {
+    font-size: 15px;
+  }
+  .remit-box > div:not(.remit-goback-btn) {
+    flex-direction: column;
+  }
+  .remit {
+    padding: 100px 40px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .member-ul > li {
+    margin: 0px;
+  }
+
+  .personal-box {
+    padding: 40px 30px;
+  }
+
+  .pay-filter {
+    padding-right: 30px;
+  }
+
+  .course-image {
+    flex: 0 0 100px;
+  }
+  .no-order-image {
+    width: 40px;
+  }
+  .remit-title > span {
+    font-size: 14px;
+  }
+  .remit {
+    padding: 100px 30px;
+  }
+}

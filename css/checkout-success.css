@@ -1,0 +1,177 @@
+/* ----------------------- 訂單完成 ----------------------- */
+.checkout-success {
+  width: 100%;
+  background-color: #fafafa;
+  padding-top: 155px;
+  padding-bottom: 80px;
+}
+
+.checkout-success > .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  padding: 60px 0px;
+}
+
+.checkout-success > .container > .main {
+  width: 60%;
+  /* background-color: pink; */
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+/* 訂單完成 & 訂單編號 */
+.success-info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.success-info-box > p {
+  text-align: center;
+  line-height: 1.5;
+}
+.success-info-box > h2 {
+  color: #364772;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px 0px;
+}
+
+/* 匯款資訊 */
+.remit-box {
+  border-radius: 8px;
+  padding: 30px 40px;
+  background-color: #fafafa;
+  margin-bottom: 40px;
+}
+.remit-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.remit-title > h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+.remit-title > span {
+  font-size: 15px;
+  color: rgb(116, 116, 116);
+}
+.remit-box > div {
+  display: flex;
+}
+.remit-box > div > .title-test {
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+.remit-box > div:last-child > .title-test {
+  margin-bottom: 0px;
+}
+
+/* 按鈕 */
+.btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-box > a {
+  /* background-color: #364772; */
+  border: 2px solid #364772;
+  font-weight: 500;
+  border-radius: 3px;
+  color: #364772;
+  font-size: 15px;
+  padding: 12px 30px;
+  transition: all 0.2s;
+}
+.btn-box > .back-btn:hover {
+  color: #51618e;
+  border-color: #51618e;
+}
+.btn-box > .search-order-btn {
+  background-color: #364772;
+  font-weight: 400;
+  color: white;
+  margin-left: 60px;
+}
+.btn-box > .search-order-btn:hover {
+  border-color: #51618e;
+  background-color: #51618e;
+}
+
+/* ----------------------- RWD ----------------------- */
+@media screen and (max-width: 1280px) {
+  .checkout-success {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .checkout-success > .container > .main {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .remit-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .remit-title > h3 {
+    margin-bottom: 10px;
+  }
+  .remit-title > span {
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .checkout-success {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .remit-box {
+    padding: 30px 30px;
+  }
+  .checkout-success > .container > .main {
+    width: 85%;
+  }
+
+  .remit-box > div {
+    flex-direction: column;
+  }
+  .remit-box > div > .title-test {
+    margin-bottom: 10px;
+  }
+  .remit-box > div:last-child > .title-test {
+    margin-bottom: 10px;
+  }
+  .remit-box > .bake-code,
+  .remit-box > .virtual-account,
+  .remit-box > .payment-date {
+    margin-bottom: 20px;
+  }
+
+  .btn-box {
+    flex-direction: column;
+  }
+  .btn-box > a {
+    width: 85%;
+    text-align: center;
+  }
+  .btn-box > .search-order-btn {
+    margin: 0;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .btn-box > a {
+    font-size: 15px;
+  }
+  .remit-title > span {
+    font-size: 14px;
+  }
+}

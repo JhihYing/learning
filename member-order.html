@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>會員專區 | 訂單記錄</title>
+
+    <!-- ----------------------- 導入css ----------------------- -->
+    <!-- 自訂義的css -->
+    <link rel="stylesheet" href="./css/member-order.css" />
+  </head>
+
+  <body>
+    <!-- -----------------------  載入 header -----------------------  -->
+    <div class="headerpage"></div>
+
+    <!-- ----------------------- 會員專區-訂單記錄 ----------------------- -->
+    <section class="member-order">
+      <div class="container">
+        <div class="member-flex-box">
+          <!-- ----------------------- 選單 (共用) ----------------------- -->
+          <div class="member-box">
+            <div class="member-title">
+              <div class="member-images">
+                <img src="./images/member-icon.svg" alt="會員專區icon" />
+              </div>
+              <h3>會員專區</h3>
+            </div>
+
+            <hr />
+
+            <ul class="member-ul">
+              <li>
+                <a href="./member-learning.html">我的學習</a>
+              </li>
+              <li class="active">
+                <a href="./member-order.html">訂單記錄</a>
+              </li>
+              <li>
+                <a href="./member-personal.html">個人檔案</a>
+              </li>
+              <li>
+                <a href="./member-password.html">修改密碼</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- ----------------------- 訂單記錄 ----------------------- -->
+          <div class="order-box">
+            <div class="order-title-box">
+              <!-- 線上課程、實體課程分類 -->
+              <ul class="order-category-ul">
+                <li class="online active">線上課程</li>
+                <li class="in-person">實體課程</li>
+              </ul>
+
+              <!-- 付款篩選 -->
+              <select class="pay-filter" name="">
+                <option value="" selected>全部訂單</option>
+                <option value="">尚未付款</option>
+                <option value="">付款成功</option>
+                <option value="">逾期失效</option>
+              </select>
+            </div>
+
+            <!-- 線上課程的訂單 -->
+            <div class="online-order-box">
+              <div class="order-card">
+                <div class="order-number">
+                  <p>訂單編號：O20221212001877</p>
+                </div>
+
+                <!-- 訂單資訊 -->
+                <ul class="order-info-ul">
+                  <li>
+                    訂單狀態：<span>尚未付款</span
+                    ><input
+                      type="button"
+                      value="繳款資訊"
+                      class="pay-payment"
+                    />
+                  </li>
+                  <li>購買日期：2022/09/10 16:32:07</li>
+                  <li>付款方式：匯款轉帳</li>
+                  <li>訂單金額：NT$ 5,120</li>
+                </ul>
+
+                <div class="toggle-box">
+                  <!-- 購買課程清單 -->
+                  <ul class="order-list-ul">
+                    <li class="course-card online-course">
+                      <div class="course-image">
+                        <img src="./images/course03.jpg" alt="" />
+                      </div>
+
+                      <div class="course-info-box">
+                        <p>線上課程：已開課</p>
+                        <h4>世界冠軍甜點學｜法式經典配方 X 異國創意風味</h4>
+
+                        <div class="course-price-btn-box">
+                          <p>NT$ 2,300</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="course-card pre-order-course">
+                      <div class="course-image">
+                        <img src="./images/preOrder-course02.jpg" alt="" />
+                      </div>
+
+                      <div class="course-info-box">
+                        <p>線上課程：募資中</p>
+                        <h4>畫出手感水彩插畫：小動物們的午後喫茶派對</h4>
+
+                        <div class="course-price-btn-box">
+                          <p>NT$ 2,600</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <div class="order-detail-list">
+                    <!-- 發票資訊 -->
+                    <div class="order-detail-indo-box">
+                      <p>發票資訊</p>
+                      <ul class="order-barcode-ul">
+                        <li>發票類型：手機載具</li>
+                        <li>手機條碼：/ABC123</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="order-more">
+                  <p>訂單詳情</p>
+                </div>
+              </div>
+
+              <div class="order-card">
+                <div class="order-number">
+                  <p>訂單編號：O20221212001877</p>
+                </div>
+
+                <!-- 訂單資訊 -->
+                <ul class="order-info-ul">
+                  <li>訂單狀態：<span>付款成功</span></li>
+                  <li>購買日期：2022/09/10 16:32:07</li>
+                  <li>付款方式：匯款轉帳</li>
+                  <li>訂單金額：NT$ 320</li>
+                </ul>
+
+                <div class="toggle-box">
+                  <!-- 購買課程清單 -->
+                  <ul class="order-list-ul">
+                    <li class="course-card book-course">
+                      <div class="course-image">
+                        <img src="./images/book.jpg" alt="" />
+                      </div>
+
+                      <div class="course-info-box">
+                        <p>新書聆聽：已開課</p>
+                        <h4>小王子</h4>
+
+                        <div class="course-price-btn-box">
+                          <p>NT$ 320</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <!-- 詳細資訊 -->
+                  <div class="order-detail-list">
+                    <!-- 發票資訊 -->
+                    <div class="order-detail-indo-box">
+                      <p>發票資訊</p>
+                      <ul class="order-barcode-ul">
+                        <li>發票類型：捐贈</li>
+                        <li>捐贈碼：2291292</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="order-more">
+                  <p>訂單詳情</p>
+                </div>
+              </div>
+
+              <!-- <div class="order-card"></div> 增加後續訂單 -->
+            </div>
+
+            <!-- 實體課程的訂單 -->
+            <div class="in-person-order-box">
+              <div class="order-card">
+                <div class="order-number">
+                  <p>訂單編號：O20221212001877</p>
+                </div>
+
+                <!-- 訂單資訊 -->
+                <ul class="order-info-ul">
+                  <li>
+                    訂單狀態：<span>尚未付款</span
+                    ><input
+                      type="button"
+                      value="繳款資訊"
+                      class="pay-payment"
+                    />
+                  </li>
+                  <li>購買日期：2022/09/10 16:32:07</li>
+                  <li>付款方式：匯款轉帳</li>
+                  <li>訂單金額：NT$ 450</li>
+                </ul>
+
+                <div class="toggle-box">
+                  <!-- 報名課程清單 -->
+                  <ul class="order-list-ul">
+                    <li class="course-card online-course">
+                      <div class="course-image">
+                        <img src="./images/course06.jpg" alt="" />
+                      </div>
+
+                      <div class="course-info-box">
+                        <p>實體課程：已開課</p>
+                        <h4>
+                          【絹印手作體驗課程】來大稻程百年老宅內，體驗印花絹印
+                        </h4>
+
+                        <div class="course-price-btn-box">
+                          <p>NT$ 450</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <!-- 詳細資訊 -->
+                  <div class="order-detail-list">
+                    <!-- 報名資訊 -->
+                    <div class="order-detail-indo-box">
+                      <p>報名資訊</p>
+                      <ul class="order-detail-indo-ul">
+                        <li>姓名：王小明</li>
+                        <li>電子郵件：tkb0123@gmail.com</li>
+                        <li>行動電話：0953324211</li>
+                        <li>票種：早鳥票</li>
+                        <li>報名日期：2023.9.22(五) 19:30</li>
+                      </ul>
+                    </div>
+
+                    <!-- 發票資訊 -->
+                    <div class="order-detail-indo-box">
+                      <p>發票資訊</p>
+                      <ul class="order-barcode-ul">
+                        <li>發票類型：手機載具</li>
+                        <li>手機條碼：/ABC123</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="order-more">
+                  <p>訂單詳情</p>
+                </div>
+              </div>
+
+              <!-- <div class="order-card"></div> 增加後續訂單 -->
+            </div>
+
+            <!-- 尚無訂單 -->
+            <div class="no-order-box">
+              <div class="no-order-image">
+                <img src="./images/order.svg" alt="尚無訂單" />
+              </div>
+              <p>尚無訂單記錄</p>
+            </div>
+
+            <!-- 繳款資訊 -->
+            <div class="remit">
+              <div class="remit-box">
+                <div class="remit-title">
+                  <h4>繳款資訊</h4>
+                  <span> (請在指定時間內繳款完成，逾期將會自動取消訂單)</span>
+                </div>
+
+                <div class="bake-code">
+                  <p class="title-test">銀行代號：</p>
+                  <p>808 (玉山銀行)</p>
+                </div>
+                <div class="virtual-account">
+                  <p class="title-test">虛擬帳號：</p>
+                  <p>3721493222554183</p>
+                </div>
+                <div class="payment-date">
+                  <p class="title-test">繳費期限：</p>
+                  <p>2023-08-10 23:59:59</p>
+                </div>
+                <div class="payment-amount">
+                  <p class="title-test">繳費金額：</p>
+                  <p>$3,700</p>
+                </div>
+
+                <div class="remit-goback-btn">
+                  <input type="button" value="返回" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------  載入 footer -----------------------  -->
+    <div class="footerpage"></div>
+
+    <!-- ----------------------- 導入JS ----------------------- -->
+    <!-- 套件 - jQuery -->
+    <script src="./vendors/jquery-3.7.0.min.js"></script>
+
+    <!-- 自定義的JS -->
+    <script src="./js/member-order.js"></script>
+  </body>
+</html>

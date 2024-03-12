@@ -1,0 +1,565 @@
+/* ----------------------- 滾輪外觀 ----------------------- */
+/* 註冊 */
+.register-radius-box::-webkit-scrollbar {
+  width: 6px;
+}
+.register-radius-box::-webkit-scrollbar-thumb {
+  background-color: rgba(218, 218, 218, 0.755);
+  border-radius: 10px;
+}
+
+.register-radius-box::-webkit-scrollbar-track {
+  background-color: initial;
+}
+
+/* 會員權利說明、個資法及隱私權相關規範、購物須知 */
+.membership-wrap .container::-webkit-scrollbar,
+.privacy-wrap .container::-webkit-scrollbar,
+.shop-wrap .container::-webkit-scrollbar {
+  width: 6px;
+}
+.membership-wrap .container::-webkit-scrollbar-thumb,
+.privacy-wrap .container::-webkit-scrollbar-thumb,
+.shop-wrap .container::-webkit-scrollbar-thumb {
+  background-color: rgba(218, 218, 218, 0.755);
+  border-radius: 10px;
+}
+
+.membership-wrap .container::-webkit-scrollbar-track,
+.privacy-wrap .container::-webkit-scrollbar-track,
+.shop-wrap .container::-webkit-scrollbar-track {
+  background-color: initial;
+}
+
+/* 背景(黑色遮蔽) */
+.register-popup-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 70%);
+  position: fixed;
+  top: 0px;
+  display: none;
+  z-index: 2;
+}
+
+/* ----------------------- 註冊 ----------------------- */
+.register-radius-box {
+  padding: 30px 40px;
+  overflow-y: auto;
+  max-height: 520px;
+  /* max-height: 600px; */
+  position: relative;
+}
+
+.register-wrap {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  border-radius: 5px;
+}
+
+.register-wrap .container {
+  width: 380px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 1px 5px 2px rgb(79 79 79 / 21%);
+  overflow: hidden;
+}
+
+.register {
+  position: relative;
+}
+
+/* 關閉視窗按鈕 */
+.register-close-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: absolute;
+  top: -36px;
+  right: -29px;
+}
+.register-close-btn:hover {
+  opacity: 0.7;
+}
+
+/* 標題 */
+.register > h2 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* 表單 */
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 輸入框 */
+input:focus,
+.gender-box > select:focus {
+  outline: none;
+  border: 1px solid #364772;
+}
+input::placeholder {
+  color: #d3d3d3;
+}
+
+.register-box > div {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.register-box > div > label {
+  color: #363636cc;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.register-box > div > input {
+  padding: 10px 20px 10px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+  border: 1px solid #9b9b9bcc;
+  margin: 0px;
+  cursor: pointer;
+  height: 39px;
+}
+.register-box > div > input:focus {
+  outline: none;
+  border: 1px solid #364772;
+}
+
+/* 帳號(E-mail) & 密碼 & 確認密碼 */
+.password-box,
+.check-password-box {
+  position: relative;
+}
+.register-box > div.password-box > input,
+.register-box > div.check-password-box > input {
+  padding: 10px 55px 10px 20px;
+}
+
+.account-box > input {
+  padding: 10px 20px 10px 20px;
+}
+
+.password-eye-icon {
+  position: absolute;
+  top: 37px;
+  right: 20px;
+  width: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.password-eye-icon:hover {
+  opacity: 0.7;
+}
+.password-eye-icon > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 性別 */
+.gender-box > select {
+  /* margin-top: 10px; */
+  padding: 10px 55px 10px 20px;
+  border-radius: 4px;
+  font-size: 15px;
+  border: 1px solid #9b9b9bcc;
+  height: 39px;
+}
+
+/* 是否同意 */
+.register-box > div.agreebox-box {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-items: center;
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+.register-box > div.agreebox-box > label {
+  margin: 0px;
+  margin-left: 10px;
+  /* cursor: pointer; */
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.agreebox-box > label > span {
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.agreebox-box > label > span:hover {
+  color: #364772;
+}
+
+/* 註冊按鈕 */
+.register-btn {
+  background-color: #364772;
+  padding: 10px 0px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  margin: 30px 0px;
+  transition: all 0.2s;
+}
+.register-btn:hover {
+  background-color: #243255;
+  cursor: pointer;
+}
+
+.register-function-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 立即登入 */
+.register-function-box {
+  margin: 10px 0px 20px 0px;
+}
+.register-function-box > a {
+  text-align: center;
+  transition: all 0.2s;
+  color: #a3a3a3;
+  font-size: 14px;
+  margin: 0px 7px;
+  white-space: nowrap;
+  position: relative;
+  cursor: pointer;
+}
+.register-function-box > a::after {
+  content: "|";
+  position: absolute;
+  right: -9px;
+}
+.register-function-box:hover > a::after {
+  color: #a3a3a3;
+}
+.register-function-box > a:last-child::after {
+  display: none;
+}
+.register-function-box > a:hover {
+  color: #737373;
+}
+
+/* --------------- 彈跳視窗(會員權利) --------------- */
+/* 背景(黑色遮蔽) */
+.membership-popup-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 70%);
+  position: fixed;
+  top: 0px;
+  display: none;
+  z-index: 2;
+}
+.membership-wrap {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  overflow-y: auto;
+}
+
+.membership-wrap .container {
+  /* width: 380px; */
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px 40px;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 1px 5px 2px rgb(79 79 79 / 21%);
+
+  /* max-height: 600px; */
+  max-height: 520px;
+  overflow-y: auto;
+}
+
+.membership {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 關閉視窗按鈕 */
+.membership-close-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: absolute;
+  top: -36px;
+  right: -29px;
+}
+.membership-close-btn:hover {
+  opacity: 0.7;
+}
+
+/* 標題 */
+.membership > h2 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-align: center;
+  margin-top: 20px;
+  border-bottom: 4px solid #364772ad;
+  padding-bottom: 10px;
+}
+
+.membership > p {
+  font-size: 15px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.popupUl-member > li > p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.member-close-btn {
+  color: #364772;
+  background-color: inherit;
+  border: 2px solid #364772;
+  padding: 10px 50px;
+  border-radius: 5px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  transition: all 0.2s;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.member-close-btn:hover {
+  color: white;
+  background-color: #364772;
+}
+
+/* --------------- 彈跳視窗(個資法及隱私權相關規範) --------------- */
+.privacy-wrap {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  overflow-y: auto;
+}
+
+.privacy-wrap .container {
+  /* width: 380px; */
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px 40px;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 1px 5px 2px rgb(79 79 79 / 21%);
+
+  max-height: 520px;
+  overflow-y: auto;
+}
+
+.privacy {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 標題 */
+.privacy > h2 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-align: center;
+  margin-top: 20px;
+  border-bottom: 4px solid #364772ad;
+  padding-bottom: 10px;
+}
+
+.privacy > p {
+  font-size: 15px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.popupUl-member > li > p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.privacy-close-btn {
+  color: #364772;
+  background-color: inherit;
+  border: 2px solid #364772;
+  padding: 10px 50px;
+  border-radius: 5px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  transition: all 0.2s;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.privacy-close-btn:hover {
+  color: white;
+  background-color: #364772;
+}
+
+/* --------------- 彈跳視窗(購物須知) --------------- */
+.shop-wrap {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  overflow-y: auto;
+}
+
+.shop-wrap .container {
+  /* width: 380px; */
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px 40px;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 1px 5px 2px rgb(79 79 79 / 21%);
+
+  max-height: 520px;
+  overflow-y: auto;
+}
+
+.shop {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 標題 */
+.shop > h2 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-align: center;
+  margin-top: 20px;
+  border-bottom: 4px solid #364772ad;
+  padding-bottom: 10px;
+}
+
+.shop > p {
+  font-size: 15px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.popupUl-member > li > p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.shop-close-btn {
+  color: #364772;
+  background-color: inherit;
+  border: 2px solid #364772;
+  padding: 10px 50px;
+  border-radius: 5px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  transition: all 0.2s;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.shop-close-btn:hover {
+  color: white;
+  background-color: #364772;
+}
+
+/* ----------------------- RWD ----------------------- */
+@media screen and (max-width: 992px) {
+  .membership-wrap > .container,
+  .privacy-wrap > .container,
+  .shop-wrap > .container {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .register-wrap .container {
+    width: 350px;
+  }
+  .membership > h2,
+  .privacy > h2,
+  .shop > h2 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .register-wrap .container {
+    width: 320px;
+  }
+
+  .register-radius-box,
+  .membership-wrap .container,
+  .privacy-wrap .container,
+  .shop-wrap .container {
+    max-height: 460px;
+  }
+
+  .membership-wrap .container,
+  .privacy-wrap .container,
+  .shop-wrap .container {
+    padding: 30px 30px;
+  }
+}

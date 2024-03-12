@@ -1,0 +1,1459 @@
+/* ----------------------- 首頁 ----------------------- */
+.index {
+  width: 100%;
+  padding-top: 125px;
+  overflow: hidden;
+}
+.index > .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.index > .swiper-container-banner > .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+}
+
+/* ----------------------- banner 輪播圖 ----------------------- */
+.swiper-container-banner > ul > .carousel-banner {
+  width: 1200px;
+  height: 450px;
+  margin: 0 auto;
+}
+.swiper-container-banner > ul > .carousel-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-container-banner > ul > .swiper-slide {
+  opacity: 30%;
+}
+.swiper-container-banner > ul > .swiper-slide.swiper-slide-active {
+  opacity: 1;
+}
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.scroll p {
+  margin-bottom: 8px;
+}
+.scroll-down-bg {
+  width: 2px;
+  height: 56px;
+  background-color: #eee;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.scroll-down {
+  width: 0.1rem;
+  height: 56px;
+  background-color: #efd06e;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-animation: scrollLoop 1.5s ease infinite;
+  animation: scrollLoop 1.5s ease infinite;
+}
+
+@keyframes scrollLoop {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  25% {
+    -webkit-transform: translateY(-80%);
+    transform: translateY(-80%);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  75% {
+    -webkit-transform: translateY(80%);
+    transform: translateY(80%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+}
+
+/* ----------------------- 課程嚴選 ----------------------- */
+.hot-course-section {
+  margin-top: 100px;
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto 0px auto;
+  width: 100%;
+}
+
+/* 課程標題區域 */
+.hot-course-title-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hot-course-title {
+  display: flex;
+  align-items: center;
+}
+.hot-course-title > h3 {
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 20px;
+  margin-right: 50px;
+}
+.hot-course-title > h3::before {
+  content: "";
+  background-image: url("../images/diamond.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.hot-course-title > h3::after {
+  content: "";
+  background-image: url("../images/diamond.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  right: -17px;
+  top: 5px;
+}
+
+.more-arrow-box {
+  /* margin-right: 120px; */
+  display: flex;
+  align-items: center;
+}
+
+.more-arrow-box > a {
+  border-bottom: 1px solid #364772;
+  font-size: 15px;
+  font-weight: 500;
+  color: #364772;
+  transition: all 0.2s;
+}
+.more-arrow-box > a:hover {
+  opacity: 0.8;
+}
+
+.hot-course-type {
+  display: flex;
+  align-items: center;
+}
+.hot-course-type > li {
+  color: #364772;
+  border: 2px solid #364772;
+  padding: 10px 20px;
+  border-radius: 3px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.hot-course-type > li:hover {
+  background-color: #364772;
+  color: white;
+}
+.hot-course-type > li:first-child {
+  margin-right: 10px;
+}
+.hot-course-type > .active {
+  background-color: #364772;
+  color: white;
+}
+
+/* 線上課程 & 募資課程 */
+.hot-course-card-box {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.swiper-container-hot-course {
+  display: none;
+}
+
+.course-card {
+  width: 285px;
+}
+.course-card:hover .course-image > img {
+  transform: scale(1.06);
+}
+.course-card:hover > a > h4 {
+  opacity: 0.8;
+}
+.course-image {
+  width: 100%;
+  position: relative;
+  padding-top: 55%;
+  overflow: hidden;
+}
+.course-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s;
+}
+.course-card > a > h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 0px;
+  line-height: 1.5;
+  transition: all 0.2s;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 48px;
+}
+
+.course-card > a > p {
+  font-size: 14px;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.course-card > a > p.location {
+  margin-left: 20px;
+  position: relative;
+  overflow: initial;
+}
+.course-card > a > p.location:before {
+  content: "";
+  background-image: url(../images/location.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: -20px;
+  top: 2px;
+}
+.course-card > a > p > span {
+  color: #a4a4a4;
+}
+
+.course-price-date-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.course-price {
+  display: flex;
+  align-items: center;
+}
+.course-price > .price {
+  font-weight: 600;
+  color: #364772;
+}
+.course-price > .original-price {
+  font-weight: 600;
+  color: #a4a4a4;
+  text-decoration: line-through;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.course-price-date-box > p {
+  color: #e56658;
+  font-size: 14px;
+  border: 1px solid #e56658;
+  border-radius: 3px;
+  font-weight: 500;
+  padding: 5px 5px;
+}
+
+/* 進度條 */
+.course-bar {
+  background-color: #dcdcdc;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.course-bar-progress {
+  background-color: #e56658;
+  width: 68%;
+  height: 5px;
+  border-radius: 5px;
+}
+
+.course-num-progress-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.course-num-progress-box > p {
+  font-size: 14px;
+  margin-left: 20px;
+}
+.course-num-progress-box > p::before {
+  content: "";
+  background-image: url("../images/students.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+
+/* ----------------------- 最新課程 ----------------------- */
+.course-section {
+  margin-top: 120px;
+  position: relative;
+  max-width: 1200px;
+  margin: 120px auto 0px auto;
+  width: 100%;
+}
+
+/* 課程標題區域 */
+.course-title-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.course-title {
+  display: flex;
+  align-items: center;
+}
+.course-title > h3 {
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 20px;
+  margin-right: 50px;
+}
+.course-title > h3::before {
+  content: "";
+  background-image: url("../images/diamond.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.course-title > h3::after {
+  content: "";
+  background-image: url("../images/diamond.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  right: -17px;
+  top: 5px;
+}
+
+.course-type {
+  display: flex;
+  align-items: center;
+}
+.course-type > li {
+  color: #364772;
+  border: 2px solid #364772;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.course-type > li:hover {
+  background-color: #364772;
+  color: white;
+}
+.course-type > li:first-child {
+  margin-right: 10px;
+}
+.course-type > li.active {
+  background-color: #364772;
+  color: white;
+}
+
+/* 線上課程 & 實體課程 */
+.swiper-container-course {
+  display: none;
+}
+
+.online-course-card-box {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.course-card {
+  width: 285px;
+}
+
+.course-price-score-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+.course-score-info-box {
+  display: flex;
+  align-items: center;
+}
+.course-price-score-box > .price {
+  font-weight: 600;
+  color: #364772;
+}
+.course-price-score-box > .price > span {
+  font-size: 14px;
+  color: #364772;
+}
+.course-score {
+  color: #f9bf4e;
+  font-weight: 500;
+  position: relative;
+  font-size: 15px;
+}
+.course-score::before {
+  content: "";
+  background-image: url("../images/star.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: -25px;
+  top: -1px;
+}
+.course-score-info-box > .now-learn {
+  color: #364772;
+  font-size: 14px;
+  border: 1px solid #364772;
+  border-radius: 3px;
+  font-weight: 500;
+  padding: 5px 5px;
+  margin-left: 10px;
+}
+
+.course-info-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 10px;
+}
+.course-info-box > p {
+  font-size: 14px;
+  margin-left: 20px;
+  line-height: 1.5;
+}
+
+.course-info-box > p:first-child:before {
+  content: "";
+  background-image: url("../images/students.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+.course-info-box > p:last-child {
+  position: relative;
+}
+.course-info-box > p:last-child:before {
+  content: "";
+  background-image: url("../images/time.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -20px;
+  top: 2.5px;
+}
+
+/* ----------------------- 專家嚴選 ----------------------- */
+.expert-section > .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+}
+
+.expert-section {
+  margin-top: 120px;
+  background-color: #f4f4f4;
+  padding: 100px 0px 150px 0px;
+}
+
+/* 專家標題區域 */
+.expert-title-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.expert-title {
+  display: flex;
+  align-items: center;
+}
+.expert-title > h3 {
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 20px;
+  margin-right: 50px;
+}
+.expert-title > h3::before {
+  content: "";
+  background-image: url("../images/diamond.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.expert-title > h3::after {
+  content: "";
+  background-image: url("../images/diamond.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  right: -17px;
+  top: 5px;
+}
+
+/* 專家 */
+.expert-card-box {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.expert-card {
+  transition: all 0.2s;
+}
+.expert-card:hover .expert-image {
+  opacity: 0.8;
+}
+.expert-card > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.expert-circle {
+  border: 1px solid #dbdbdb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 209px;
+  height: 209px;
+}
+.expert-image {
+  width: 193px;
+  height: 193px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+.expert-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.expert-card > a > h4 {
+  font-weight: 500;
+  margin: 10px 0px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.expert-card > a > p {
+  font-size: 15px;
+  color: #364772;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ----------------------- 新書聆聽 ----------------------- */
+.book-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 120px;
+  position: relative;
+  width: 100%;
+}
+
+/* 課程標題區域 */
+.book-title-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.book-title {
+  display: flex;
+  align-items: center;
+}
+.book-title > h3 {
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 20px;
+  margin-right: 50px;
+}
+.book-title > h3::before {
+  content: "";
+  background-image: url("../images/diamond.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.book-title > h3::after {
+  content: "";
+  background-image: url("../images/diamond.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  right: -17px;
+  top: 5px;
+}
+
+/* 課程 */
+.book-card-box {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.book-card {
+  border: 1px solid #dcdcdc;
+  width: 226px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 13px 13px;
+  border-radius: 3px;
+}
+.book-card > a {
+  width: 100%;
+}
+.book-card:hover .book-image > img {
+  transform: scale(1.06);
+}
+.book-card:hover > a > h4 {
+  opacity: 0.8;
+}
+.book-image {
+  width: 100%;
+  position: relative;
+  padding-top: 100%;
+  overflow: hidden;
+}
+.book-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s;
+}
+.book-card > a > h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 0px;
+  line-height: 1.5;
+  width: 100%;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.book-card > a > p {
+  font-size: 14px;
+  width: 100%;
+  line-height: 1.5;
+  height: 42px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.book-price-learn-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+.book-date-score-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+.book-price-learn-box > .price {
+  font-weight: 600;
+  color: #364772;
+}
+.book-price-learn-box > .now-learn {
+  color: #364772;
+  font-size: 14px;
+  border: 1px solid #364772;
+  border-radius: 3px;
+  font-weight: 500;
+  padding: 5px 5px;
+  margin-left: 10px;
+}
+
+.book-score {
+  color: #f9bf4e;
+  font-weight: 500;
+  position: relative;
+}
+.book-score::before {
+  content: "";
+  background-image: url("../images/star.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: -20px;
+  top: -1px;
+}
+
+.book-date-score-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 10px;
+}
+.book-date-score-box > p {
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.book-date-score-box > p:first-child:before {
+  content: "";
+  background-image: url("../images/time.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+
+/* ----------------------- 精選文章 & 最新消息 ----------------------- */
+.article-news-section {
+  margin-top: 160px;
+  position: relative;
+  padding: 100px 0px;
+}
+.article-bg {
+  background-color: #f4f4f4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 54%;
+  height: 100%;
+  z-index: -1;
+}
+.article-news-section > .container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+/* --------- 精選文章 --------- */
+.article-box {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.article-title > h3 {
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 20px;
+  margin-right: 50px;
+}
+.article-title > h3::before {
+  content: "";
+  background-image: url("../images/diamond.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.article-title > h3::after {
+  content: "";
+  background-image: url("../images/diamond.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  right: -17px;
+  top: 5px;
+}
+
+/* 文章 */
+.article-card-box {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.article-card {
+  width: 285px;
+  margin-bottom: 50px;
+}
+.article-card:hover .article-image > img {
+  transform: scale(1.06);
+}
+.article-card:hover > a > h4 {
+  opacity: 0.8;
+}
+.article-card:nth-child(3),
+.article-card:nth-child(4) {
+  margin-bottom: 0;
+}
+.article-image {
+  width: 100%;
+  position: relative;
+  padding-top: 55%;
+  overflow: hidden;
+}
+.article-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s;
+}
+.article-card > a > h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 0px;
+  line-height: 1.5;
+  width: 100%;
+  transition: all 0.2s;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 48px;
+}
+
+.article-card > a > .date {
+  font-size: 14px;
+  width: 100%;
+  line-height: 1.5;
+  color: #828282;
+  margin-top: 10px;
+}
+.article-card > a > .teacher {
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.article-card > a > .teacher > span {
+  color: #a4a4a4;
+}
+
+.article-box > .more {
+  color: #364772;
+  border-radius: 3px;
+  border: 1.5px solid #364772;
+  padding: 10px 15px;
+  display: inline-block;
+  margin-top: 50px;
+  transition: all 0.2s;
+}
+.article-box > .more:hover {
+  background-color: #364772;
+  color: white;
+}
+
+/* --------- 最新消息 --------- */
+.news-box {
+  width: 40%;
+}
+.news-box > .container {
+  text-align: center;
+}
+.news-title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.news-title > h3 {
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 20px;
+  margin-right: 50px;
+}
+.news-title > h3::before {
+  content: "";
+  background-image: url("../images/diamond.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.news-title > h3::after {
+  content: "";
+  background-image: url("../images/diamond.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  right: -17px;
+  top: 5px;
+}
+
+/* 消息 */
+.news-card-box {
+  margin-top: 30px;
+  /* display: none; */
+}
+.news-card {
+  margin-bottom: 22px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.news-card:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.news-card:hover .news-info-box > h4 {
+  color: #364772;
+}
+.news-card > a {
+  display: flex;
+}
+.news-num > p {
+  font-size: 35px;
+  font-weight: 500;
+  width: 52px;
+  text-align: left;
+  color: #364772;
+}
+
+.news-info-box {
+  font-size: 14px;
+  width: 100%;
+  line-height: 1.5;
+  color: #828282;
+  text-align: left;
+}
+.news-info-box > h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+  line-height: 1.5;
+  width: 100%;
+  transition: all 0.2s;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 48px;
+}
+
+.news-box > .container > .more {
+  color: #364772;
+  border-radius: 3px;
+  border: 1.5px solid #364772;
+  padding: 10px 15px;
+  display: inline-block;
+  margin-top: 80px;
+  text-align: center;
+  transition: all 0.2s;
+  /* display: none; */
+}
+.news-box > .container > .more:hover {
+  background-color: #364772;
+  color: white;
+}
+
+/* 尚無公告 */
+.no-announcement {
+  padding: 180px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(244 244 244 / 40%);
+  border-radius: 3px;
+  margin-top: 50px;
+  display: none;
+}
+.no-announcement-img {
+  width: 90px;
+}
+.no-announcement-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.no-announcement > p {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #909090;
+}
+
+/* ----------------------- 輪播圖 ----------------------- */
+.swiper-box {
+  position: relative;
+}
+.swiper-container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.swiper-container > .swiper-slide__content {
+  position: absolute;
+  top: 0;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "";
+}
+.swiper-button-prev {
+  background-image: url("../images/arrow-pre.svg");
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: initial;
+  right: 140px;
+  top: 24px;
+  transition: all 0.2s;
+  z-index: 1;
+}
+.swiper-container-banner > .container > .swiper-button-prev {
+  background-image: url("../images/banner-arrow-pre.svg");
+  left: 40px;
+  right: initial;
+  top: -200px;
+}
+.swiper-container-banner > .container > .swiper-button-next {
+  background-image: url("../images/banner-arrow-next.svg");
+  top: -225px;
+  right: 40px;
+}
+
+.swiper-button-next {
+  background-image: url("../images/arrow-next.svg");
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: 90px;
+  top: 24px;
+  transition: all 0.2s;
+  z-index: 1;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 0.7;
+}
+
+.swiper-container-expert > .swiper-button-prev,
+.swiper-container-expert > .swiper-button-next {
+  top: 16px;
+}
+.swiper-container-book > .swiper-button-prev,
+.swiper-container-book > .swiper-button-next {
+  top: 16px;
+}
+
+/* 分頁 */
+.swiper-container-banner > .container > .swiper-pagination {
+  bottom: 20px !important;
+}
+.swiper-pagination {
+  position: absolute;
+  top: initial;
+  bottom: -50px !important;
+  right: 10px;
+  width: auto !important;
+  /* left: auto !important; */
+  left: 50% !important;
+  transform: translateX(-50%);
+  margin: 0;
+}
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 4px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #efd06e;
+  width: 24px;
+}
+
+/* ----------------------- RWD ----------------------- */
+@media screen and (max-width: 1280px) {
+  .index > .swiper-container-banner > .container {
+    width: 880px;
+  }
+  .swiper-container-banner > ul > .carousel-banner {
+    width: 880px;
+    height: 400px;
+  }
+  .hot-course-section {
+    margin-top: 100px;
+  }
+  .expert-section {
+    padding: 100px 40px;
+  }
+  .article-news-section {
+    padding: 100px 40px;
+  }
+
+  .index > .container {
+    padding: 0px 40px;
+  }
+  .article-card {
+    width: 48%;
+  }
+
+  .news-box > .container > .more {
+    margin-top: 50px;
+  }
+
+  .swiper-container-banner > .container > .swiper-button-next {
+    top: -150px;
+  }
+  .swiper-container-banner > .container > .swiper-button-prev {
+    top: -150px;
+  }
+
+  .online-course-card-box > li > a > .course-price-score-box {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .index {
+    padding-top: 75px;
+  }
+  .swiper-container-banner > ul > .carousel-banner {
+    width: 100%;
+    height: 300px;
+  }
+  .index > .swiper-container-banner > .container {
+    width: 100%;
+  }
+  .swiper-container-banner > .container > .swiper-button-next {
+    top: -150px;
+  }
+  .swiper-container-banner > .container > .swiper-button-prev {
+    top: -150px;
+  }
+
+  .article-bg {
+    width: 100%;
+    height: 52%;
+  }
+  .article-news-section > .container {
+    flex-direction: column;
+  }
+  .article-box {
+    width: 100%;
+    margin-bottom: 200px;
+  }
+  .news-box {
+    width: 100%;
+  }
+  .news-box > .container > .more {
+    margin-top: 50px;
+  }
+  .scroll {
+    display: none;
+  }
+
+  .course-price-date-box {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .course-price {
+    margin-top: 10px;
+  }
+  .course-score {
+    font-size: 14px;
+  }
+  .course-score::before {
+    width: 16px;
+    height: 16px;
+    left: -20px;
+  }
+
+  .course-price-score-box {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+  .course-score-info-box {
+    margin-bottom: 10px;
+  }
+  .course-score-info-box > p {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .expert-section > .container {
+    margin-right: -40px;
+  }
+  .book-section {
+    margin-right: -40px;
+  }
+  .swiper-container {
+    padding-right: 40px;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+  .index > .container {
+    padding: 0px 40px 0px 2px;
+  }
+  .expert-section {
+    padding: 100px 40px 100px 40px;
+  }
+  .more-arrow-box {
+    margin-right: 40px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next,
+  .swiper-pagination {
+    display: none;
+  }
+  .course-section {
+    margin-right: -40px;
+  }
+  .hot-course-section {
+    margin-right: -40px;
+  }
+  .index > div > .container > .swiper-button-next {
+    display: inline-block;
+  }
+  .index > div > .container > .swiper-button-prev {
+    display: inline-block;
+  }
+  .index > div > .container > .swiper-pagination {
+    display: inline-block;
+  }
+  .course-score {
+    font-size: 16px;
+  }
+  .course-score::before {
+    width: 18px;
+    height: 18px;
+    left: -25px;
+  }
+
+  .course-score-info-box > p {
+    margin-left: 25px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .article-card {
+    width: 100%;
+  }
+  .article-card:nth-child(3) {
+    margin-bottom: 50px;
+  }
+  .article-bg {
+    height: 65%;
+  }
+  .article-news-section {
+    padding: 100px 25px;
+  }
+  .expert-section {
+    padding: 100px 25px 100px 25px;
+  }
+  .index > .container {
+    padding: 0px 25px 0px 2px;
+  }
+
+  .book-section {
+    margin-right: -25px;
+  }
+  .swiper-container {
+    padding-right: 25px;
+  }
+  .expert-title-box > .more-arrow-box {
+    margin-right: 40px;
+  }
+  .course-section {
+    margin-right: -25px;
+  }
+  .hot-course-section {
+    margin-right: -25px;
+  }
+  .swiper-container-banner > ul > .carousel-banner {
+    height: 250px;
+  }
+  .index > div > .container > .swiper-button-next {
+    display: none;
+  }
+  .index > div > .container > .swiper-button-prev {
+    display: none;
+  }
+  .hot-course-title-box,
+  .course-title-box {
+    align-items: flex-end;
+  }
+  .hot-course-type,
+  .course-type {
+    margin-top: 20px;
+  }
+  .hot-course-title,
+  .course-title {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .more-arrow-box {
+    margin-right: 25px;
+    margin-bottom: 12px;
+  }
+  .more-arrow-box > a {
+    white-space: nowrap;
+  }
+
+  .course-price-score-box {
+    flex-direction: row;
+    align-items: center;
+  }
+  .course-score-info-box {
+    margin-bottom: 0;
+  }
+  .course-score-info-box > p {
+    margin-left: 25px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .expert-circle {
+    width: 209px;
+    height: 209px;
+  }
+  .expert-image {
+    width: 191px;
+    height: 191px;
+  }
+  .swiper-container-banner > ul > .carousel-banner {
+    height: 210px;
+  }
+  .hot-course-type > li,
+  .course-type > li {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+  .more-arrow-box > a,
+  .more-arrow-box > a {
+    font-size: 14px;
+  }
+
+  .news-info-box > h4 {
+    font-size: 15px;
+    height: 45px;
+  }
+  .news-box > .container > .more,
+  .article-box > .more {
+    font-size: 15px;
+  }
+  .hot-course-section {
+    margin-top: 70px;
+  }
+}

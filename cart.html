@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>購物車</title>
+
+    <!-- ----------------------- 導入css ----------------------- -->
+    <!-- 自訂義的css -->
+    <link rel="stylesheet" href="./css/cart.css" />
+  </head>
+
+  <body>
+    <!-- -----------------------  載入 header -----------------------  -->
+    <div class="headerpage"></div>
+
+    <!-- ----------------------- 購物車 ----------------------- -->
+    <section class="carts-bg">
+      <div class="carts">
+        <div class="container">
+          <h3>購物車</h3>
+
+          <form action="" class="carts-main-box">
+            <!--  ----------------------- 購物車清單 ----------------------- -->
+            <ul class="carts-ul">
+              <li class="course-card online-course">
+                <input class="checkbox" type="checkbox" />
+                <a href="">
+                  <div class="course-image">
+                    <img src="./images/course03.jpg" alt="" />
+                  </div>
+
+                  <div class="course-info-box">
+                    <p>線上課程：已開課</p>
+                    <h4>世界冠軍甜點學｜法式經典配方 X 異國創意風味</h4>
+
+                    <div class="course-price-btn-box">
+                      <p>NT$ 2,300</p>
+                      <button class="delete-btn">
+                        <img src="./images/delete.svg" alt="" />
+                        <p>刪除</p>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="course-card pre-order-course">
+                <input class="checkbox" type="checkbox" />
+                <a href="">
+                  <div class="course-image">
+                    <img src="./images/preOrder-course02.jpg" alt="" />
+                  </div>
+
+                  <div class="course-info-box">
+                    <p>線上課程：募資中</p>
+                    <h4>畫出手感水彩插畫：小動物們的午後喫茶派對</h4>
+
+                    <div class="course-price-btn-box">
+                      <p>NT$ 2,600</p>
+                      <button class="delete-btn">
+                        <img src="./images/delete.svg" alt="" />
+                        <p>刪除</p>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="course-card book-course">
+                <input class="checkbox" type="checkbox" />
+                <a href="">
+                  <div class="course-image">
+                    <img src="./images/book.jpg" alt="" />
+                  </div>
+
+                  <div class="course-info-box">
+                    <p>新書聆聽：已開課</p>
+                    <h4>小王子</h4>
+
+                    <div class="course-price-btn-box">
+                      <p>NT$ 320</p>
+                      <button class="delete-btn">
+                        <img src="./images/delete.svg" alt="" />
+                        <p>刪除</p>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+            <!--  ----------------------- 空的購物車 ----------------------- -->
+            <div class="null-carts">
+              <div class="null-carts-img">
+                <img src="./images/null-cart.svg" alt="" />
+              </div>
+              <p>購物車是空的，去逛逛吧！</p>
+              <a class="back-btn" href="./index.html">前往首頁</a>
+            </div>
+
+            <!-- ----------------------- 結帳 ----------------------- -->
+            <div class="checkout-box">
+              <h3>訂單明細</h3>
+              <div class="price-box">
+                <p>小計</p>
+                <span>NT$ 5,220</span>
+              </div>
+              <a href="./checkout.html" class="checkout-btn">前往結帳</a>
+              <!-- <input class="checkout-btn" type="submit" value="前往結帳" /> -->
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------  載入 footer -----------------------  -->
+    <div class="footerpage"></div>
+
+    <!-- ----------------------- 導入JS ----------------------- -->
+    <!-- 套件 - jQuery -->
+    <script src="./vendors/jquery-3.7.0.min.js"></script>
+
+    <!-- 自定義的JS -->
+    <script src="./js/cart.js"></script>
+  </body>
+</html>

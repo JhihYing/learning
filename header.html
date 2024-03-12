@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>header</title>
+
+    <!-- ----------------------- 導入css ----------------------- -->
+    <!-- 套件 - 漢堡選單 -->
+    <link rel="stylesheet" href="./vendors/hamburgers/hamburgers.min.css" />
+
+    <!-- css 初始化 -->
+    <link rel="stylesheet" href="./css/reset.css" />
+
+    <!-- 自訂義的 css -->
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/register.css" />
+  </head>
+
+  <body>
+    <!-- ----------------------- header ----------------------- -->
+    <header class="header">
+      <div class="container">
+        <div class="nav-main">
+          <!-- logo、導覽列 -->
+          <div class="left-box">
+            <!-- ----------------------- logo ----------------------- -->
+            <a class="logo" href="./index.html">
+              <img src="./images/logo.svg" alt="" />
+            </a>
+
+            <!-- ----------------------- 導覽列 ----------------------- -->
+            <ul class="nav-box">
+              <li class="nav-category">
+                <a class="nav-category-title">
+                  <p>課程類別</p>
+                  <div class="nav-arrow-icon">
+                    <img src="./images/nav-arrow-down.svg" alt="箭頭" />
+                  </div>
+                </a>
+
+                <!-- 下拉式選單 -->
+                <div class="nav-dropdown">
+                  <!-- 分類 -->
+                  <div class="nav-category-box">
+                    <ul class="nav-category-ul">
+                      <li>
+                        <a href="./all-course.html">所有分類</a>
+                      </li>
+                      <li>
+                        <p>語言學習</p>
+                        <div class="nav-dropdown-arrow-icon">
+                          <img src="./images/nav-arrow-right.svg" alt="箭頭" />
+                        </div>
+
+                        <!-- 分類細項 -->
+                        <div class="nav-category-details-box">
+                          <ul class="nav-category-details-ul">
+                            <li>
+                              <a href="">所有 語言學習</a>
+                            </li>
+                            <li>
+                              <a href="">中文</a>
+                            </li>
+                            <li>
+                              <a href="">英文</a>
+                            </li>
+                            <li>
+                              <a href="">日文</a>
+                            </li>
+                            <li>
+                              <a href="">韓文</a>
+                            </li>
+                            <li>
+                              <a href="">法文</a>
+                            </li>
+                            <li>
+                              <a href="">其他</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <p>投資理財</p>
+                        <div class="nav-dropdown-arrow-icon">
+                          <img src="./images/nav-arrow-right.svg" alt="箭頭" />
+                        </div>
+
+                        <!-- 分類細項 -->
+                        <div class="nav-category-details-box">
+                          <ul class="nav-category-details-ul">
+                            <li>
+                              <a href="">所有 投資理財</a>
+                            </li>
+                            <li>
+                              <a href="">當沖</a>
+                            </li>
+                            <li>
+                              <a href="">區塊鏈</a>
+                            </li>
+                            <li>
+                              <a href="">美股投資</a>
+                            </li>
+                            <li>
+                              <a href="">盤勢分析</a>
+                            </li>
+                            <li>
+                              <a href="">技術分析</a>
+                            </li>
+                            <li>
+                              <a href="">ETF</a>
+                            </li>
+                            <li>
+                              <a href="">房地產</a>
+                            </li>
+                            <li>
+                              <a href="">其他</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <p>生活品味</p>
+                        <div class="nav-dropdown-arrow-icon">
+                          <img src="./images/nav-arrow-right.svg" alt="箭頭" />
+                        </div>
+
+                        <!-- 分類細項 -->
+                        <div class="nav-category-details-box">
+                          <ul class="nav-category-details-ul">
+                            <li>
+                              <a href="">所有 生活品味</a>
+                            </li>
+                            <li>
+                              <a href="">健康</a>
+                            </li>
+                            <li>
+                              <a href="">攝影</a>
+                            </li>
+                            <li>
+                              <a href="">DIY 手作</a>
+                            </li>
+                            <li>
+                              <a href="">旅遊</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <a href="./expert.html">專家嚴選</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 搜尋、我的學習、購物車、小鈴鐺、會員 -->
+          <div class="right-box">
+            <!-- --------- 搜尋 --------- -->
+            <div class="search">
+              <input type="text" placeholder="今天想學點什麼？" />
+              <div class="search-img">
+                <img src="./images/search.svg" alt="搜尋" />
+              </div>
+            </div>
+
+            <!-- 搜尋 (RWD顯示) -->
+            <a class="search-rwd">
+              <div class="search-img-rwd">
+                <img src="./images/search-rwd.svg" alt="搜尋" />
+              </div>
+            </a>
+
+            <section class="search-rwd-open">
+              <div class="search-rwd-box">
+                <div class="search-title">
+                  <p>想找什麼嗎？</p>
+                  <button
+                    class="search-close-btn"
+                    id="search-close"
+                    type="button"
+                  >
+                    ✕
+                  </button>
+                </div>
+
+                <div class="search-box">
+                  <input type="text" placeholder="今天想學點什麼？" />
+                  <div class="search-rwd-img">
+                    <img src="./images/search-black.svg" alt="搜尋" />
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- 登入後才顯示 -->
+            <a
+              href="./member-learning.html"
+              class="nav-learn login-afrer-toggleShow"
+              >我的學習</a
+            >
+
+            <!-- --------- 購物車 --------- -->
+            <a href="./cart.html" class="cart">
+              <div class="cart-icon">
+                <img src="./images/cart.svg" alt="購物車" />
+              </div>
+              <div class="cart-notice">
+                26
+                <!-- <p>26</p> -->
+              </div>
+            </a>
+
+            <!-- --------- 小鈴鐺 --------- -->
+            <a href="./notification.html" class="bell">
+              <div class="bell-icon">
+                <img src="./images/bell.svg" alt="最新消息/通知" />
+              </div>
+              <div class="bell-notice"></div>
+            </a>
+
+            <!-- --------- 登入前 --------- -->
+            <div class="login-before-box">
+              <p class="login" id="login">登入</p>
+              <p class="sign-up" id="signUp">註冊</p>
+            </div>
+
+            <!-- --------- 登入後 --------- -->
+            <div class="login-after-box login-afrer-toggleShow">
+              <div class="member-icon">
+                <img src="./images/member.svg" alt="會員" />
+              </div>
+
+              <!-- 下拉式選單 -->
+              <ul class="member-dropdown">
+                <li class="nav-member-info">
+                  <p>鄭允源</p>
+                  <p>tkb0001234@gmail.com</p>
+                </li>
+                <li>
+                  <a href="./member-learning.html">我的學習</a>
+                </li>
+                <li>
+                  <a href="./member-order.html">訂單記錄</a>
+                </li>
+                <li>
+                  <a href="./member-personal.html">個人檔案</a>
+                </li>
+                <li class="nav-sign-out">登出</li>
+              </ul>
+            </div>
+
+            <!-- ----------------------- 漢堡選單(RWD顯示) ----------------------- -->
+            <button
+              class="hamburger hamburger--slider"
+              id="hamburger"
+              type="button"
+            >
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+
+            <!-- 漢堡選單(展開) -->
+            <div class="rwd-bg"></div>
+
+            <!-- --------- 主選單 --------- -->
+
+            <div class="hamburger-bg"></div>
+
+            <section class="hamburger-open">
+              <!-- 會員(登入後，才顯示) -->
+              <div class="rwd-nav-member-box" id="handleGoMember">
+                <div class="rwd-nav-member-info">
+                  <p>鄭允源</p>
+                  <p>tkb0001234@gmail.com</p>
+                </div>
+                <div class="rwd-nav-dropdown-arrow-icon">
+                  <img src="./images/nav-arrow-right.svg" alt="箭頭" />
+                </div>
+              </div>
+
+              <!-- 登入 / 註冊 -->
+              <div class="rwd-nav-login-register">
+                <p class="login" id="login-rwd">登入</p>
+                <p class="sign-up" id="signUp-rwd">註冊</p>
+              </div>
+
+              <!-- 我的學習 -->
+              <a href="./member-learning.html" class="rwd-nav-learn"
+                >我的學習</a
+              >
+
+              <!-- 專家嚴選 -->
+              <a href="./expert.html" class="rwd-nav-expert">專家嚴選</a>
+
+              <!-- 課程類別 -->
+              <div class="rwd-nav-category-box">
+                <p>課程類別</p>
+                <ul class="rwd-nav-category-ul">
+                  <li>
+                    <a href="./all-course.html">所有分類</a>
+                  </li>
+                  <li>
+                    <p>語言學習</p>
+                    <div class="rwd-nav-dropdown-arrow-icon">
+                      <img src="./images/nav-arrow-right.svg" alt="箭頭" />
+                    </div>
+                  </li>
+                  <li>
+                    <p>投資理財</p>
+                    <div class="rwd-nav-dropdown-arrow-icon">
+                      <img src="./images/nav-arrow-right.svg" alt="箭頭" />
+                    </div>
+                  </li>
+                  <li>
+                    <p>生活品味</p>
+                    <div class="rwd-nav-dropdown-arrow-icon">
+                      <img src="./images/nav-arrow-right.svg" alt="箭頭" />
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- --------- 會員專區選單 --------- -->
+            <section class="hamburger-open-member">
+              <!-- 返回主選單 -->
+              <div class="rwd-nav-back-box" id="handleGoMainNav01">
+                <div class="rwd-nav-back-arrow-icon">
+                  <img src="./images/nav-arrow-right.svg" alt="箭頭" />
+                </div>
+                <p>返回 主選單</p>
+              </div>
+
+              <!-- 選單 -->
+              <ul class="rwd-member-dropdown">
+                <li>
+                  <a href="">訂單記錄</a>
+                </li>
+                <li>
+                  <a href="">個人檔案</a>
+                </li>
+                <li class="rwd-nav-sign-out">登出</li>
+              </ul>
+            </section>
+
+            <!-- --------- 課程類別(細項)選單 --------- -->
+            <section class="hamburger-open-course-details">
+              <!-- 返回主選單 -->
+              <div class="rwd-nav-back-box" id="handleGoMainNav02">
+                <div class="rwd-nav-back-arrow-icon">
+                  <img src="./images/nav-arrow-right.svg" alt="箭頭" />
+                </div>
+                <p>返回 主選單</p>
+              </div>
+
+              <!-- 選單 -->
+              <div class="rwd-nav-category-details-box">
+                <!-- 語言學習 -->
+                <ul
+                  class="rwd-nav-category-details-ul"
+                  id="rwd-language-learning"
+                >
+                  <li>
+                    <a href="">所有 語言學習</a>
+                  </li>
+                  <li>
+                    <a href="">中文</a>
+                  </li>
+                  <li>
+                    <a href="">英文</a>
+                  </li>
+                  <li>
+                    <a href="">日文</a>
+                  </li>
+                  <li>
+                    <a href="">韓文</a>
+                  </li>
+                  <li>
+                    <a href="">法文</a>
+                  </li>
+                  <li>
+                    <a href="">其他</a>
+                  </li>
+                </ul>
+
+                <!-- 投資理財 -->
+                <ul
+                  class="rwd-nav-category-details-ul"
+                  id="rwd-investment-learning"
+                >
+                  <li>
+                    <a href="">所有 投資理財</a>
+                  </li>
+                  <li>
+                    <a href="">當沖</a>
+                  </li>
+                  <li>
+                    <a href="">區塊鏈</a>
+                  </li>
+                  <li>
+                    <a href="">美股投資</a>
+                  </li>
+                  <li>
+                    <a href="">盤勢分析</a>
+                  </li>
+                  <li>
+                    <a href="">技術分析</a>
+                  </li>
+                  <li>
+                    <a href="">ETF</a>
+                  </li>
+                  <li>
+                    <a href="">房地產</a>
+                  </li>
+                  <li>
+                    <a href="">其他</a>
+                  </li>
+                </ul>
+
+                <!-- 生活品味 -->
+                <ul class="rwd-nav-category-details-ul" id="rwd-life-learning">
+                  <li>
+                    <a href="">所有 生活品味</a>
+                  </li>
+                  <li>
+                    <a href="">健康</a>
+                  </li>
+                  <li>
+                    <a href="">攝影</a>
+                  </li>
+                  <li>
+                    <a href="">DIY 手作</a>
+                  </li>
+                  <li>
+                    <a href="">旅遊</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ----------------------- 登入 ----------------------- -->
+    <!-- 背景(黑色遮蔽) -->
+    <div class="popup-bg"></div>
+
+    <section class="login-wrap">
+      <div class="container">
+        <div class="login">
+          <!-- 關閉視窗按鈕 -->
+          <button class="login-close-btn" id="login-close-btn" type="button">
+            ✕
+          </button>
+
+          <!-- 標題 -->
+          <h2>會員登入</h2>
+
+          <!-- 表單 -->
+          <form action="" class="login-form">
+            <!-- 輸入框 (帳號、密碼) -->
+            <div class="account-password-box">
+              <div class="account-box">
+                <label for="account">帳號</label>
+                <input
+                  id="account"
+                  type="text"
+                  placeholder="輸入帳號"
+                  required
+                />
+              </div>
+
+              <div class="password-box">
+                <label for="password">密碼</label>
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="輸入密碼"
+                  required
+                />
+                <div class="password-eye-icon" id="handlePassword">
+                  <img src="./images/hide-password.svg" alt="密碼隱藏" />
+                </div>
+              </div>
+            </div>
+
+            <!-- 登入按鈕 -->
+            <input class="login-btn" type="submit" value="登入" />
+
+            <!-- 忘記密碼 & 未收到驗證碼 & 立即註冊 -->
+            <div class="login-function-box">
+              <!-- 忘記密碼 -->
+              <a class="forgot-password" href="">忘記密碼</a>
+
+              <!-- 未收到驗證碼 -->
+              <!-- <a class="verify-code" href="">未收到驗證碼</a> -->
+
+              <!-- 立即註冊 -->
+              <a class="register-now">立即註冊</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------- 註冊 ----------------------- -->
+    <!-- 背景(黑色遮蔽) -->
+    <div class="register-popup-bg"></div>
+
+    <section class="register-wrap">
+      <div class="container">
+        <div class="register-radius-box">
+          <div class="register">
+            <!-- 關閉視窗按鈕 -->
+            <button
+              class="register-close-btn"
+              id="register-close"
+              type="button"
+            >
+              ✕
+            </button>
+
+            <!-- 標題 -->
+            <h2>會員註冊</h2>
+
+            <!-- 表單 -->
+            <form action="" class="register-form">
+              <!-- 輸入框 -->
+              <div class="register-box">
+                <!-- 帳號 -->
+                <div class="account-box">
+                  <label for="register-account">帳號(E-mail)</label>
+                  <input
+                    id="register-account"
+                    type="email"
+                    placeholder="輸入帳號(E-mail)"
+                    required
+                  />
+                </div>
+
+                <!-- 密碼 -->
+                <div class="password-box">
+                  <label for="register-password">密碼</label>
+                  <input
+                    id="register-password"
+                    type="password"
+                    placeholder="輸入密碼"
+                    required
+                  />
+                  <div class="password-eye-icon" id="handleRegisterPassword">
+                    <img src="./images/hide-password.svg" alt="密碼隱藏" />
+                  </div>
+                </div>
+
+                <!-- 確認密碼 -->
+                <div class="check-password-box">
+                  <label for="check-password">確認密碼</label>
+                  <input
+                    id="check-password"
+                    type="password"
+                    placeholder="輸入確認密碼"
+                    required
+                  />
+                  <div
+                    class="password-eye-icon"
+                    id="handleCheckRegisterPassword"
+                  >
+                    <img src="./images/hide-password.svg" alt="密碼隱藏" />
+                  </div>
+                </div>
+
+                <!-- 真實姓名 -->
+                <div class="name-box">
+                  <label for="name">姓名</label>
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="輸入姓名"
+                    required
+                  />
+                </div>
+
+                <!-- 性別 -->
+                <div class="gender-box">
+                  <label for="gender">性別</label>
+                  <select id="gender" name="gender">
+                    <option value="" disabled selected>請選擇</option>
+                    <option value="male">男性</option>
+                    <option value="female">女性</option>
+                    <option value="other">其他/不公開</option>
+                  </select>
+                </div>
+
+                <!-- 手機 -->
+                <div class="phone-box">
+                  <label for="phone">行動電話</label>
+                  <input
+                    id="phone"
+                    type="text"
+                    placeholder="輸入行動電話"
+                    required
+                  />
+                </div>
+
+                <!-- 生日 -->
+                <div class="birthday-box">
+                  <label for="birthday">生日</label>
+                  <input
+                    id="birthday"
+                    type="date"
+                    placeholder="輸入行動電話"
+                    required
+                  />
+                </div>
+
+                <!-- 是否同意 -->
+                <div class="agreebox-box">
+                  <input type="checkbox" id="agree" required />
+                  <label
+                    >已閱讀且同意
+                    <span class="memberNotice">會員權利說明</span>，並已瞭解
+                    <span class="privacyNotice">個資法及隱私權相關規範</span>、
+                    <span class="shopNotice">購物須知</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- 註冊按鈕 -->
+              <input class="register-btn" type="submit" value="註冊" />
+
+              <div class="register-function-box">
+                <!-- 立即登入 -->
+                <a class="login-info">立即登入</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------- 彈跳視窗(會員權利說明) --------------- -->
+    <!-- 背景(黑色遮蔽) -->
+    <div class="membership-popup-bg"></div>
+
+    <section class="membership-wrap">
+      <div class="container">
+        <div class="membership">
+          <!-- 關閉視窗按鈕 -->
+          <!-- <button
+            class="membership-close-btn"
+            id="membership-close-btn"
+            type="button"
+          >
+            ✕
+          </button> -->
+
+          <!-- 標題 -->
+          <h2>會員權利說明</h2>
+
+          <p>
+            非常歡迎您光臨「線上商城」（以下簡稱本網站），為了讓您能夠安心使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障您的權益，請您詳閱下列內容：
+          </p>
+          <ul class="popupUl-member">
+            <li>
+              <p>
+                一、隱私權保護政策的適用範圍
+                隱私權保護政策內容，包括本網站如何處理在您使用網站服務時收集到的個人識別資料。隱私權保護政策不適用於本網站以外的相關連結或網站（包括但不限於經由本網站所連結所至者）。
+              </p>
+            </li>
+            <li>
+              <p>
+                二、個人資料的蒐集、處理及利用方式
+                當您造訪本網站或使用本網站所提供之功能服務時，我們將視該服務功能性質，請您提供必要的個人資料，並在該特定目的範圍內處理及利用您的個人資料；非經您書面同意，本網站不會將個人資料用於其他用途。
+                本網站在您使用服務信箱、問卷調查等互動性功能時，會保留您所提供的姓名、電子郵件地址、聯絡方式及使用時間等。
+                於一般瀏覽時，伺服器會自行記錄相關行徑，包括您使用連線設備的IP位址、使用時間、使用的瀏覽器、瀏覽及點選資料記錄等，做為我們增進網站服務的參考依據，此記錄為內部應用，絕不對外公佈。
+                為提供精確的服務，我們會將收集的問卷調查內容進行統計與分析，分析結果之統計數據或說明文字呈現，除供內部研究外，我們會視需要公佈統計數據及說明文字，但不涉及特定個人之資料。您可以隨時向我們提出請求，以更正或刪除本網站所蒐集您錯誤或不完整的個人資料，請見最下方聯繫管道。
+              </p>
+            </li>
+            <li>
+              <p>
+                三、資料之保護
+                本網站主機均設有防火牆、防毒系統等相關的各項資訊安全設備及必要的安全防護措施，加以保護網站及您的個人資料採用嚴格的保護措施，只由經過授權的人員才能接觸您的個人資料，相關處理人員皆簽有保密合約，如有違反保密義務者，將會受到相關的法律處分。如因業務需要有必要委託其他單位提供服務時，本網站亦會嚴格要求其遵守保密義務，並且採取必要檢查程序以確定其將確實遵守。
+              </p>
+            </li>
+            <li>
+              <p>
+                四、網站對外的相關連結
+                本網站的網頁提供其他網站的網路連結，您也可經由本網站所提供的連結，點選進入其他網站。但該連結網站不適用本網站的隱私權保護政策，您必須參考該連結網站中的隱私權保護政策。
+              </p>
+            </li>
+            <li>
+              <p>
+                五、與第三人共用個人資料之政策
+                本網站絕不會提供、交換、出租或出售任何您的個人資料給其他個人、團體、私人企業或公務機關，但有法律依據或合約義務者，不在此限。
+                前項但書之情形包括不限於： 。經由您書面同意。 法律明文規定。
+                。配合司法或行政主管機關依職權或職務需要之調查或使用。
+                。為免除您生命、身體、自由或財產上之危險。
+                。與公務機關或學術研究機構合作，基於公共利益為統計或學術研究而有必要，且資料經過提供者處理或蒐集著依其揭露方式無從識別特定之當事人。
+                。當您在網站的行為，違反服務條款或可能損害或妨礙網站與其他使用者權益或導致任何人遭受損害時，經網站管理單位研析揭露您的個人資料是為了辨識、聯絡或採取法律行動所必要者。
+                。有利於您的權益。
+                。本網站委託廠商協助蒐集、處理或利用您的個人資料時，將對委外廠商或個人善盡監督管理之責。
+              </p>
+            </li>
+            <li>
+              <p>
+                六、Cookie之使用
+                為了提供您最佳的服務，本網站會在您的電腦中放置並取用我們的Cookie，若您不願接受Cookie的寫入，您可在您使用的瀏覽器功能項中設定隱私權等級為高，即可拒絕Cookie的寫入，但可能會導致網站某些功能無法正常執行
+                。
+              </p>
+            </li>
+            <li>
+              <p>
+                七、隱私權保護政策之修正
+                本網站隱私權保護政策將因應需求隨時進行修正，修正後的條款將刊登於網站上。
+              </p>
+            </li>
+            <li>
+              <p>
+                八、聯繫管道
+                對於本站之隱私權政策有任何疑問，或者想提出變更、移除個人資料之請求，請前往本站「聯絡我們」頁面提交表單。
+              </p>
+            </li>
+          </ul>
+
+          <button type="button" class="member-close-btn">關閉</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------- 彈跳視窗(個資法及隱私權相關規範) --------------- -->
+    <section class="privacy-wrap">
+      <div class="container">
+        <div class="privacy">
+          <!-- 標題 -->
+          <h2>個資法及隱私權相關規範</h2>
+
+          <p>
+            非常歡迎您光臨「線上商城」（以下簡稱本網站），為了讓您能夠安心使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障您的權益，請您詳閱下列內容：
+          </p>
+          <ul class="popupUl-member">
+            <li>
+              <p>
+                一、隱私權保護政策的適用範圍
+                隱私權保護政策內容，包括本網站如何處理在您使用網站服務時收集到的個人識別資料。隱私權保護政策不適用於本網站以外的相關連結或網站（包括但不限於經由本網站所連結所至者）。
+              </p>
+            </li>
+            <li>
+              <p>
+                二、個人資料的蒐集、處理及利用方式
+                當您造訪本網站或使用本網站所提供之功能服務時，我們將視該服務功能性質，請您提供必要的個人資料，並在該特定目的範圍內處理及利用您的個人資料；非經您書面同意，本網站不會將個人資料用於其他用途。
+                本網站在您使用服務信箱、問卷調查等互動性功能時，會保留您所提供的姓名、電子郵件地址、聯絡方式及使用時間等。
+                於一般瀏覽時，伺服器會自行記錄相關行徑，包括您使用連線設備的IP位址、使用時間、使用的瀏覽器、瀏覽及點選資料記錄等，做為我們增進網站服務的參考依據，此記錄為內部應用，絕不對外公佈。
+                為提供精確的服務，我們會將收集的問卷調查內容進行統計與分析，分析結果之統計數據或說明文字呈現，除供內部研究外，我們會視需要公佈統計數據及說明文字，但不涉及特定個人之資料。您可以隨時向我們提出請求，以更正或刪除本網站所蒐集您錯誤或不完整的個人資料，請見最下方聯繫管道。
+              </p>
+            </li>
+            <li>
+              <p>
+                三、資料之保護
+                本網站主機均設有防火牆、防毒系統等相關的各項資訊安全設備及必要的安全防護措施，加以保護網站及您的個人資料採用嚴格的保護措施，只由經過授權的人員才能接觸您的個人資料，相關處理人員皆簽有保密合約，如有違反保密義務者，將會受到相關的法律處分。如因業務需要有必要委託其他單位提供服務時，本網站亦會嚴格要求其遵守保密義務，並且採取必要檢查程序以確定其將確實遵守。
+              </p>
+            </li>
+            <li>
+              <p>
+                四、網站對外的相關連結
+                本網站的網頁提供其他網站的網路連結，您也可經由本網站所提供的連結，點選進入其他網站。但該連結網站不適用本網站的隱私權保護政策，您必須參考該連結網站中的隱私權保護政策。
+              </p>
+            </li>
+            <li>
+              <p>
+                五、與第三人共用個人資料之政策
+                本網站絕不會提供、交換、出租或出售任何您的個人資料給其他個人、團體、私人企業或公務機關，但有法律依據或合約義務者，不在此限。
+                前項但書之情形包括不限於： 。經由您書面同意。 法律明文規定。
+                。配合司法或行政主管機關依職權或職務需要之調查或使用。
+                。為免除您生命、身體、自由或財產上之危險。
+                。與公務機關或學術研究機構合作，基於公共利益為統計或學術研究而有必要，且資料經過提供者處理或蒐集著依其揭露方式無從識別特定之當事人。
+                。當您在網站的行為，違反服務條款或可能損害或妨礙網站與其他使用者權益或導致任何人遭受損害時，經網站管理單位研析揭露您的個人資料是為了辨識、聯絡或採取法律行動所必要者。
+                。有利於您的權益。
+                。本網站委託廠商協助蒐集、處理或利用您的個人資料時，將對委外廠商或個人善盡監督管理之責。
+              </p>
+            </li>
+            <li>
+              <p>
+                六、Cookie之使用
+                為了提供您最佳的服務，本網站會在您的電腦中放置並取用我們的Cookie，若您不願接受Cookie的寫入，您可在您使用的瀏覽器功能項中設定隱私權等級為高，即可拒絕Cookie的寫入，但可能會導致網站某些功能無法正常執行
+                。
+              </p>
+            </li>
+            <li>
+              <p>
+                七、隱私權保護政策之修正
+                本網站隱私權保護政策將因應需求隨時進行修正，修正後的條款將刊登於網站上。
+              </p>
+            </li>
+            <li>
+              <p>
+                八、聯繫管道
+                對於本站之隱私權政策有任何疑問，或者想提出變更、移除個人資料之請求，請前往本站「聯絡我們」頁面提交表單。
+              </p>
+            </li>
+          </ul>
+
+          <button type="button" class="privacy-close-btn">關閉</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------- 彈跳視窗(購物須知) --------------- -->
+    <section class="shop-wrap">
+      <div class="container">
+        <div class="shop">
+          <!-- 標題 -->
+          <h2>購物須知</h2>
+
+          <p>
+            非常歡迎您光臨「線上商城」（以下簡稱本網站），為了讓您能夠安心使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障您的權益，請您詳閱下列內容：
+          </p>
+          <ul class="popupUl-member">
+            <li>
+              <p>
+                一、隱私權保護政策的適用範圍
+                隱私權保護政策內容，包括本網站如何處理在您使用網站服務時收集到的個人識別資料。隱私權保護政策不適用於本網站以外的相關連結或網站（包括但不限於經由本網站所連結所至者）。
+              </p>
+            </li>
+            <li>
+              <p>
+                二、個人資料的蒐集、處理及利用方式
+                當您造訪本網站或使用本網站所提供之功能服務時，我們將視該服務功能性質，請您提供必要的個人資料，並在該特定目的範圍內處理及利用您的個人資料；非經您書面同意，本網站不會將個人資料用於其他用途。
+                本網站在您使用服務信箱、問卷調查等互動性功能時，會保留您所提供的姓名、電子郵件地址、聯絡方式及使用時間等。
+                於一般瀏覽時，伺服器會自行記錄相關行徑，包括您使用連線設備的IP位址、使用時間、使用的瀏覽器、瀏覽及點選資料記錄等，做為我們增進網站服務的參考依據，此記錄為內部應用，絕不對外公佈。
+                為提供精確的服務，我們會將收集的問卷調查內容進行統計與分析，分析結果之統計數據或說明文字呈現，除供內部研究外，我們會視需要公佈統計數據及說明文字，但不涉及特定個人之資料。您可以隨時向我們提出請求，以更正或刪除本網站所蒐集您錯誤或不完整的個人資料，請見最下方聯繫管道。
+              </p>
+            </li>
+            <li>
+              <p>
+                三、資料之保護
+                本網站主機均設有防火牆、防毒系統等相關的各項資訊安全設備及必要的安全防護措施，加以保護網站及您的個人資料採用嚴格的保護措施，只由經過授權的人員才能接觸您的個人資料，相關處理人員皆簽有保密合約，如有違反保密義務者，將會受到相關的法律處分。如因業務需要有必要委託其他單位提供服務時，本網站亦會嚴格要求其遵守保密義務，並且採取必要檢查程序以確定其將確實遵守。
+              </p>
+            </li>
+            <li>
+              <p>
+                四、網站對外的相關連結
+                本網站的網頁提供其他網站的網路連結，您也可經由本網站所提供的連結，點選進入其他網站。但該連結網站不適用本網站的隱私權保護政策，您必須參考該連結網站中的隱私權保護政策。
+              </p>
+            </li>
+            <li>
+              <p>
+                五、與第三人共用個人資料之政策
+                本網站絕不會提供、交換、出租或出售任何您的個人資料給其他個人、團體、私人企業或公務機關，但有法律依據或合約義務者，不在此限。
+                前項但書之情形包括不限於： 。經由您書面同意。 法律明文規定。
+                。配合司法或行政主管機關依職權或職務需要之調查或使用。
+                。為免除您生命、身體、自由或財產上之危險。
+                。與公務機關或學術研究機構合作，基於公共利益為統計或學術研究而有必要，且資料經過提供者處理或蒐集著依其揭露方式無從識別特定之當事人。
+                。當您在網站的行為，違反服務條款或可能損害或妨礙網站與其他使用者權益或導致任何人遭受損害時，經網站管理單位研析揭露您的個人資料是為了辨識、聯絡或採取法律行動所必要者。
+                。有利於您的權益。
+                。本網站委託廠商協助蒐集、處理或利用您的個人資料時，將對委外廠商或個人善盡監督管理之責。
+              </p>
+            </li>
+            <li>
+              <p>
+                六、Cookie之使用
+                為了提供您最佳的服務，本網站會在您的電腦中放置並取用我們的Cookie，若您不願接受Cookie的寫入，您可在您使用的瀏覽器功能項中設定隱私權等級為高，即可拒絕Cookie的寫入，但可能會導致網站某些功能無法正常執行
+                。
+              </p>
+            </li>
+            <li>
+              <p>
+                七、隱私權保護政策之修正
+                本網站隱私權保護政策將因應需求隨時進行修正，修正後的條款將刊登於網站上。
+              </p>
+            </li>
+            <li>
+              <p>
+                八、聯繫管道
+                對於本站之隱私權政策有任何疑問，或者想提出變更、移除個人資料之請求，請前往本站「聯絡我們」頁面提交表單。
+              </p>
+            </li>
+          </ul>
+
+          <button type="button" class="shop-close-btn">關閉</button>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <!-- ----------------------- 導入JS ----------------------- -->
+  <!-- 套件 - jQuery -->
+  <script src="./vendors/jquery-3.7.0.min.js"></script>
+
+  <!-- 自定義的JS -->
+  <script src="./js/header.js"></script>
+  <script src="./js/login.js"></script>
+  <script src="./js/register.js"></script>
+</html>

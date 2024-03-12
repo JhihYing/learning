@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>線上課程-播放頁</title>
+
+    <!-- ----------------------- 導入css ----------------------- -->
+    <!-- 自訂義的css -->
+    <link rel="stylesheet" href="./css/courses.css" />
+  </head>
+
+  <body>
+    <!-- -----------------------  載入 header -----------------------  -->
+    <div class="headerpage"></div>
+
+    <!-- ----------------------- 線上課程-播放頁 ----------------------- -->
+    <section class="course-play-video">
+      <div class="container">
+        <!-- ----------------------- 主要內容 ----------------------- -->
+        <div class="main-content">
+          <h3>畫出手感水彩插畫：小動物們的午後喫茶派對</h3>
+
+          <!-- 尚未購買課程 -->
+          <div class="no-buy-course-box">
+            <div class="no-buy-course-img">
+              <img src="./images/privacy.svg" alt="課程內容未解鎖" />
+            </div>
+            <h3>課程內容未解鎖</h3>
+            <p>已購買課程？請檢查是否登入正確帳號</p>
+            <a href="">購買此堂課</a>
+          </div>
+
+          <!-- 影片 -->
+          <div class="course-video-box">
+            <video
+              class="course-video"
+              src="./images/video_480P.mp4"
+              controls
+              preload="auto"
+            ></video>
+          </div>
+
+          <!-- 進度 -->
+          <div class="schedule-box">
+            <div class="course-schedule">
+              <p>上課進度</p>
+              <div class="course-bar">
+                <div class="course-bar-progress"></div>
+              </div>
+              <span>68%</span>
+            </div>
+
+            <div class="homewoek-schedule">
+              <p>作業 0/2</p>
+            </div>
+          </div>
+
+          <!-- ----------------------- 課程內容 ----------------------- -->
+          <section class="course-main-section">
+            <!-- -------- 課程內容 -------- -->
+            <div class="course-main-box">
+              <!-- 分類與內容 -->
+              <div class="course-content">
+                <!-- 分類 -->
+                <ul class="info-nav-ul">
+                  <li class="chapter-li">章節</li>
+                  <li class="announcement-li active">公告</li>
+                  <!-- <li class="faq-li">討論</li> -->
+                  <li class="evaluate-li">評價</li>
+                  <!-- <li class="homework-li">作業</li> -->
+                </ul>
+
+                <!-- 章節 -->
+                <div class="chapter-box-rwd"></div>
+
+                <!-- 評價 -->
+                <div class="evaluate-box">
+                  <div class="evaluate-title">
+                    <h3>課程內容評價</h3>
+                    <a>修改評價</a>
+                  </div>
+                  <form action="" class="evaluate-form">
+                    <div class="evaluate">
+                      <p>你對於此課程的評價如何</p>
+
+                      <div class="rate">
+                        <input
+                          type="radio"
+                          id="star5"
+                          name="rate"
+                          value="5"
+                          required
+                        />
+                        <label for="star5" title="text"></label>
+                        <input
+                          type="radio"
+                          id="star4"
+                          name="rate"
+                          value="4"
+                          required
+                        />
+                        <label for="star4" title="text"></label>
+                        <input
+                          type="radio"
+                          id="star3"
+                          name="rate"
+                          value="3"
+                          required
+                        />
+                        <label for="star3" title="text"></label>
+                        <input
+                          type="radio"
+                          id="star2"
+                          name="rate"
+                          value="2"
+                          required
+                        />
+                        <label for="star2" title="text"></label>
+                        <input
+                          type="radio"
+                          id="star1"
+                          name="rate"
+                          value="1"
+                          required
+                        />
+                        <label for="star1" title="text"></label>
+                      </div>
+                    </div>
+
+                    <div class="thoughts">
+                      <p>公開分享你對課程內容的想法</p>
+                      <textarea
+                        placeholder="你的回饋對老師而言是最大的鼓勵"
+                        required
+                      ></textarea>
+                    </div>
+
+                    <div class="send-evaluate">
+                      <p class="notice-once">評價只能修改一次</p>
+                      <p class="notice-no">評價修改次數已達上限</p>
+                      <input type="submit" class="cancel-btn" value="取消" />
+                      <input type="submit" class="send-btn" value="送出" />
+                    </div>
+                  </form>
+
+                  <!-- 評價已填寫 -->
+                  <div class="evaluate-ok">
+                    <div class="evaluate-member">
+                      <img src="./images/evaluate-member.svg" alt="" />
+                    </div>
+
+                    <div class="evaluate-info">
+                      <div class="evaluate-info-title-box">
+                        <div class="evaluate-info-title">
+                          <p class="evaluate-name">patrick.lee</p>
+                          <ul class="star-ul">
+                            <li>
+                              <img src="./images/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/star.svg" alt="" />
+                            </li>
+                          </ul>
+                        </div>
+                        <p class="evaluate-date">2022-03-30</p>
+                      </div>
+                      <div class="evaluate-content">
+                        <p>
+                          講師搭配教材與範例，讓線上上課不會無聊，不過內容很豐富，需要花很多時間聽講。
+                          建議在最後有個收攝總結，簡單複習。不然重新在上一次課的機會應該不大高。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 問答 -->
+                <div class="faq-box"></div>
+
+                <!-- 作業 -->
+                <div class="homework-box"></div>
+                <!-- 公告 -->
+                <div class="announcement-box">
+                  <div class="announcement-title">
+                    <p>
+                      共有
+                      <span>2</span>
+                      則公告
+                    </p>
+                  </div>
+
+                  <div class="announcement active">
+                    <div class="announcement-title-box">
+                      <p class="member-privacy active">學員限定</p>
+                      <h3>分享平價好用的水彩筆</h3>
+                      <p class="date">2022/07/29</p>
+                    </div>
+                    <div class="announcement-info-box">
+                      <div class="announcement-info">
+                        <p>
+                          各位學員好，這堂課程內容已經全部上架完成，<br />
+                          大家可以接著學習繪製小刺蝟蒙布朗，以及和風富士山窗景<br />
+                          (搭配日式糰子雪精靈)的背景繪製囉。<br />
+                          也希望大家可以上傳作業，多多練習，我都會幫同學們批改並回覆哦!<br />
+                          如果對課程教學內容有問題，歡迎你到 YOTTA<br />
+                          的討論區中詢問，我會盡可能地回覆你們！<br />
+                        </p>
+                        <p>
+                          ▌ 上架範圍：<br />
+                          - 教學影片： <br />
+                          單元30~32 （6-1、6-2、7-1）<br />
+                          素材：<br />
+                          6-1小刺蝟蒙布朗草稿與上色-講義.pdf（下載位置：單元30）<br />
+                          6-1教材-小刺蝟蒙布朗草稿與上色.pdf（下載位置：單元30）<br />
+                          6-2和風富士山窗景草稿與上色-講義.pdf（下載位置：單元31）<br />
+                          6-2教材-和風富士山窗景.pdf（下載位置：單元31）<br />
+                          作業：作業17 ～ 作業18
+                        </p>
+                        <p>
+                          ▌如何觀看課程呢？ <br />
+                          電腦裝置： <br />
+                          步驟一：使用網頁瀏覽器「登入會員」後，上方會顯示「我的課程」。<br />
+                          步驟二：進入「我的課程」後，找到已開課的線上課程，按下「播放」按鈕，進入課程播放器開始觀看。<br />
+                          手機 / 平板裝置： <br />
+                          步驟一：點選右上方選單「登入/註冊」進行會員登入。登入會員後，下拉式選單即會顯示「我的課程」。<br />
+                          步驟二：進入「我的課程」後，找到已開課的線上課程，按下「播放」按鈕，進入課程播放器開始觀看。<br />
+                          ．觀看課程如有問題，請直接參閱此篇「觀看課程影片」說明。<br />
+                          ．課程播放器不順暢，或無法順利觀看，請參閱此篇「課程播放器不順暢或無法順利觀看」說明。
+                        </p>
+                      </div>
+
+                      <!-- 收合 -->
+                      <div class="introduction-show-box">
+                        <div class="introduction-show-btn">
+                          <div class="arrow-top">
+                            <img src="./images/expert-arrow-top.svg" alt="" />
+                          </div>
+                          <p>閱讀更多</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="announcement active">
+                    <div class="announcement-title-box">
+                      <p class="member-privacy">學員限定</p>
+                      <h3>【通知】課程內容全部完成上架</h3>
+                      <p class="date">2022/05/14</p>
+                    </div>
+
+                    <div class="announcement-info-box">
+                      <div class="announcement-info">
+                        <p>
+                          各位學員好，這堂課程內容已經全部上架完成，<br />
+                          大家可以接著學習繪製小刺蝟蒙布朗，以及和風富士山窗景<br />
+                          (搭配日式糰子雪精靈)的背景繪製囉。<br />
+                          也希望大家可以上傳作業，多多練習，我都會幫同學們批改並回覆哦!<br />
+                          如果對課程教學內容有問題，歡迎你到 YOTTA<br />
+                          的討論區中詢問，我會盡可能地回覆你們！<br />
+                        </p>
+                        <p>
+                          ▌ 上架範圍：<br />
+                          - 教學影片： <br />
+                          單元30~32 （6-1、6-2、7-1）<br />
+                          素材：<br />
+                          6-1小刺蝟蒙布朗草稿與上色-講義.pdf（下載位置：單元30）<br />
+                          6-1教材-小刺蝟蒙布朗草稿與上色.pdf（下載位置：單元30）<br />
+                          6-2和風富士山窗景草稿與上色-講義.pdf（下載位置：單元31）<br />
+                          6-2教材-和風富士山窗景.pdf（下載位置：單元31）<br />
+                          作業：作業17 ～ 作業18
+                        </p>
+                        <p>
+                          ▌如何觀看課程呢？ <br />
+                          電腦裝置： <br />
+                          步驟一：使用網頁瀏覽器「登入會員」後，上方會顯示「我的課程」。<br />
+                          步驟二：進入「我的課程」後，找到已開課的線上課程，按下「播放」按鈕，進入課程播放器開始觀看。<br />
+                          手機 / 平板裝置： <br />
+                          步驟一：點選右上方選單「登入/註冊」進行會員登入。登入會員後，下拉式選單即會顯示「我的課程」。<br />
+                          步驟二：進入「我的課程」後，找到已開課的線上課程，按下「播放」按鈕，進入課程播放器開始觀看。<br />
+                          ．觀看課程如有問題，請直接參閱此篇「觀看課程影片」說明。<br />
+                          ．課程播放器不順暢，或無法順利觀看，請參閱此篇「課程播放器不順暢或無法順利觀看」說明。
+                        </p>
+                      </div>
+
+                      <!-- 收合 -->
+                      <div class="introduction-show-box">
+                        <div class="introduction-show-btn">
+                          <div class="arrow-top">
+                            <img src="./images/expert-arrow-top.svg" alt="" />
+                          </div>
+                          <p>閱讀更多</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ----------------------- 頁碼 ----------------------- -->
+                  <div class="pagination-box">
+                    <button class="page-arrow-pre"><</button>
+
+                    <div class="page-number">
+                      <span>1</span>
+                      <span>/</span>
+                      <span>2</span>
+                    </div>
+
+                    <button class="page-arrow-next">></button>
+                  </div>
+
+                  <!-- 尚無公告 -->
+                  <div class="no-announcement">
+                    <div class="no-announcement-img">
+                      <img src="./images/announcement.svg" alt="尚無公告" />
+                    </div>
+                    <p>尚無公告</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ----------------------- 播放清單 ----------------------- -->
+        <div class="play-video-list">
+          <!-- 章節 -->
+          <div class="chapter-box chapter-container">
+            <div class="chapter-title-box">
+              <h3>課程單元</h3>
+              <p>4 章節 12 單元，426 分鐘</p>
+            </div>
+
+            <div class="chapter chapter-01">
+              <div class="chapter-list-box active">
+                <h4>第一章、水彩工具介紹</h4>
+                <div class="chapter-time">
+                  <div class="chapter-arrow-img">
+                    <img src="./images/chapter-arrow-top.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <ul class="chapter-ul">
+                <li class="active">
+                  <div class="checkbox active">
+                    <div></div>
+                  </div>
+
+                  <div class="chapter-title">
+                    <p>1-1 Maruco 習慣使用的水彩繪畫工具介紹</p>
+                    <div class="chapter-info-box">
+                      <a href="">試看</a>
+                      <p>02:20</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="chapter chapter-02">
+              <div class="chapter-list-box active">
+                <h4>第二章、基礎打稿法</h4>
+                <div class="chapter-time">
+                  <div class="chapter-arrow-img">
+                    <img src="./images/chapter-arrow-top.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <ul class="chapter-ul">
+                <li>
+                  <div class="checkbox">
+                    <div></div>
+                  </div>
+
+                  <div class="chapter-title">
+                    <p>2-1 如何使用點與線定位並用幾何圖形抓出形體</p>
+                    <div class="chapter-info-box">
+                      <a href="">試看</a>
+                      <p>05:20</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="checkbox">
+                    <div></div>
+                  </div>
+
+                  <div class="chapter-title">
+                    <p>2-2 畫出漂亮弧線繪製草稿</p>
+                    <div class="chapter-info-box">
+                      <a href="">試看</a>
+                      <p>10:31</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="checkbox">
+                    <div></div>
+                  </div>
+
+                  <div class="chapter-title">
+                    <p>2-3 光影的繪製與觀察</p>
+                    <div class="chapter-info-box">
+                      <p>02:15</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <p class="homewoek">作業：練習光影的繪製</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="chapter chapter-03">
+              <div class="chapter-list-box active">
+                <h4>第三章、水彩的調色與上色方式</h4>
+                <div class="chapter-time">
+                  <div class="chapter-arrow-img">
+                    <img src="./images/chapter-arrow-top.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <ul class="chapter-ul">
+                <li>
+                  <div class="checkbox">
+                    <div></div>
+                  </div>
+
+                  <div class="chapter-title">
+                    <p>3-1 三原色調色概念</p>
+                    <div class="chapter-info-box">
+                      <p>05:33</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="checkbox">
+                    <div></div>
+                  </div>
+
+                  <div class="chapter-title">
+                    <p>3-2 水彩的調色與上色方式</p>
+                    <div class="chapter-info-box">
+                      <p>06:42</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="checkbox">
+                    <div></div>
+                  </div>
+
+                  <div class="chapter-title">
+                    <p>3-3 水彩水份控制與深淺明度的變化</p>
+                    <div class="chapter-info-box">
+                      <p>08:42</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="checkbox">
+                    <div></div>
+                  </div>
+
+                  <div class="chapter-title">
+                    <p>3-4 如何製作調色盤的顏色樣本</p>
+                    <div class="chapter-info-box">
+                      <a href="">試看</a>
+                      <p>03:07</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="checkbox">
+                    <div></div>
+                  </div>
+
+                  <div class="chapter-title">
+                    <p>3-5 上色畫筆的角度變化與運筆的方式 (單色平塗法)</p>
+                    <div class="chapter-info-box">
+                      <p>07:59</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="checkbox">
+                    <div></div>
+                  </div>
+
+                  <div class="chapter-title">
+                    <p>3-6 疊色法-兔兔餅乾上色(示範)</p>
+                    <div class="chapter-info-box">
+                      <p>08:01</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------  載入 footer -----------------------  -->
+    <div class="footerpage"></div>
+
+    <!-- ----------------------- 導入JS ----------------------- -->
+    <!-- 套件 - jQuery -->
+    <script src="./vendors/jquery-3.7.0.min.js"></script>
+
+    <!-- 自定義的JS -->
+    <script src="./js/courses.js"></script>
+  </body>
+</html>

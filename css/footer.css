@@ -1,0 +1,165 @@
+/* ----------------------- footer----------------------- */
+.footer {
+  width: 100%;
+  position: static;
+  background-color: #364772;
+}
+.footer > .container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.footer-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 0px;
+}
+
+/* ----------------------- logo ----------------------- */
+.footer-logo {
+  width: 120px;
+  min-width: 120px;
+}
+.footer-logo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ----------------------- 選單 ----------------------- */
+.footer-nav {
+  display: flex;
+  align-items: flex-start;
+}
+.footer-nav-info {
+  margin-right: 60px;
+}
+.footer-nav-info:last-child {
+  margin-right: 0;
+}
+.footer-nav-info > .title {
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: white;
+  white-space: nowrap;
+}
+.footer-nav-info > ul {
+  display: flex;
+  flex-direction: column;
+}
+.footer-nav-info > ul > li {
+  margin-bottom: 16px;
+  font-size: 15px;
+  display: inline-block;
+}
+.footer-nav-info > ul > li:last-child {
+  margin-bottom: 0;
+}
+.footer-nav-info > ul > li > a {
+  color: white;
+  white-space: nowrap;
+  transition: all 0.2s;
+  font-weight: 300;
+}
+.footer-nav-info > ul > li:hover > a {
+  color: #e8c558;
+}
+
+/* ----------------------- 社群 ----------------------- */
+.community {
+  display: flex;
+  align-items: center;
+}
+.community > a {
+  width: 30px;
+  margin-left: 20px;
+  transition: all 0.2s;
+}
+.community > a:first-child {
+  margin-left: 0;
+}
+.community > a:hover {
+  opacity: 0.8;
+}
+.community > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ----------------------- hr ----------------------- */
+hr {
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 0px;
+}
+
+/* ----------------------- 著作權 ----------------------- */
+.footer > .container > .copyright {
+  text-align: center;
+  padding: 20px 0px;
+}
+.footer > .container > .copyright > p {
+  color: white;
+  font-size: 14px;
+}
+
+/* ----------------------- RWD ----------------------- */
+@media screen and (max-width: 1280px) {
+  /* 導覽列(主要) */
+  .footer > .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer-main {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 300px;
+    align-items: center;
+  }
+  .footer-nav {
+    margin: 40px 0px;
+  }
+  .community > a {
+    margin: 0px;
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer-logo {
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-nav-info {
+    margin-right: 0px;
+  }
+  .footer-main {
+    width: 100%;
+    margin: 0;
+  }
+  .footer-nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .footer > .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .footer-nav-info > .title {
+    font-size: 15px;
+  }
+  .footer-nav-info > ul > li > a {
+    font-size: 14px;
+  }
+}

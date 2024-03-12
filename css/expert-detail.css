@@ -1,0 +1,1177 @@
+.nav-box > li > a {
+  color: #e8c558 !important;
+}
+
+/* ----------------------- 滾輪外觀 ----------------------- */
+/* 下拉式選單 (分類) */
+.course-title-box::-webkit-scrollbar {
+  height: 6px;
+}
+.course-title-box::-webkit-scrollbar-thumb {
+  background-color: rgba(218, 218, 218, 0.755);
+  border-radius: 10px;
+}
+.course-title-box::-webkit-scrollbar-track {
+  background-color: initial;
+}
+
+/* ----------------------- 專家嚴選-專家介紹 ----------------------- */
+.expert-detail {
+  width: 100%;
+  padding-top: 125px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.expert-detail > .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ----------------------- 麵包屑 ----------------------- */
+.bread-crumbs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  font-size: 15px;
+}
+.bread-crumbs > a {
+  transition: all 0.2s;
+}
+.bread-crumbs > a:hover {
+  opacity: 0.8;
+}
+.bread-crumbs > span {
+  margin: 0px 8px;
+}
+.bread-crumbs > p {
+  font-weight: 500;
+  color: #364772;
+}
+
+/* ----------------------- 專家 & 簡介 ----------------------- */
+.expert-section {
+  display: flex;
+  align-items: flex-start;
+  /* margin-bottom: 110px; */
+}
+
+/* 專家 */
+.expert-box {
+  background-color: #f4f4f4;
+  width: 30%;
+  min-width: 342px;
+  margin-right: 60px;
+  border-radius: 3px;
+}
+.expert-top-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 40px 50px 40px;
+}
+.expert-circle {
+  border: 1px solid #dbdbdb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 216px;
+  height: 216px;
+}
+.expert-image {
+  width: 198px;
+  height: 198px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.expert-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.expert-top-box > h4 {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 30px 0 20px 0;
+  text-align: center;
+  line-height: 1.5;
+}
+.expert-top-box > .job-title {
+  font-weight: 500;
+  color: #364772;
+  border-bottom: 3px solid #364772;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+.expert-top-box > .expertise {
+  line-height: 1.5;
+  text-align: center;
+}
+
+.community-icon {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.community-icon > a {
+  margin: 0px 10px;
+  width: 27px;
+  height: 27px;
+  transition: all 0.2s;
+}
+.community-icon > a:hover {
+  opacity: 0.8;
+}
+.community-icon > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 已開課 & 已分享 */
+.open-share-box {
+  background-color: #51618e;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 40px;
+  border-radius: 0px 0px 3px 3px;
+}
+
+.open-share-box > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.open-share-box > div > p {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+.open-share-box > div > p:last-child {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.open-share-box > hr {
+  width: 1.5px;
+  height: 70px;
+  background-color: #ffffff52;
+  margin: 0px 10px;
+}
+
+/* ----------------------- 簡介 ----------------------- */
+.introduction {
+  max-height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+.introduction-box {
+  width: 70%;
+  position: relative;
+}
+.introduction-box > h3 {
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 20px;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.introduction-box > h3::before {
+  content: "";
+  background-image: url("../images/diamond.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.introduction-box > h3::after {
+  content: "";
+  background-image: url("../images/diamond.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  right: -17px;
+  top: 5px;
+}
+
+.introduction > h4 {
+  font-size: 18px;
+  color: #364772;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.introduction > p {
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+.introduction > p:last-child {
+  margin-bottom: 0;
+}
+
+.introduction-show-box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: 30px;
+  transition: all 0.2s;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0), #fff);
+  width: 100%;
+  height: 100px;
+}
+.introduction-show-btn:hover {
+  opacity: 0.8;
+}
+.introduction-show-btn {
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px 0px 5px 30px;
+  border-radius: 30px;
+}
+.introduction-show-btn > p {
+  text-align: end;
+  color: #364772;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.introduction-show-btn > .arrow-top {
+  width: 12px;
+  margin-bottom: -2px;
+  margin-right: 5px;
+  transform: rotate(180deg);
+}
+.introduction-show-btn > .arrow-top > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ----------------------- 分隔線 ----------------------- */
+.expert-detail > .container > hr {
+  width: 100%;
+  height: 2px;
+  background-color: #e4e4e494;
+  margin: 80px 0px;
+}
+
+/* ----------------------- 最新課程 ----------------------- */
+
+/* 課程標題區域 */
+.course-title-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.course-title {
+  display: flex;
+  align-items: center;
+}
+.course-total {
+  white-space: nowrap;
+}
+.course-title > h3 {
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 20px;
+  margin-right: 50px;
+}
+.course-title > h3::before {
+  content: "";
+  background-image: url("../images/diamond.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.course-title > h3::after {
+  content: "";
+  background-image: url("../images/diamond.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  right: -17px;
+  top: 5px;
+}
+
+.course-type {
+  display: flex;
+  align-items: center;
+}
+.course-type > li {
+  color: #364772;
+  border: 2px solid #364772;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-right: 10px;
+  white-space: nowrap;
+  font-size: 15px;
+}
+.course-type > li:hover {
+  background-color: #364772;
+  color: white;
+}
+.course-type > li:last-child {
+  margin-right: 0px;
+}
+.course-type > li.active {
+  background-color: #364772;
+  color: white;
+}
+
+/* 課程 */
+.course-card-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 50px 20px;
+  display: none;
+}
+.course-card:hover .course-image > img {
+  transform: scale(1.06);
+}
+.course-card:hover > a > h4 {
+  opacity: 0.8;
+}
+.course-image {
+  width: 100%;
+  position: relative;
+  padding-top: 55%;
+  overflow: hidden;
+}
+.course-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s;
+}
+.course-card > a > h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 0px;
+  line-height: 1.5;
+  transition: all 0.2s;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 48px;
+}
+
+.course-card > a > p {
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  position: relative;
+}
+.course-card > a > p > span {
+  color: #a4a4a4;
+}
+
+.course-price-score-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+.course-score-info-box {
+  display: flex;
+  align-items: center;
+}
+.course-price-score-box > .price {
+  font-weight: 600;
+  color: #364772;
+}
+.course-score {
+  color: #f9bf4e;
+  font-weight: 500;
+  position: relative;
+}
+.course-score::before {
+  content: "";
+  background-image: url("../images/star.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: -25px;
+  top: -1px;
+}
+.course-score-info-box > .now-learn {
+  color: #364772;
+  font-size: 14px;
+  border: 1px solid #364772;
+  border-radius: 3px;
+  font-weight: 500;
+  padding: 5px 5px;
+  margin-left: 10px;
+}
+
+.course-info-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 10px;
+}
+.course-info-box > p {
+  font-size: 14px;
+  margin-left: 20px;
+  line-height: 1.5;
+}
+
+.course-info-box > p:first-child:before {
+  content: "";
+  background-image: url("../images/students.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+.course-info-box > p:last-child {
+  position: relative;
+}
+.course-info-box > p:last-child:before {
+  content: "";
+  background-image: url("../images/time.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -20px;
+  top: 2.5px;
+}
+
+/* ----------------------- 頁碼 ----------------------- */
+.pagination-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.pagination-box > button {
+  background-color: #f5f5f5;
+  border: none;
+  outline: none;
+  width: 28px;
+  min-width: 28px;
+  height: 28px;
+  min-height: 28px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.pagination-box > button:hover {
+  background-color: #e8e8e8;
+}
+.pagination-box > .page-number {
+  margin: 0px 20px;
+}
+
+/* ----------------------- 專家專欄 ---------------------- */
+.article-section {
+  border-top: 2px solid #e4e4e494;
+  margin-top: 80px;
+  padding-top: 80px;
+}
+
+/* 課程標題區域 */
+.article-title-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.article-title {
+  display: flex;
+  align-items: center;
+}
+.article-title > h3 {
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 20px;
+  margin-right: 50px;
+}
+.article-title > h3::before {
+  content: "";
+  background-image: url("../images/diamond.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.article-title > h3::after {
+  content: "";
+  background-image: url("../images/diamond.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  right: -17px;
+  top: 5px;
+}
+
+/* 線上課程 */
+.article-card-box {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 50px 20px;
+}
+
+.article-card:hover .article-image > img {
+  transform: scale(1.06);
+}
+.article-card:hover > a > h4 {
+  opacity: 0.8;
+}
+.article-card:nth-child(3),
+.article-card:nth-child(4) {
+  margin-bottom: 0;
+}
+.article-image {
+  width: 100%;
+  position: relative;
+  padding-top: 55%;
+  overflow: hidden;
+}
+.article-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s;
+}
+.article-card > a > h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 0px;
+  line-height: 1.5;
+  width: 100%;
+  transition: all 0.2s;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 48px;
+}
+
+.article-card > a > .date {
+  font-size: 14px;
+  width: 100%;
+  line-height: 1.5;
+  color: #828282;
+  margin-top: 10px;
+}
+.article-card > a > .teacher {
+  font-size: 14px;
+}
+.article-card > a > .teacher > span {
+  color: #a4a4a4;
+}
+
+.article-box > .more {
+  color: #364772;
+  border-radius: 3px;
+  border: 1.5px solid #364772;
+  padding: 10px 15px;
+  /* font-weight: 500; */
+  display: inline-block;
+  margin-top: 50px;
+  transition: all 0.2s;
+}
+.article-box > .more:hover {
+  background-color: #364772;
+  color: white;
+}
+
+/* 實體課程  */
+.online-course-card-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 50px 20px;
+  display: none;
+}
+
+.course-card > a > h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 0px;
+  line-height: 1.5;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 48px;
+}
+
+.course-price-score-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+.course-score-info-box {
+  display: flex;
+  align-items: center;
+}
+.course-price-score-box > .price {
+  font-weight: 600;
+  color: #364772;
+}
+.course-price-score-box > .price > span {
+  font-size: 14px;
+  color: #364772;
+}
+.course-score {
+  color: #f9bf4e;
+  font-weight: 500;
+  position: relative;
+}
+.course-score::before {
+  content: "";
+  background-image: url("../images/star.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: -25px;
+  top: -1px;
+}
+.course-score-info-box > .now-learn {
+  color: #364772;
+  font-size: 14px;
+  border: 1px solid #364772;
+  border-radius: 3px;
+  font-weight: 500;
+  padding: 5px 5px;
+  margin-left: 10px;
+}
+
+.course-info-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 10px;
+}
+.course-info-box > p {
+  font-size: 14px;
+  margin-left: 20px;
+  line-height: 1.5;
+}
+
+.course-info-box > p:first-child:before {
+  content: "";
+  background-image: url("../images/students.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+.course-info-box > p:last-child {
+  position: relative;
+}
+.course-info-box > p:last-child:before {
+  content: "";
+  background-image: url("../images/time.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -20px;
+  top: 2.5px;
+}
+
+/* 新書聆聽 */
+.book-card-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 50px 20px;
+  display: none;
+}
+.book-card {
+  border: 1px solid #dcdcdc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 13px 13px;
+  border-radius: 3px;
+}
+.book-card > a {
+  width: 100%;
+}
+.book-card:hover .book-image > img {
+  transform: scale(1.06);
+}
+.book-card:hover > a > h4 {
+  opacity: 0.8;
+}
+.book-image {
+  width: 100%;
+  position: relative;
+  padding-top: 100%;
+  overflow: hidden;
+}
+.book-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s;
+}
+.book-card > a > h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 0px;
+  line-height: 1.5;
+  width: 100%;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.book-card > a > p {
+  font-size: 14px;
+  width: 100%;
+  line-height: 1.5;
+  height: 42px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.book-price-learn-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+.book-date-score-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+.book-price-learn-box > .price {
+  font-weight: 600;
+  color: #364772;
+}
+.book-price-learn-box > .now-learn {
+  color: #364772;
+  font-size: 14px;
+  border: 1px solid #364772;
+  border-radius: 3px;
+  font-weight: 500;
+  padding: 5px 5px;
+  margin-left: 10px;
+}
+
+.book-score {
+  color: #f9bf4e;
+  font-weight: 500;
+  position: relative;
+}
+.book-score::before {
+  content: "";
+  background-image: url("../images/star.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: -25px;
+  top: -1px;
+}
+
+.book-date-score-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 10px;
+}
+.book-date-score-box > p {
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.book-date-score-box > p:first-child:before {
+  content: "";
+  background-image: url("../images/time.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+
+/* 募資課程 */
+.hot-course-card-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 50px 20px;
+  display: none;
+}
+
+.course-card:hover > a > h4 {
+  opacity: 0.8;
+}
+
+.course-card > a > h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 0px;
+  line-height: 1.5;
+  transition: all 0.2s;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 48px;
+}
+
+.course-card > a > p.location {
+  margin-left: 20px;
+  position: relative;
+  overflow: initial;
+}
+.course-card > a > p.location:before {
+  content: "";
+  background-image: url(../images/location.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: -20px;
+  top: -2px;
+}
+
+.course-price-date-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.course-price {
+  display: flex;
+  align-items: center;
+}
+.course-price > .price {
+  font-weight: 600;
+  color: #364772;
+}
+.course-price > .original-price {
+  font-weight: 600;
+  color: #a4a4a4;
+  text-decoration: line-through;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.course-price-date-box > p {
+  color: #e56658;
+  font-size: 14px;
+  border: 1px solid #e56658;
+  border-radius: 3px;
+  font-weight: 500;
+  padding: 5px 5px;
+}
+
+/* 進度條 */
+.course-bar {
+  background-color: #dcdcdc;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.course-bar-progress {
+  background-color: #e56658;
+  width: 68%;
+  height: 5px;
+  border-radius: 5px;
+}
+
+.course-num-progress-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.course-num-progress-box > p {
+  font-size: 14px;
+  margin-left: 20px;
+}
+.course-num-progress-box > p::before {
+  content: "";
+  background-image: url("../images/students.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+
+/* ----------------------- RWD ----------------------- */
+@media screen and (max-width: 1280px) {
+  .expert-detail {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .course-card-box,
+  .online-course-card-box,
+  .hot-course-card-box {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px 20px;
+  }
+  .article-card-box {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px 20px;
+  }
+  .book-card-box {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .course-price-score-box {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+  .course-score-info-box {
+    margin-bottom: 10px;
+  }
+  .course-score-info-box > p {
+    margin-left: 25px;
+  }
+
+  .online-course-card-box > li > a > .course-price-score-box {
+    flex-direction: row;
+    align-items: center;
+  }
+  .online-course-card-box
+    > li
+    > a
+    > .course-price-score-box
+    > .course-score-info-box {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .expert-box {
+    margin-right: 40px;
+  }
+  .expert-circle {
+    width: 200px;
+    height: 200px;
+  }
+  .expert-image {
+    width: 182px;
+    height: 182px;
+  }
+  .expert-box {
+    min-width: 280px;
+  }
+  .expert-top-box {
+    padding: 30px 20px 50px 20px;
+  }
+  .open-share-box {
+    padding: 20px 20px;
+  }
+
+  .course-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .course-type {
+    margin-top: 20px;
+  }
+  .course-title-box {
+    align-items: flex-end;
+  }
+  .course-total {
+    margin-bottom: 12px;
+    font-size: 15px;
+  }
+  .course-type > li {
+    font-size: 15px;
+  }
+
+  /* .course-score-info-box > .now-learn {
+    display: none;
+  } */
+
+  .book-card-box {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .course-price-date-box {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+  .course-price {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .expert-section {
+    flex-direction: column;
+  }
+  .expert-box {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .introduction-box {
+    width: 100%;
+  }
+
+  .course-title-box {
+    overflow-x: scroll;
+    padding-bottom: 20px;
+  }
+  .course-total {
+    margin-left: 40px;
+  }
+
+  .course-card-box,
+  .online-course-card-box,
+  .hot-course-card-box {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px 20px;
+  }
+  .article-card-box {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px 20px;
+  }
+  .book-card-box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .expert-detail {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .course-card-box,
+  .online-course-card-box,
+  .hot-course-card-box {
+    grid-template-columns: 1fr;
+    grid-gap: 40px 0px;
+  }
+  .article-card-box {
+    grid-template-columns: 1fr;
+    grid-gap: 40px 0px;
+  }
+
+  .book-card-box {
+    grid-template-columns: 1fr;
+  }
+
+  .course-score-info-box > .now-learn {
+    display: inline-block;
+  }
+  .course-price-date-box {
+    flex-direction: row;
+    align-items: center;
+  }
+  .course-price-score-box {
+    flex-direction: row;
+    align-items: center;
+  }
+  .course-score-info-box {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 414px) {
+  .introduction > p {
+    font-size: 15px;
+  }
+
+  .expert-circle {
+    width: 188px;
+    height: 188px;
+  }
+  .expert-image {
+    width: 170px;
+    height: 170px;
+  }
+  .expert-top-box > .job-title {
+    margin-bottom: 20px;
+  }
+  .expert-top-box {
+    padding: 30px 20px 40px 20px;
+  }
+  .open-share-box > div > p:last-child {
+    margin-top: 10px;
+  }
+  .open-share-box {
+    padding: 10px;
+  }
+}

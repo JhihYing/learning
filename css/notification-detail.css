@@ -1,0 +1,170 @@
+/* ----------------------- 公告 ----------------------- */
+.notification-detail {
+  width: 100%;
+  padding-top: 125px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.notification-detail > .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ----------------------- 麵包屑 ----------------------- */
+.bread-crumbs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  font-size: 15px;
+}
+.bread-crumbs > a {
+  transition: all 0.2s;
+}
+.bread-crumbs > a:hover {
+  opacity: 0.8;
+}
+.bread-crumbs > span {
+  margin: 0px 8px;
+}
+.bread-crumbs > p {
+  font-weight: 500;
+  color: #364772;
+}
+
+/* ----------------------- 主要內容 ----------------------- */
+.notification-title > h3 {
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 20px;
+  margin-right: 50px;
+  display: inline-block;
+}
+.notification-title > h3::before {
+  content: "";
+  background-image: url(../images/diamond.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.notification-title > h3::after {
+  content: "";
+  background-image: url(../images/diamond.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  right: -17px;
+  top: 5px;
+}
+
+.notification-container {
+  margin-top: 30px;
+  background-color: #f9f9f9;
+  padding: 50px 50px;
+}
+
+.notification-container > a {
+  color: #364772;
+  font-weight: 500;
+  position: relative;
+  padding-left: 20px;
+  transition: all 0.2s;
+  font-size: 15px;
+}
+.notification-container > a:hover {
+  opacity: 0.8;
+}
+.notification-container > a::before {
+  content: "";
+  background-image: url("../images/left-arrow-blue.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 20px;
+  height: 11px;
+}
+.latestNews-title {
+  margin: 30px 0px 30px 0px;
+  border-bottom: 1px solid #cfcfcf;
+  padding-bottom: 30px;
+}
+
+.latestNews-title > h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+  line-height: 1.5;
+  width: 100%;
+  transition: all 0.2s;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.latestNews-img {
+  width: 60%;
+  margin-bottom: 30px;
+}
+.latestNews-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.latestNews-info > p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* ----------------------- RWD ----------------------- */
+@media screen and (max-width: 1280px) {
+  .notification-detail {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .latestNews-img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .notification-container {
+    padding: 30px 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .notification-detail {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .latestNews-title > h4 {
+    font-size: 18px;
+  }
+  .latestNews-title > p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .latestNews-info > p {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .latestNews-title > h4 {
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>公告</title>
+
+    <!-- ----------------------- 導入css ----------------------- -->
+    <!-- 自訂義的css -->
+    <link rel="stylesheet" href="./css/notification.css" />
+  </head>
+
+  <body>
+    <!-- -----------------------  載入 header -----------------------  -->
+    <div class="headerpage"></div>
+
+    <!-- ----------------------- 公告 ----------------------- -->
+    <section class="notification">
+      <div class="container">
+        <!-- ----------------------- 麵包屑 ----------------------- -->
+        <div class="bread-crumbs">
+          <a href="./index.html">首頁</a>
+          <span>/</span>
+          <p>公告</p>
+        </div>
+
+        <!-- ----------------------- 主要內容 ----------------------- -->
+        <div class="notification-title">
+          <h3>公告</h3>
+        </div>
+
+        <div class="notification-container">
+          <!-- 選單 -->
+          <ul class="notification-list">
+            <li class="latestNews active">最新消息</li>
+            <li class="notify">通知</li>
+          </ul>
+
+          <!-- 最新消息 -->
+          <div class="latestNews-container">
+            <ul class="latestNews-ul">
+              <li>
+                <a href="./notification-detail.html">
+                  <div class="latestNews-info">
+                    <p>2023/05/17</p>
+                    <h4>【重要聲明】反詐騙聲明</h4>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="./notification-detail.html">
+                  <div class="latestNews-info">
+                    <p>2023/05/17</p>
+                    <h4>【平維護更新】2023/09/09 0:00，暫停使用，敬請見諒。</h4>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="./notification-detail.html">
+                  <div class="latestNews-info">
+                    <p>2023/05/17</p>
+                    <h4>【優惠快訊】限時教育類別全館95折</h4>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+            <!-- ----------------------- 頁碼 ----------------------- -->
+            <div class="pagination-box">
+              <button class="page-arrow-pre"><</button>
+
+              <div class="page-number">
+                <span>1</span>
+                <span>/</span>
+                <span>2</span>
+              </div>
+
+              <button class="page-arrow-next">></button>
+            </div>
+          </div>
+
+          <!-- 通知 -->
+          <div class="notify-container">
+            <ul class="notify-ul">
+              <li>
+                <a href="./courses.html" class="active">
+                  <div class="notify-img">
+                    <img src="./images/course01.jpg" alt="" />
+                  </div>
+                  <div class="notify-info">
+                    <p>2023/05/17</p>
+                    <h4>
+                      【從「流量經營」到「熱銷熱賣」｜愛莉莎莎的自媒體銷售學】全數上架公告
+                    </h4>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="./book.html">
+                  <div class="notify-img">
+                    <img src="./images/book03.jpg" alt="" />
+                  </div>
+                  <div class="notify-info">
+                    <p>2023/05/17</p>
+                    <h4>【獻給皇帝的禮物】第一批課程上架公告</h4>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="./course-detail.html">
+                  <div class="notify-img">
+                    <img src="./images/course06.jpg" alt="" />
+                  </div>
+                  <div class="notify-info">
+                    <p>2023/05/17</p>
+                    <h4>【絹印手作體驗課程】活動延後公告</h4>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+            <!-- ----------------------- 頁碼 ----------------------- -->
+            <div class="pagination-box">
+              <button class="page-arrow-pre"><</button>
+
+              <div class="page-number">
+                <span>1</span>
+                <span>/</span>
+                <span>2</span>
+              </div>
+
+              <button class="page-arrow-next">></button>
+            </div>
+          </div>
+
+          <!-- 尚無公告 -->
+          <div class="no-announcement">
+            <div class="no-announcement-img">
+              <img src="./images/announcement.svg" alt="尚無公告" />
+            </div>
+            <p>目前尚無公告唷！</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------  載入 footer -----------------------  -->
+    <div class="footerpage"></div>
+
+    <!-- ----------------------- 導入JS ----------------------- -->
+    <!-- 套件 - jQuery -->
+    <script src="./vendors/jquery-3.7.0.min.js"></script>
+
+    <!-- 自定義的JS -->
+    <script src="./js/notification.js"></script>
+  </body>
+</html>

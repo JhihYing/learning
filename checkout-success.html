@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>訂單完成</title>
+
+    <!-- ----------------------- 導入css ----------------------- -->
+    <!-- 自訂義的css -->
+    <link rel="stylesheet" href="./css/checkout-success.css" />
+  </head>
+
+  <body>
+    <!-- -----------------------  載入 header -----------------------  -->
+    <div class="headerpage"></div>
+
+    <!-- ----------------------- 訂單完成 ----------------------- -->
+    <section class="checkout-success">
+      <div class="container">
+        <div class="main">
+          <!-- 訂單完成 & 訂單編號 -->
+          <div class="success-info-box">
+            <div class="success-icon">
+              <img src="./images/success.svg" alt="訂單完成" />
+            </div>
+            <h2>訂單完成</h2>
+            <p>訂單編號：2021100401</p>
+          </div>
+
+          <!-- 匯款資訊 -->
+          <div class="remit-box">
+            <div class="remit-title">
+              <h3>繳費資訊</h3>
+              <span> (請在指定時間內繳費完成，逾期將會自動取消訂單)</span>
+            </div>
+
+            <div class="bake-code">
+              <p class="title-test">銀行代號：</p>
+              <p>808 (玉山銀行)</p>
+            </div>
+            <div class="virtual-account">
+              <p class="title-test">虛擬帳號：</p>
+              <p>3721493222554183</p>
+            </div>
+            <div class="payment-date">
+              <p class="title-test">繳費期限：</p>
+              <p>2023-08-10 23:59:59</p>
+            </div>
+            <div class="payment-amount">
+              <p class="title-test">繳費金額：</p>
+              <p>$3,700</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 按鈕 -->
+        <div class="btn-box">
+          <a class="back-btn" href="./index.html">前往首頁</a>
+          <a class="search-order-btn" href=./member-order.html>查詢訂單</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------  載入 footer -----------------------  -->
+    <div class="footerpage"></div>
+
+    <!-- ----------------------- 導入JS ----------------------- -->
+    <!-- 套件 - jQuery -->
+    <script src="./vendors/jquery-3.7.0.min.js"></script>
+
+    <!-- 自定義的JS -->
+    <script src="./js/checkout-success.js"></script>
+  </body>
+</html>

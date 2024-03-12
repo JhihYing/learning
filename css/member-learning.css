@@ -1,0 +1,545 @@
+/* ----------------------- 滾輪外觀 ----------------------- */
+/* 下拉式選單 (分類) */
+.course-type-ul::-webkit-scrollbar {
+  height: 6px;
+}
+.course-type-ul::-webkit-scrollbar-thumb {
+  background-color: rgba(218, 218, 218, 0.755);
+  border-radius: 10px;
+}
+.course-type-ul::-webkit-scrollbar-track {
+  background-color: initial;
+}
+
+/* ----------------------- 會員專區-我的學習 ----------------------- */
+.member-personal {
+  width: 100%;
+  background-color: #fafafa;
+  padding-top: 130px;
+  padding-bottom: 100px;
+  min-height: calc(100vh - 244px);
+}
+.member-personal > .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.member-flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* ----------------------- 選單 (共用) ----------------------- */
+.member-box {
+  width: 20%;
+  min-width: 240px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 40px 20px 20px 20px;
+  margin-right: 20px;
+  position: sticky;
+  top: 130px;
+}
+.member-title {
+  display: flex;
+}
+.member-title > h3 {
+  font-weight: 500;
+}
+.member-images {
+  width: 18px;
+  margin-right: 10px;
+}
+.member-images > img {
+  width: 100%;
+  height: 100%;
+}
+.member-ul {
+  text-align: center;
+  white-space: nowrap;
+}
+.member-ul > li {
+  margin-bottom: 40px;
+}
+.member-box > hr {
+  margin: 0px;
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: #e5e5e5;
+  margin: 30px 0px;
+}
+.member-ul > li:hover > a {
+  color: #364772;
+}
+.member-ul > li > a {
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.member-ul > li.active > a {
+  color: #364772;
+  font-weight: 500;
+}
+
+/* ----------------------- 主要內容 ----------------------- */
+.main-content {
+  background-color: white;
+  border-radius: 8px;
+  width: 78%;
+  padding: 40px 50px;
+  /* min-height: 560px; */
+}
+
+.course-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.course-nav > p {
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+/* 課程分類選單 */
+.course-type-ul {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  width: calc(100% - 160px);
+  padding-bottom: 20px;
+}
+.course-type-ul > li {
+  margin-right: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 8px 15px;
+  white-space: nowrap;
+}
+.course-type-ul > li:last-child {
+  margin-right: 0;
+}
+.course-type-ul > li.active {
+  background-color: #364772;
+  color: white;
+  border-radius: 30px;
+}
+
+.course-type-ul > li:hover:not(.active) {
+  background-color: #efefef;
+  border-radius: 30px;
+  padding: 8px 15px;
+}
+
+/* 線上課程 */
+.online-course-card-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 55px 20px;
+  /* display: none; */
+}
+
+.course-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s;
+}
+.course-card > a > h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 0px;
+  line-height: 1.5;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 48px;
+}
+
+.course-card > a > p {
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.course-card > a > p > span {
+  color: #a4a4a4;
+}
+.course-card:hover .course-image > img {
+  transform: scale(1.06);
+}
+.course-card:hover > a > h4 {
+  opacity: 0.8;
+}
+
+/* 進度條 */
+.schedule-box {
+  margin-top: 20px;
+}
+.course-bar {
+  background-color: #dcdcdc;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.course-bar-progress {
+  background-color: #8699ce;
+  width: 68%;
+  height: 5px;
+  border-radius: 5px;
+}
+.hot-course-card-box
+  > li
+  > a
+  > .schedule-box
+  > .course-bar
+  > .course-bar-progress {
+  background-color: #e56658;
+}
+.book-card-box > li > a > .schedule-box > .course-bar > .course-bar-progress {
+  background-color: #cc9453;
+}
+
+.course-schedule {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.course-schedule > p {
+  font-size: 14px;
+}
+
+/* 新書聆聽 */
+.book-card-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 55px 20px;
+  display: none;
+}
+.book-card {
+  border: 1px solid #dcdcdc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 13px 13px;
+  border-radius: 3px;
+}
+.book-card > a {
+  width: 100%;
+}
+.book-card:hover .book-image > img {
+  transform: scale(1.06);
+}
+.book-card:hover > a > h4 {
+  opacity: 0.8;
+}
+.book-image {
+  width: 100%;
+  position: relative;
+  padding-top: 100%;
+  overflow: hidden;
+}
+.book-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s;
+}
+.book-card > a > h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 0px;
+  line-height: 1.5;
+  width: 100%;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.book-card > a > .schedule-box > .course-schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.book-card > a > .schedule-box > .course-schedule > .homework {
+  margin-top: 10px;
+}
+
+/* 募資中 */
+.hot-course-card-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 55px 20px;
+  display: none;
+}
+
+.course-card > a > p.location {
+  margin-left: 20px;
+  position: relative;
+  overflow: initial;
+}
+.course-card > a > p.location:before {
+  content: "";
+  background-image: url(../images/location.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: -20px;
+  top: -2px;
+}
+
+.course-info-box {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.course-info-box > p.course-notice {
+  color: #e56658;
+  font-size: 14px;
+  border: 1px solid #e56658;
+  border-radius: 3px;
+  font-weight: 500;
+  padding: 5px 5px;
+  margin-bottom: 10px;
+}
+.course-info-box > p.open-course-date {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.course-schedule {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.course-schedule > p {
+  font-size: 14px;
+}
+.hot-course-card-box > li > a > .schedule-box > .course-schedule > p {
+  margin-left: 20px;
+}
+.hot-course-card-box > li > a > .schedule-box > .course-schedule > p::before {
+  content: "";
+  background-image: url("../images/students.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+
+/* 實體課程 */
+.course-card-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 55px 20px;
+  display: none;
+}
+
+.course-image {
+  width: 100%;
+  position: relative;
+  padding-top: 55%;
+  overflow: hidden;
+}
+
+.course-image.course-close::after {
+  content: "已結束";
+  color: white;
+  background-color: #00000099;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-date-box {
+  margin-top: 10px;
+}
+.course-date-box > p {
+  position: relative;
+  font-size: 14px;
+  margin-left: 20px;
+  line-height: 1.5;
+}
+
+.course-date-box > p:last-child:before {
+  content: "";
+  background-image: url("../images/time.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -20px;
+  top: 2.5px;
+}
+
+/* 尚無課程 */
+.no-course-box {
+  /* border: 1px solid red; */
+  padding: 130px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+.no-course-img {
+  width: 80px;
+}
+.no-course-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.no-course-box > p {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #909090;
+}
+
+/* ----------------------- RWD ----------------------- */
+@media screen and (max-width: 1280px) {
+  .member-personal {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .member-box {
+    min-width: 200px;
+  }
+  .course-schedule > p {
+    font-size: 13px;
+  }
+  .book-card-box {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 992px) {
+  .member-personal {
+    height: auto;
+  }
+
+  .member-personal > .container > h2 {
+    display: none;
+  }
+  .member-flex-box {
+    flex-direction: column;
+  }
+  .member-title,
+  .member-box > hr {
+    display: none;
+  }
+  .member-box {
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 0px;
+    background-color: inherit;
+    height: auto;
+    position: relative;
+    top: initial;
+  }
+  .member-ul {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+  .member-ul > li {
+    margin: 0px 10px;
+  }
+
+  .main-content {
+    width: 100%;
+    /* padding: 40px 25px; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .online-course-card-box {
+    grid-template-columns: 1fr 1fr;
+  }
+  .course-schedule > p {
+    font-size: 14px;
+  }
+  .hot-course-card-box {
+    grid-template-columns: 1fr 1fr;
+  }
+  .course-card-box {
+    grid-template-columns: 1fr 1fr;
+  }
+  .book-card-box {
+    grid-template-columns: 1fr 1fr;
+  }
+  .course-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .course-type-ul {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-content {
+    padding: 40px 40px;
+  }
+  .member-personal {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .online-course-card-box {
+    grid-template-columns: 1fr;
+  }
+  .hot-course-card-box {
+    grid-template-columns: 1fr;
+  }
+  .course-card-box {
+    grid-template-columns: 1fr;
+  }
+  .book-card-box {
+    grid-template-columns: 1fr;
+  }
+  .member-ul > li > a {
+    font-size: 15px;
+  }
+  .course-type-ul > li {
+    font-size: 15px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .main-content {
+    padding: 40px 30px;
+  }
+  .member-ul > li {
+    margin: 0px;
+  }
+  .member-ul {
+    justify-content: space-between;
+  }
+}

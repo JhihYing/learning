@@ -13,8 +13,7 @@
 
 
 ## Demo
-- https://jhihying.github.io/eggfarm/
-
+- https://jhihying.github.io/learning/
 
 ## 使用技術 / 套件
 - 以手刻的方式來開發 UI 介面

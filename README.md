@@ -5,10 +5,6 @@
 - 結合線上課程、實體課程、募資課程、新書聆聽的學習平台，功能包含登入登出、會員中心、購物車、結帳流程、最新消息、專家嚴選等
 - 此專案為前後端不分離，由於後端只懂前端基礎，所以並沒有使用任何框架、CSS預處理器，供後端工程師套版使用
 
-專案心得：
-
-- 
-
 
 ## Demo
 - https://jhihying.github.io/learning/
@@ -29,4 +25,8 @@
 
 
 ## 參考資料
-- [いとう養雞場](http://ito-eggfarm.com/)
+- [ACCUPASS活動通](https://www.accupass.com/)
+- [PressPlay Academy](https://www.pressplay.cc/)
+- [知識衛星](https://sat.cool/home)
+- [YOTTA友讀](https://www.yottau.com.tw/home)
+- [1號課堂](https://classone.cwgv.com.tw/)

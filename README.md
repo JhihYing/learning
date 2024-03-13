@@ -1,5 +1,5 @@
 # 學習平台 | 2023.09
-![]([https://i.imgur.com/VJu04t7.png)
+![](https://i.imgur.com/VJu04t7.png)
 
 ## 專案說明
 以養雞場為主題的 **單頁式** 形象網站 (純切版)。
